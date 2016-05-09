@@ -6,22 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>p344 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode P344 题解1.题意：输入一个字符串返回它反转之后的字符串2.代码
-
-[title] [] [url] [link text]1234567891011121314151617181920212223242526272829303132333435 package leetcode;import java.util.Scanner;/** *  * @author ZhangM">
+  <meta name="description" content="LeetCode P344 题解1.题意：输入一个字符串返回它反转之后的字符串">
 <meta property="og:type" content="article">
 <meta property="og:title" content="p344">
 <meta property="og:url" content="http://yoursite.com/2016/05/08/p344/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode P344 题解1.题意：输入一个字符串返回它反转之后的字符串2.代码
-
-[title] [] [url] [link text]1234567891011121314151617181920212223242526272829303132333435 package leetcode;import java.util.Scanner;/** *  * @author ZhangM">
-<meta property="og:updated_time" content="2016-05-09T06:08:48.804Z">
+<meta property="og:description" content="LeetCode P344 题解1.题意：输入一个字符串返回它反转之后的字符串">
+<meta property="og:updated_time" content="2016-05-09T10:25:47.727Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="p344">
-<meta name="twitter:description" content="LeetCode P344 题解1.题意：输入一个字符串返回它反转之后的字符串2.代码
-
-[title] [] [url] [link text]1234567891011121314151617181920212223242526272829303132333435 package leetcode;import java.util.Scanner;/** *  * @author ZhangM">
+<meta name="twitter:description" content="LeetCode P344 题解1.题意：输入一个字符串返回它反转之后的字符串">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -218,7 +212,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-P344-题解"><a href="#LeetCode-P344-题解" class="headerlink" title="LeetCode P344 题解"></a>LeetCode P344 题解</h2><p>1.题意：输入一个字符串返回它反转之后的字符串<br>2.代码</p>
+        <h2 id="LeetCode-P344-题解"><a href="#LeetCode-P344-题解" class="headerlink" title="LeetCode P344 题解"></a>LeetCode P344 题解</h2><p>1.题意：输入一个字符串返回它反转之后的字符串<br><a id="more"></a><br>2.代码</p>
 <hr>
 <figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">package</span> leetcode;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * </span><br><span class="line"> * <span class="doctag">@author</span> ZhangMengRou</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">p344</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner in = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		String a = in.nextLine();</span><br><span class="line">		String ans = <span class="keyword">new</span> String();</span><br><span class="line">		ans = reverseString(a);</span><br><span class="line">		System.out.print(ans);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">reverseString</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		StringBuilder bu = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		StringBuilder ans = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		bu.append(s);</span><br><span class="line">		<span class="keyword">int</span> len = bu.length();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = len - <span class="number">1</span>; i &gt; -<span class="number">1</span>; i--) &#123;</span><br><span class="line">			ans.append(s.charAt(i));</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// System.out.print(ans);</span></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> String(ans);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
