@@ -4,24 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>资源 | ZMR小站</title>
+  <title>p258 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Android UI性能优化详解
+  <meta name="description" content="LeetCode P258 Add Digits 题解1.题目：
 
-http://mrpeak.cn/android/2016/01/11/android-performance-ui">
+Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
+For example:
+Given num = 38, the process is like: 3 + 8 = 11, 1 +">
 <meta property="og:type" content="article">
-<meta property="og:title" content="资源">
-<meta property="og:url" content="http://yoursite.com/2016/05/08/资源/index.html">
+<meta property="og:title" content="p258">
+<meta property="og:url" content="http://yoursite.com/2016/05/11/p258/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="Android UI性能优化详解
+<meta property="og:description" content="LeetCode P258 Add Digits 题解1.题目：
 
-http://mrpeak.cn/android/2016/01/11/android-performance-ui">
-<meta property="og:updated_time" content="2016-05-08T13:08:14.363Z">
+Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
+For example:
+Given num = 38, the process is like: 3 + 8 = 11, 1 +">
+<meta property="og:updated_time" content="2016-05-11T06:08:03.082Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="资源">
-<meta name="twitter:description" content="Android UI性能优化详解
+<meta name="twitter:title" content="p258">
+<meta name="twitter:description" content="LeetCode P258 Add Digits 题解1.题目：
 
-http://mrpeak.cn/android/2016/01/11/android-performance-ui">
+Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
+For example:
+Given num = 38, the process is like: 3 + 8 = 11, 1 +">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -177,11 +183,11 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-资源" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p258" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/08/资源/" class="article-date">
-  	<time datetime="2016-05-08T13:07:34.000Z" itemprop="datePublished">2016-05-08</time>
+      <a href="/2016/05/11/p258/" class="article-date">
+  	<time datetime="2016-05-11T05:51:11.000Z" itemprop="datePublished">2016-05-11</time>
 </a>
     </div>
   
@@ -194,7 +200,7 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
         
   
     <h1 class="article-title" itemprop="name">
-      资源
+      p258
     </h1>
   
 
@@ -203,12 +209,12 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/其它/">其它</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
 	</div>
 
         
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/其它/">其它</a>
+	<a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
 	</div>
 
 
@@ -218,9 +224,29 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Android UI性能优化详解</p>
+        <h2 id="LeetCode-P258-Add-Digits-题解"><a href="#LeetCode-P258-Add-Digits-题解" class="headerlink" title="LeetCode P258 Add Digits 题解"></a>LeetCode P258 Add Digits 题解</h2><p>1.题目：</p>
 <blockquote>
-<p><a href="http://mrpeak.cn/android/2016/01/11/android-performance-ui" target="_blank" rel="external">http://mrpeak.cn/android/2016/01/11/android-performance-ui</a></p>
+<p>Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.</p>
+<p>For example:</p>
+<p>Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.</p>
+<p>Follow up:<br>Could you do it without any loop/recursion in O(1) runtime? </p>
+</blockquote>
+<p>题意：</p>
+<blockquote>
+<p>输入一个数字，将这个数字所有位数相加一直到得到一个小于10的数，返回这个数<br>希望复杂度为O(1) </p>
+</blockquote>
+<a id="more"></a> 
+<p>2.解题思路: </p>
+<blockquote>
+<p>一般最开始都会想用个循环就出来了，然复杂度要求O(1)，即没有循环。<br>看到这样的复杂度发觉肯定是有规律可以推出公式的，尝试。<br>11 ：2，比原来减少了9<br>22 ：4，比原来减少了18<br>可以这样想 一个两位数变成个位加十位 减少十位上的数字<em>(10-1)<br>……<br>反之可以推，知道这个数ans,原来的数n=9</em>k+ans；得到公式</p>
+</blockquote>
+<p>3.代码</p>
+<hr>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">package</span> leetcode;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * </span><br><span class="line"> * <span class="doctag">@author</span> ZhangMengRou</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">p292</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner in = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		String a = in.nextLine();</span><br><span class="line">		String[] list = a.split(<span class="string">" "</span>);</span><br><span class="line">		<span class="keyword">int</span>[] al = <span class="keyword">new</span> <span class="keyword">int</span>[list.length];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;list.length;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			al[i]=Integer.parseInt(list[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span> ans = singleNumber(al);</span><br><span class="line">		System.out.print(ans);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">singleNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> as = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">			as = as ^ nums[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> as;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr>
+<p>4.一些总结：</p>
+<blockquote>
+<p>第一次提交Wrong了。。。忘记考虑k*9%9=0,然答案应该是9</p>
 </blockquote>
 
       
@@ -231,18 +257,9 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
     
 <nav id="article-nav">
   
-    <a href="/2016/05/08/鼎沸/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          鼎沸
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/05/08/p338/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p338</div>
+    <a href="/2016/05/11/p136/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p136</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -258,7 +275,7 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="资源" data-title="资源" data-url="http://yoursite.com/2016/05/08/资源/"></div>
+	<div class="ds-thread" data-thread-key="p258" data-title="p258" data-url="http://yoursite.com/2016/05/11/p258/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
