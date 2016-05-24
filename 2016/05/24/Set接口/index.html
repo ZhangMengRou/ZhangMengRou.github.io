@@ -4,24 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>资源 | ZMR小站</title>
+  <title>Set接口 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Android UI性能优化详解
+  <meta name="description" content="Set
+Set是一个接口继承自Collection(集合)
 
-http://mrpeak.cn/android/2016/01/11/android-performance-ui">
+Set是一种不包含重复的元素的无序Collection。Set是接口，自身没有具体实现。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="资源">
-<meta property="og:url" content="http://yoursite.com/2016/05/08/资源/index.html">
+<meta property="og:title" content="Set接口">
+<meta property="og:url" content="http://yoursite.com/2016/05/24/Set接口/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="Android UI性能优化详解
+<meta property="og:description" content="Set
+Set是一个接口继承自Collection(集合)
 
-http://mrpeak.cn/android/2016/01/11/android-performance-ui">
-<meta property="og:updated_time" content="2016-05-08T13:08:14.363Z">
+Set是一种不包含重复的元素的无序Collection。Set是接口，自身没有具体实现。">
+<meta property="og:updated_time" content="2016-05-24T23:30:55.056Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="资源">
-<meta name="twitter:description" content="Android UI性能优化详解
+<meta name="twitter:title" content="Set接口">
+<meta name="twitter:description" content="Set
+Set是一个接口继承自Collection(集合)
 
-http://mrpeak.cn/android/2016/01/11/android-performance-ui">
+Set是一种不包含重复的元素的无序Collection。Set是接口，自身没有具体实现。">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -185,11 +188,11 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-资源" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Set接口" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/08/资源/" class="article-date">
-  	<time datetime="2016-05-08T13:07:34.000Z" itemprop="datePublished">2016-05-08</time>
+      <a href="/2016/05/24/Set接口/" class="article-date">
+  	<time datetime="2016-05-24T13:46:27.000Z" itemprop="datePublished">2016-05-24</time>
 </a>
     </div>
   
@@ -202,7 +205,7 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
         
   
     <h1 class="article-title" itemprop="name">
-      资源
+      Set接口
     </h1>
   
 
@@ -211,12 +214,12 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/其它/">其它</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/The-source-code/">The source code</a></li></ul>
 	</div>
 
         
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/其它/">其它</a>
+	<a class="article-category-link" href="/categories/Java/">Java</a>
 	</div>
 
 
@@ -226,9 +229,15 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Android UI性能优化详解</p>
+        <h2 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h2><blockquote>
+<p>Set是一个接口继承自Collection(集合)</p>
+</blockquote>
+<p>Set是一种不包含重复的元素的无序Collection。<br>Set是接口，自身没有具体实现。<br><a id="more"></a><br>为了更加直接的了解，先看下实现的源码。<br>HashSet的内部其实使用到HashMap来实现对集合的操作<br>关于add操作：</p>
+<hr>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">private</span> <span class="keyword">transient</span> HashMap&lt;E,Object&gt; map;</span><br><span class="line"><span class="comment">/**</span><br><span class="line">     * Adds the specified element to this set if it is not already present.</span><br><span class="line">     * More formally, adds the specified element &lt;tt&gt;e&lt;/tt&gt; to this set if</span><br><span class="line">     * this set contains no element &lt;tt&gt;e2&lt;/tt&gt; such that</span><br><span class="line">     * &lt;tt&gt;(e==null&amp;nbsp;?&amp;nbsp;e2==null&amp;nbsp;:&amp;nbsp;e.equals(e2))&lt;/tt&gt;.</span><br><span class="line">     * If this set already contains the element, the call leaves the set</span><br><span class="line">     * unchanged and returns &lt;tt&gt;false&lt;/tt&gt;.</span><br><span class="line">     *</span><br><span class="line">     * <span class="doctag">@param</span> e element to be added to this set</span><br><span class="line">     * <span class="doctag">@return</span> &lt;tt&gt;true&lt;/tt&gt; if this set did not already contain the specified</span><br><span class="line">     * element</span><br><span class="line">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">add</span><span class="params">(E e)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> map.put(e, PRESENT)==<span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<hr>
 <blockquote>
-<p><a href="http://mrpeak.cn/android/2016/01/11/android-performance-ui" target="_blank" rel="external">http://mrpeak.cn/android/2016/01/11/android-performance-ui</a></p>
+<p>这里的e为key,由于键值是唯一的，就防止了重复。(ps:有时间要去填HashMap的坑read the source code)</p>
 </blockquote>
 
       
@@ -239,18 +248,9 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
     
 <nav id="article-nav">
   
-    <a href="/2016/05/08/鼎沸/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          鼎沸
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/05/08/p338/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p338</div>
+    <a href="/2016/05/24/p349/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p349</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -266,7 +266,7 @@ http://mrpeak.cn/android/2016/01/11/android-performance-ui">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="资源" data-title="资源" data-url="http://yoursite.com/2016/05/08/资源/"></div>
+	<div class="ds-thread" data-thread-key="Set接口" data-title="Set接口" data-url="http://yoursite.com/2016/05/24/Set接口/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
