@@ -4,24 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p292 | ZMR小站</title>
+  <title>p122 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode P292 Nim Game 题解1.题目：
-
-You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who re">
+  <meta name="description" content="LeetCode 122 Best Time to Buy and Sell Stock II 题解1.题目：
+  Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You ma">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p292">
-<meta property="og:url" content="http://yoursite.com/2016/05/11/p292/index.html">
+<meta property="og:title" content="p122">
+<meta property="og:url" content="http://yoursite.com/2016/05/28/p122/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode P292 Nim Game 题解1.题目：
-
-You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who re">
-<meta property="og:updated_time" content="2016-05-25T13:50:43.035Z">
+<meta property="og:description" content="LeetCode 122 Best Time to Buy and Sell Stock II 题解1.题目：
+  Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You ma">
+<meta property="og:updated_time" content="2016-05-28T02:37:11.925Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p292">
-<meta name="twitter:description" content="LeetCode P292 Nim Game 题解1.题目：
-
-You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who re">
+<meta name="twitter:title" content="p122">
+<meta name="twitter:description" content="LeetCode 122 Best Time to Buy and Sell Stock II 题解1.题目：
+  Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You ma">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -169,11 +166,11 @@ You are playing the following Nim Game with your friend: There is a heap of ston
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p292" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p122" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/11/p292/" class="article-date">
-  	<time datetime="2016-05-11T00:27:59.000Z" itemprop="datePublished">2016-05-11</time>
+      <a href="/2016/05/28/p122/" class="article-date">
+  	<time datetime="2016-05-28T02:28:29.000Z" itemprop="datePublished">2016-05-28</time>
 </a>
     </div>
   
@@ -186,7 +183,7 @@ You are playing the following Nim Game with your friend: There is a heap of ston
         
   
     <h1 class="article-title" itemprop="name">
-      p292
+      p122
     </h1>
   
 
@@ -210,27 +207,21 @@ You are playing the following Nim Game with your friend: There is a heap of ston
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-P292-Nim-Game-题解"><a href="#LeetCode-P292-Nim-Game-题解" class="headerlink" title="LeetCode P292 Nim Game 题解"></a>LeetCode P292 Nim Game 题解</h2><p>1.题目：</p>
-<blockquote>
-<p>You are playing the following Nim Game with your friend: There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.</p>
-<p>Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.</p>
-<p>For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend. </p>
+        <h2 id="LeetCode-122-Best-Time-to-Buy-and-Sell-Stock-II-题解"><a href="#LeetCode-122-Best-Time-to-Buy-and-Sell-Stock-II-题解" class="headerlink" title="LeetCode 122 Best Time to Buy and Sell Stock II 题解"></a>LeetCode 122 Best Time to Buy and Sell Stock II 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>  Say you have an array for which the ith element is the price of a given stock on day i.<br> Design an algorithm to find the maximum profit.<br> You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times).<br> However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).</p>
 </blockquote>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>你和你的朋友互相拿地上的石头，你先动手，每个人一次只能拿1-3个，拿到最后那一个石头的胜利。</p>
+<p>输入一个数组，是每天股票的价格，进行买入卖出操作，返回你可以获得的最大利润。</p>
 </blockquote>
-<p>2.解题思路: </p>
-<blockquote>
-<p>将对方置于3+1的困境是最好的战略<br> 即留给对方的石头是4的整数倍必赢</p>
+<h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
+<p>贪心</p>
 </blockquote>
-<p>3.代码</p>
+<h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">package</span> leetcode;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">p122</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner in = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		String a = in.nextLine();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span>[] nn1 = <span class="keyword">new</span> <span class="keyword">int</span>[(a.length() + <span class="number">1</span>) / <span class="number">2</span>];</span><br><span class="line">		String[] n1 = a.split(<span class="string">" "</span>);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (a.length() + <span class="number">1</span>) / <span class="number">2</span>; i++) &#123;</span><br><span class="line">			nn1[i] = Integer.parseInt(n1[i]);</span><br><span class="line">			<span class="comment">// System.out.println(nn1[i]);</span></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 完成数据的输入并进行处理</span></span><br><span class="line">		<span class="keyword">int</span> ans;</span><br><span class="line">		ans = maxProfit(nn1);</span><br><span class="line"></span><br><span class="line">		System.out.print(ans + <span class="string">" "</span>);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] prices)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span> (prices == <span class="keyword">null</span> || prices.length &lt; <span class="number">2</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; prices.length; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (prices[i] - prices[i - <span class="number">1</span>] &gt; <span class="number">0</span>) &#123;</span><br><span class="line">				max = max + prices[i] - prices[i - <span class="number">1</span>];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> max;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">package</span> leetcode;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * </span><br><span class="line"> * <span class="doctag">@author</span> ZhangMengRou</span><br><span class="line"> *</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">p292</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner in = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		String a = in.nextLine();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">boolean</span> ans = canWinNim(Integer.parseInt(a));</span><br><span class="line">		System.out.print(ans);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">canWinNim</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (n % <span class="number">4</span> == <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<hr>
-<p>4.一些总结：~</p>
-
+<h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
     </div>
     
@@ -239,18 +230,9 @@ You are playing the following Nim Game with your friend: There is a heap of ston
     
 <nav id="article-nav">
   
-    <a href="/2016/05/11/常用转换/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          常用转换
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/05/08/鼎沸/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">鼎沸</div>
+    <a href="/2016/05/27/p100/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p100</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -266,7 +248,7 @@ You are playing the following Nim Game with your friend: There is a heap of ston
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p292" data-title="p292" data-url="http://yoursite.com/2016/05/11/p292/"></div>
+	<div class="ds-thread" data-thread-key="p122" data-title="p122" data-url="http://yoursite.com/2016/05/28/p122/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
