@@ -4,21 +4,45 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p122 | ZMR小站</title>
+  <title>p171 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode 122 Best Time to Buy and Sell Stock II 题解1.题目：
-  Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You ma">
+  <meta name="description" content="LeetCode 171 Excel Sheet Column Number  题解1.题目：
+  Given a column title as appear in an Excel sheet, return its corresponding column number.
+
+For example:
+A -&amp;gt; 1
+B -&amp;gt; 2
+C -&amp;gt; 3
+...
+Z -&amp;gt; 26
+A">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p122">
-<meta property="og:url" content="http://yoursite.com/2016/05/28/p122/index.html">
+<meta property="og:title" content="p171">
+<meta property="og:url" content="http://yoursite.com/2016/05/29/p171/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode 122 Best Time to Buy and Sell Stock II 题解1.题目：
-  Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You ma">
-<meta property="og:updated_time" content="2016-05-28T02:37:11.925Z">
+<meta property="og:description" content="LeetCode 171 Excel Sheet Column Number  题解1.题目：
+  Given a column title as appear in an Excel sheet, return its corresponding column number.
+
+For example:
+A -&amp;gt; 1
+B -&amp;gt; 2
+C -&amp;gt; 3
+...
+Z -&amp;gt; 26
+A">
+<meta property="og:updated_time" content="2016-05-29T07:22:48.201Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p122">
-<meta name="twitter:description" content="LeetCode 122 Best Time to Buy and Sell Stock II 题解1.题目：
-  Say you have an array for which the ith element is the price of a given stock on day i. Design an algorithm to find the maximum profit. You ma">
+<meta name="twitter:title" content="p171">
+<meta name="twitter:description" content="LeetCode 171 Excel Sheet Column Number  题解1.题目：
+  Given a column title as appear in an Excel sheet, return its corresponding column number.
+
+For example:
+A -&amp;gt; 1
+B -&amp;gt; 2
+C -&amp;gt; 3
+...
+Z -&amp;gt; 26
+A">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +190,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p122" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p171" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/28/p122/" class="article-date">
-  	<time datetime="2016-05-28T02:28:29.000Z" itemprop="datePublished">2016-05-28</time>
+      <a href="/2016/05/29/p171/" class="article-date">
+  	<time datetime="2016-05-29T07:21:19.000Z" itemprop="datePublished">2016-05-29</time>
 </a>
     </div>
   
@@ -183,7 +207,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p122
+      p171
     </h1>
   
 
@@ -207,19 +231,27 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-122-Best-Time-to-Buy-and-Sell-Stock-II-题解"><a href="#LeetCode-122-Best-Time-to-Buy-and-Sell-Stock-II-题解" class="headerlink" title="LeetCode 122 Best Time to Buy and Sell Stock II 题解"></a>LeetCode 122 Best Time to Buy and Sell Stock II 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>  Say you have an array for which the ith element is the price of a given stock on day i.<br> Design an algorithm to find the maximum profit.<br> You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times).<br> However, you may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).</p>
+        <h2 id="LeetCode-171-Excel-Sheet-Column-Number-题解"><a href="#LeetCode-171-Excel-Sheet-Column-Number-题解" class="headerlink" title="LeetCode 171 Excel Sheet Column Number  题解"></a>LeetCode 171 Excel Sheet Column Number  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>  Given a column title as appear in an Excel sheet, return its corresponding column number.</p>
 </blockquote>
-<a id="more"></a> 
+<p>For example:</p>
+<pre><code>A -&gt; 1
+B -&gt; 2
+C -&gt; 3
+...
+Z -&gt; 26
+AA -&gt; 27
+AB -&gt; 28 
+</code></pre><a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入一个数组，是每天股票的价格，进行买入卖出操作，返回你可以获得的最大利润。</p>
+<p>26进制</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>贪心</p>
+<p>26进制</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">package</span> leetcode;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">p122</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner in = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		String a = in.nextLine();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span>[] nn1 = <span class="keyword">new</span> <span class="keyword">int</span>[(a.length() + <span class="number">1</span>) / <span class="number">2</span>];</span><br><span class="line">		String[] n1 = a.split(<span class="string">" "</span>);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; (a.length() + <span class="number">1</span>) / <span class="number">2</span>; i++) &#123;</span><br><span class="line">			nn1[i] = Integer.parseInt(n1[i]);</span><br><span class="line">			<span class="comment">// System.out.println(nn1[i]);</span></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 完成数据的输入并进行处理</span></span><br><span class="line">		<span class="keyword">int</span> ans;</span><br><span class="line">		ans = maxProfit(nn1);</span><br><span class="line"></span><br><span class="line">		System.out.print(ans + <span class="string">" "</span>);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] prices)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span> (prices == <span class="keyword">null</span> || prices.length &lt; <span class="number">2</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; prices.length; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (prices[i] - prices[i - <span class="number">1</span>] &gt; <span class="number">0</span>) &#123;</span><br><span class="line">				max = max + prices[i] - prices[i - <span class="number">1</span>];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> max;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">package</span> leetcode;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">p171</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		String s = <span class="string">"AC"</span>;</span><br><span class="line">		ans = titleToNumber(s);</span><br><span class="line">		System.out.println(ans);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">titleToNumber</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = s.length() - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">			ans = (<span class="keyword">int</span>) (ans + (s.charAt(i) - <span class="string">'A'</span> + <span class="number">1</span>)</span><br><span class="line">					* Math.pow(<span class="number">26</span>, s.length() - <span class="number">1</span> - i));</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -230,18 +262,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/05/28/p242/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/06/06/p169/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p242
+          p169
         
       </div>
     </a>
   
   
-    <a href="/2016/05/27/p100/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p100</div>
+    <a href="/2016/05/29/p168/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p168</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -257,7 +289,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p122" data-title="p122" data-url="http://yoursite.com/2016/05/28/p122/"></div>
+	<div class="ds-thread" data-thread-key="p171" data-title="p171" data-url="http://yoursite.com/2016/05/29/p171/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
