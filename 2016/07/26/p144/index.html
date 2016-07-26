@@ -4,24 +4,33 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p350 | ZMR小站</title>
+  <title>p144 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode 350 Intersection of Two Arrays II 题解1.题目：
-  Given two arrays, write a function to compute their intersection.
-Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
+  <meta name="description" content="LeetCode 144  Binary Tree Preorder Traversal 题解1.题目：
+Given a binary tree, return the preorder traversal of its nodes’ values.
+
+For example:Given binary tree {1,#,2,3},
+   1    \     2    /   3
+return">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p350">
-<meta property="og:url" content="http://yoursite.com/2016/06/06/p350/index.html">
+<meta property="og:title" content="p144">
+<meta property="og:url" content="http://yoursite.com/2016/07/26/p144/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode 350 Intersection of Two Arrays II 题解1.题目：
-  Given two arrays, write a function to compute their intersection.
-Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
-<meta property="og:updated_time" content="2016-06-06T04:47:41.340Z">
+<meta property="og:description" content="LeetCode 144  Binary Tree Preorder Traversal 题解1.题目：
+Given a binary tree, return the preorder traversal of its nodes’ values.
+
+For example:Given binary tree {1,#,2,3},
+   1    \     2    /   3
+return">
+<meta property="og:updated_time" content="2016-07-26T06:36:02.436Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p350">
-<meta name="twitter:description" content="LeetCode 350 Intersection of Two Arrays II 题解1.题目：
-  Given two arrays, write a function to compute their intersection.
-Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
+<meta name="twitter:title" content="p144">
+<meta name="twitter:description" content="LeetCode 144  Binary Tree Preorder Traversal 题解1.题目：
+Given a binary tree, return the preorder traversal of its nodes’ values.
+
+For example:Given binary tree {1,#,2,3},
+   1    \     2    /   3
+return">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -169,11 +178,11 @@ Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p350" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p144" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/06/06/p350/" class="article-date">
-  	<time datetime="2016-06-06T04:45:50.000Z" itemprop="datePublished">2016-06-06</time>
+      <a href="/2016/07/26/p144/" class="article-date">
+  	<time datetime="2016-07-26T06:26:02.000Z" itemprop="datePublished">2016-07-26</time>
 </a>
     </div>
   
@@ -186,7 +195,7 @@ Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
         
   
     <h1 class="article-title" itemprop="name">
-      p350
+      p144
     </h1>
   
 
@@ -210,20 +219,21 @@ Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-350-Intersection-of-Two-Arrays-II-题解"><a href="#LeetCode-350-Intersection-of-Two-Arrays-II-题解" class="headerlink" title="LeetCode 350 Intersection of Two Arrays II 题解"></a>LeetCode 350 Intersection of Two Arrays II 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>  Given two arrays, write a function to compute their intersection.</p>
-<p>Example:<br>Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2]. </p>
+        <h2 id="LeetCode-144-Binary-Tree-Preorder-Traversal-题解"><a href="#LeetCode-144-Binary-Tree-Preorder-Traversal-题解" class="headerlink" title="LeetCode 144  Binary Tree Preorder Traversal 题解"></a>LeetCode 144  Binary Tree Preorder Traversal 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a binary tree, return the preorder traversal of its nodes’ values.</p>
 </blockquote>
-<a id="more"></a> 
+<p>For example:<br>Given binary tree {1,#,2,3},</p>
+<p>   1<br>    \<br>     2<br>    /<br>   3</p>
+<p>return [1,2,3].<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>返回两个数组的公共部分</p>
+<p>输入一个二叉树，输出他的前序遍历节点的值。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>感觉有点暴力</p>
+<p>dp</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] intersect(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span>[] nums2) &#123;</span><br><span class="line">        Arrays.sort(nums1);</span><br><span class="line">		Arrays.sort(nums2);</span><br><span class="line">		ArrayList&lt;Integer&gt; ansArrayList = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">		<span class="keyword">int</span> len1 = nums1.length;</span><br><span class="line">		<span class="keyword">int</span> len2 = nums2.length;</span><br><span class="line">		<span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (; i &lt; len1 &amp;&amp; j &lt; len2;) &#123;</span><br><span class="line">			<span class="keyword">if</span> (nums1[i] == nums2[j]) &#123;</span><br><span class="line">				ansArrayList.add(nums1[i]);</span><br><span class="line">				i++;</span><br><span class="line">				j++;</span><br><span class="line"></span><br><span class="line">			&#125; <span class="keyword">else</span> <span class="keyword">if</span> (nums1[i] &gt; nums2[j]) &#123;</span><br><span class="line">				j++;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				i++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span>[] ans = <span class="keyword">new</span> <span class="keyword">int</span>[ansArrayList.size()];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; ansArrayList.size(); k++) &#123;</span><br><span class="line">			ans[k] = ansArrayList.get(k);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dp</span><span class="params">(TreeNode root, List&lt;Integer&gt; list)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		list.add(root.val);</span><br><span class="line">		<span class="keyword">if</span> (root.left != <span class="keyword">null</span>) &#123;</span><br><span class="line">			dp(root.left, list);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (root.right != <span class="keyword">null</span>) &#123;</span><br><span class="line">			dp(root.right, list);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> List&lt;Integer&gt; <span class="title">preorderTraversal</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">		List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">		<span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> list;</span><br><span class="line">		dp(root, list);</span><br><span class="line"></span><br><span class="line">		<span class="comment">//for (int i : list) &#123;</span></span><br><span class="line">		<span class="comment">//	System.out.println(i);</span></span><br><span class="line">		<span class="comment">//&#125;</span></span><br><span class="line">		<span class="keyword">return</span> list;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -234,18 +244,18 @@ Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
     
 <nav id="article-nav">
   
-    <a href="/2016/06/09/p343/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/07/26/p94/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p343
+          p94
         
       </div>
     </a>
   
   
-    <a href="/2016/06/06/p217/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p217</div>
+    <a href="/2016/07/26/p319/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p319</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -261,7 +271,7 @@ Example:Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p350" data-title="p350" data-url="http://yoursite.com/2016/06/06/p350/"></div>
+	<div class="ds-thread" data-thread-key="p144" data-title="p144" data-url="http://yoursite.com/2016/07/26/p144/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
