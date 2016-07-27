@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p357 | ZMR小站</title>
+  <title>p371 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode 357 Count Numbers with Unique Digits 题解1.题目：
- Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x &amp;lt; 10n.Example:Given n = 2, return 91. (The answer should">
+  <meta name="description" content="LeetCode 371 Sum of Two Integers 题解1.题目：
+ Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.Example:Given a = 1 and b = 2, return 3.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p357">
-<meta property="og:url" content="http://yoursite.com/2016/07/26/p357/index.html">
+<meta property="og:title" content="p371">
+<meta property="og:url" content="http://yoursite.com/2016/07/26/p371/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode 357 Count Numbers with Unique Digits 题解1.题目：
- Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x &amp;lt; 10n.Example:Given n = 2, return 91. (The answer should">
-<meta property="og:updated_time" content="2016-07-26T08:26:37.557Z">
+<meta property="og:description" content="LeetCode 371 Sum of Two Integers 题解1.题目：
+ Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.Example:Given a = 1 and b = 2, return 3.">
+<meta property="og:updated_time" content="2016-07-26T15:25:54.765Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p357">
-<meta name="twitter:description" content="LeetCode 357 Count Numbers with Unique Digits 题解1.题目：
- Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x &amp;lt; 10n.Example:Given n = 2, return 91. (The answer should">
+<meta name="twitter:title" content="p371">
+<meta name="twitter:description" content="LeetCode 371 Sum of Two Integers 题解1.题目：
+ Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.Example:Given a = 1 and b = 2, return 3.">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +166,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p357" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p371" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/26/p357/" class="article-date">
-  	<time datetime="2016-07-26T08:14:20.000Z" itemprop="datePublished">2016-07-26</time>
+      <a href="/2016/07/26/p371/" class="article-date">
+  	<time datetime="2016-07-26T15:21:57.000Z" itemprop="datePublished">2016-07-26</time>
 </a>
     </div>
   
@@ -183,7 +183,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p357
+      p371
     </h1>
   
 
@@ -207,19 +207,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-357-Count-Numbers-with-Unique-Digits-题解"><a href="#LeetCode-357-Count-Numbers-with-Unique-Digits-题解" class="headerlink" title="LeetCode 357 Count Numbers with Unique Digits 题解"></a>LeetCode 357 Count Numbers with Unique Digits 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x &lt; 10n.<br>Example:<br>Given n = 2, return 91. (The answer should be the total numbers in the range of 0 ≤ x &lt; 100, excluding [11,22,33,44,55,66,77,88,99]) </p>
+        <h2 id="LeetCode-371-Sum-of-Two-Integers-题解"><a href="#LeetCode-371-Sum-of-Two-Integers-题解" class="headerlink" title="LeetCode 371 Sum of Two Integers 题解"></a>LeetCode 371 Sum of Two Integers 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.<br>Example:<br>Given a = 1 and b = 2, return 3. </p>
 </blockquote>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入一个数，找出这个数n中所有0 ≤ x &lt; 10n.每个位置上数字都不相同的x的个数</p>
+<p>在不使用加减号的情况下输出两个数的和。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>排序取中间</p>
+<p>使用位运算：用异或计算位置上的得数，用与计算进位，直到进位为0输出结果。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">countNumbersWithUniqueDigits</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">int</span> ans=<span class="number">9</span>;</span><br><span class="line">			<span class="keyword">int</span> j=<span class="number">9</span>;</span><br><span class="line">			<span class="keyword">if</span> (n==<span class="number">1</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="number">10</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (n==<span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (n&gt;<span class="number">10</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">return</span> <span class="number">8877691</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> i=n;i&gt;<span class="number">1</span>;i--)</span><br><span class="line">			&#123;</span><br><span class="line">				ans=ans*j;</span><br><span class="line">				j--;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">return</span> ans+countNumbersWithUniqueDigits(n-<span class="number">1</span>);</span><br><span class="line">	         </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSum</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (b == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> a;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> sum = a ^ b;</span><br><span class="line">		<span class="keyword">int</span> carry = (a &amp; b) &lt;&lt; <span class="number">1</span>;<span class="comment">//向前进位</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> getSum(sum, carry);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -230,18 +230,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/07/26/p371/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/07/27/p13/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p371
+          p13
         
       </div>
     </a>
   
   
-    <a href="/2016/07/26/p94/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p94</div>
+    <a href="/2016/07/26/p357/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p357</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -257,7 +257,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p357" data-title="p357" data-url="http://yoursite.com/2016/07/26/p357/"></div>
+	<div class="ds-thread" data-thread-key="p371" data-title="p371" data-url="http://yoursite.com/2016/07/26/p371/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
