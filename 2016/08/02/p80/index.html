@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p206 | ZMR小站</title>
+  <title>p80 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode 206 Reverse Linked List 题解1.题目：
- Reverse a singly linked list.">
+  <meta name="description" content="LeetCode 26 Remove Duplicates from Sorted Array 题解1.题目：
+   Follow up for “Remove Duplicates”:What if duplicates are allowed at most twice?For example,Given sorted array nums = [1,1,1,2,2,3],Your funct">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p206">
-<meta property="og:url" content="http://yoursite.com/2016/07/27/p206/index.html">
+<meta property="og:title" content="p80">
+<meta property="og:url" content="http://yoursite.com/2016/08/02/p80/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode 206 Reverse Linked List 题解1.题目：
- Reverse a singly linked list.">
-<meta property="og:updated_time" content="2016-07-27T10:01:22.559Z">
+<meta property="og:description" content="LeetCode 26 Remove Duplicates from Sorted Array 题解1.题目：
+   Follow up for “Remove Duplicates”:What if duplicates are allowed at most twice?For example,Given sorted array nums = [1,1,1,2,2,3],Your funct">
+<meta property="og:updated_time" content="2016-08-02T09:00:51.466Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p206">
-<meta name="twitter:description" content="LeetCode 206 Reverse Linked List 题解1.题目：
- Reverse a singly linked list.">
+<meta name="twitter:title" content="p80">
+<meta name="twitter:description" content="LeetCode 26 Remove Duplicates from Sorted Array 题解1.题目：
+   Follow up for “Remove Duplicates”:What if duplicates are allowed at most twice?For example,Given sorted array nums = [1,1,1,2,2,3],Your funct">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +166,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p206" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p80" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/27/p206/" class="article-date">
-  	<time datetime="2016-07-27T09:57:49.000Z" itemprop="datePublished">2016-07-27</time>
+      <a href="/2016/08/02/p80/" class="article-date">
+  	<time datetime="2016-08-02T08:55:16.000Z" itemprop="datePublished">2016-08-02</time>
 </a>
     </div>
   
@@ -183,7 +183,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p206
+      p80
     </h1>
   
 
@@ -207,19 +207,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-206-Reverse-Linked-List-题解"><a href="#LeetCode-206-Reverse-Linked-List-题解" class="headerlink" title="LeetCode 206 Reverse Linked List 题解"></a>LeetCode 206 Reverse Linked List 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> Reverse a singly linked list.</p>
+        <h2 id="LeetCode-26-Remove-Duplicates-from-Sorted-Array-题解"><a href="#LeetCode-26-Remove-Duplicates-from-Sorted-Array-题解" class="headerlink" title="LeetCode 26 Remove Duplicates from Sorted Array 题解"></a>LeetCode 26 Remove Duplicates from Sorted Array 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>   Follow up for “Remove Duplicates”:<br>What if duplicates are allowed at most twice?<br>For example,<br>Given sorted array nums = [1,1,1,2,2,3],<br>Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn’t matter what you leave beyond the new length.<br>Subscribe to see which companies asked this question</p>
 </blockquote>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>将一个链表反转</p>
+<p>输入一个有序数组，去除数组中重复的元素，（允许两个重复的存在），并输出最后的元素的个数。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码</p>
+<p>标记一个flag,注意边界条件</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head==<span class="keyword">null</span>) <span class="keyword">return</span> head;</span><br><span class="line">		<span class="keyword">if</span> (head.next==<span class="keyword">null</span>) </span><br><span class="line">		&#123;</span><br><span class="line">			ListNode listNode = <span class="keyword">new</span> ListNode(head.val);</span><br><span class="line">			<span class="keyword">return</span> listNode;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		ListNode ans =reverseList(head.next);</span><br><span class="line">		ListNode n =<span class="keyword">new</span> ListNode(head.val);</span><br><span class="line">		ListNode now=ans;</span><br><span class="line">		<span class="keyword">for</span> (;;)<span class="comment">//注意循环到终点再定位next</span></span><br><span class="line">		&#123;</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span>(now.next==<span class="keyword">null</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				now.next=n;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			now=now.next;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeDuplicates</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans=<span class="number">1</span>;</span><br><span class="line">		 <span class="keyword">int</span> flag=<span class="number">1</span>;</span><br><span class="line">	        <span class="keyword">if</span> (nums.length&lt;<span class="number">3</span>)</span><br><span class="line">	        &#123;</span><br><span class="line">	        	<span class="keyword">return</span> nums.length;</span><br><span class="line">	        &#125;</span><br><span class="line">	        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;nums.length;i++)</span><br><span class="line">	        &#123;</span><br><span class="line">	        	<span class="keyword">if</span> (nums[i]==nums[i-<span class="number">1</span>])</span><br><span class="line">	        	&#123;</span><br><span class="line">	        		flag++;</span><br><span class="line">	        		<span class="keyword">if</span> (flag&lt;<span class="number">3</span>)</span><br><span class="line">	        		&#123;</span><br><span class="line">	        			nums[ans]=nums[i];</span><br><span class="line">	        			ans++;</span><br><span class="line">	        		&#125;</span><br><span class="line">	        		</span><br><span class="line">	        		</span><br><span class="line">	        	&#125;</span><br><span class="line">	        	<span class="keyword">else</span> &#123;</span><br><span class="line">	        		nums[ans]=nums[i];</span><br><span class="line">        			ans++;</span><br><span class="line">        			flag=<span class="number">1</span>;</span><br><span class="line">				&#125;</span><br><span class="line">	        	</span><br><span class="line">	        &#125;</span><br><span class="line">	        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -230,18 +230,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/07/28/p12/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p12
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/07/27/p13/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p13</div>
+    <a href="/2016/08/02/p26/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p26</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -257,7 +248,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p206" data-title="p206" data-url="http://yoursite.com/2016/07/27/p206/"></div>
+	<div class="ds-thread" data-thread-key="p80" data-title="p80" data-url="http://yoursite.com/2016/08/02/p80/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
