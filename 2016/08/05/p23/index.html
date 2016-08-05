@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p21 | ZMR小站</title>
+  <title>p23 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode 21 Merge Two Sorted Lists 题解1.题目：
- Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.">
+  <meta name="description" content="LeetCode 21 Merge k Sorted Lists 题解1.题目：
+ Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p21">
-<meta property="og:url" content="http://yoursite.com/2016/08/04/p21/index.html">
+<meta property="og:title" content="p23">
+<meta property="og:url" content="http://yoursite.com/2016/08/05/p23/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode 21 Merge Two Sorted Lists 题解1.题目：
- Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.">
-<meta property="og:updated_time" content="2016-08-04T14:45:10.823Z">
+<meta property="og:description" content="LeetCode 21 Merge k Sorted Lists 题解1.题目：
+ Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.">
+<meta property="og:updated_time" content="2016-08-05T02:29:44.676Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p21">
-<meta name="twitter:description" content="LeetCode 21 Merge Two Sorted Lists 题解1.题目：
- Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.">
+<meta name="twitter:title" content="p23">
+<meta name="twitter:description" content="LeetCode 21 Merge k Sorted Lists 题解1.题目：
+ Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +166,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p21" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p23" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/04/p21/" class="article-date">
-  	<time datetime="2016-08-04T14:41:51.000Z" itemprop="datePublished">2016-08-04</time>
+      <a href="/2016/08/05/p23/" class="article-date">
+  	<time datetime="2016-08-05T02:26:06.000Z" itemprop="datePublished">2016-08-05</time>
 </a>
     </div>
   
@@ -183,7 +183,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p21
+      p23
     </h1>
   
 
@@ -207,21 +207,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-21-Merge-Two-Sorted-Lists-题解"><a href="#LeetCode-21-Merge-Two-Sorted-Lists-题解" class="headerlink" title="LeetCode 21 Merge Two Sorted Lists 题解"></a>LeetCode 21 Merge Two Sorted Lists 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.</p>
+        <h2 id="LeetCode-21-Merge-k-Sorted-Lists-题解"><a href="#LeetCode-21-Merge-k-Sorted-Lists-题解" class="headerlink" title="LeetCode 21 Merge k Sorted Lists 题解"></a>LeetCode 21 Merge k Sorted Lists 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity. </p>
 </blockquote>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>合并两个有序链表</p>
+<p>合并K个有序链表</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码。记得保留头节点。</p>
+<p>用21题的方法，加上递归，两两合并再合并。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">mergeTwoLists</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (l1 == <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> l2;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (l2 == <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> l1;</span><br><span class="line">		&#125;</span><br><span class="line">		ListNode ans = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">		;</span><br><span class="line">		ListNode node = ans;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">while</span> (l1 != <span class="keyword">null</span> &amp;&amp; l2 != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (l1.val &gt;= l2.val) &#123;</span><br><span class="line">				node.next = l2;</span><br><span class="line"></span><br><span class="line">				l2 = l2.next;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				node.next = l1;</span><br><span class="line">				l1 = l1.next;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">// System.out.println(node.val);</span></span><br><span class="line">			node = node.next;</span><br><span class="line">		&#125;</span><br><span class="line">		node.next = (l1 != <span class="keyword">null</span>) ? l1 : l2;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> ans.next;<span class="comment">//因为是用0初始化的，去掉初始的节点</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ListNode <span class="title">mergeKLists</span><span class="params">(ListNode[] lists)</span> </span>&#123;</span><br><span class="line">		ListNode ans = <span class="keyword">new</span> ListNode(Integer.MIN_VALUE);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// ListNode node = ans;</span></span><br><span class="line">		<span class="keyword">int</span> len = lists.length;</span><br><span class="line">		<span class="keyword">if</span> (len &lt; <span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">if</span> (len == <span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> lists[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> mergeKLists(lists, <span class="number">0</span>, len - <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ListNode <span class="title">mergeKLists</span><span class="params">(ListNode[] lists, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (left == right)</span><br><span class="line">			<span class="keyword">return</span> lists[left];</span><br><span class="line">		ListNode ans = <span class="keyword">new</span> ListNode(Integer.MIN_VALUE);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> mid = (left + right) / <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">return</span> mergeTwoLists(mergeKLists(lists, left, mid),</span><br><span class="line">				mergeKLists(lists, mid + <span class="number">1</span>, right));<span class="comment">// 用递归不然会超时</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ListNode <span class="title">mergeTwoLists</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (l1 == <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> l2;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (l2 == <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">return</span> l1;</span><br><span class="line">		&#125;</span><br><span class="line">		ListNode ans = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">		ListNode node = ans;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">while</span> (l1 != <span class="keyword">null</span> &amp;&amp; l2 != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (l1.val &gt;= l2.val) &#123;</span><br><span class="line">				node.next = l2;</span><br><span class="line"></span><br><span class="line">				l2 = l2.next;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				node.next = l1;</span><br><span class="line">				l1 = l1.next;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">// System.out.println(node.val);</span></span><br><span class="line">			node = node.next;</span><br><span class="line">		&#125;</span><br><span class="line">		node.next = (l1 != <span class="keyword">null</span>) ? l1 : l2;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> ans.next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="4-一些总结：输入测试数据的时候，不要让你的链表变成一个环。"><a href="#4-一些总结：输入测试数据的时候，不要让你的链表变成一个环。" class="headerlink" title="4.一些总结：输入测试数据的时候，不要让你的链表变成一个环。"></a>4.一些总结：输入测试数据的时候，不要让你的链表变成一个环。</h3>
+<h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
     </div>
     
@@ -230,18 +230,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/05/p23/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/05/p147/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p23
+          p147
         
       </div>
     </a>
   
   
-    <a href="/2016/08/04/p88/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p88</div>
+    <a href="/2016/08/04/p21/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p21</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -257,7 +257,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p21" data-title="p21" data-url="http://yoursite.com/2016/08/04/p21/"></div>
+	<div class="ds-thread" data-thread-key="p23" data-title="p23" data-url="http://yoursite.com/2016/08/05/p23/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
