@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p75 | ZMR小站</title>
+  <title>p34 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode 75 Contains Duplicate 题解1.题目：
-  Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and">
+  <meta name="description" content="LeetCode 34 Search for a Range 题解1.题目：
+ Given a sorted array of integers, find the starting and ending position of a given target value.Your algorithm’s runtime complexity must be in the order of O(lo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p75">
-<meta property="og:url" content="http://yoursite.com/2016/08/06/p75/index.html">
+<meta property="og:title" content="p34">
+<meta property="og:url" content="http://yoursite.com/2016/08/11/p34/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode 75 Contains Duplicate 题解1.题目：
-  Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and">
-<meta property="og:updated_time" content="2016-08-06T12:21:30.009Z">
+<meta property="og:description" content="LeetCode 34 Search for a Range 题解1.题目：
+ Given a sorted array of integers, find the starting and ending position of a given target value.Your algorithm’s runtime complexity must be in the order of O(lo">
+<meta property="og:updated_time" content="2016-08-11T15:39:13.177Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p75">
-<meta name="twitter:description" content="LeetCode 75 Contains Duplicate 题解1.题目：
-  Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and">
+<meta name="twitter:title" content="p34">
+<meta name="twitter:description" content="LeetCode 34 Search for a Range 题解1.题目：
+ Given a sorted array of integers, find the starting and ending position of a given target value.Your algorithm’s runtime complexity must be in the order of O(lo">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +166,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p75" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p34" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/06/p75/" class="article-date">
-  	<time datetime="2016-08-06T12:11:02.000Z" itemprop="datePublished">2016-08-06</time>
+      <a href="/2016/08/11/p34/" class="article-date">
+  	<time datetime="2016-08-11T15:35:31.000Z" itemprop="datePublished">2016-08-11</time>
 </a>
     </div>
   
@@ -183,7 +183,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p75
+      p34
     </h1>
   
 
@@ -207,19 +207,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-75-Contains-Duplicate-题解"><a href="#LeetCode-75-Contains-Duplicate-题解" class="headerlink" title="LeetCode 75 Contains Duplicate 题解"></a>LeetCode 75 Contains Duplicate 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>  Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white and blue.<br>Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. </p>
+        <h2 id="LeetCode-34-Search-for-a-Range-题解"><a href="#LeetCode-34-Search-for-a-Range-题解" class="headerlink" title="LeetCode 34 Search for a Range 题解"></a>LeetCode 34 Search for a Range 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Given a sorted array of integers, find the starting and ending position of a given target value.<br>Your algorithm’s runtime complexity must be in the order of O(log n).<br>If the target is not found in the array, return [-1, -1].<br>For example,<br>Given [5, 7, 7, 8, 8, 10] and target value 8,<br>return [3, 4]. </p>
 </blockquote>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入一个数组，只有0，1，2.进行排序。</p>
-<h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><p>桶排序</p>
+<p>输入一个有序数组，查找某个目标数的起始。</p>
+<h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><p>先用二分找到一个目标数，然后对其进行左右延展。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sortColors</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">         <span class="keyword">int</span>[] ans = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)</span><br><span class="line">        &#123;</span><br><span class="line">        	ans[nums[i]]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> j=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">        	<span class="keyword">while</span> (ans[j]==<span class="number">0</span>) j++;</span><br><span class="line">        	nums[i]=j;</span><br><span class="line">        	ans[j]--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] searchRange(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">int</span>[] ans = &#123; -<span class="number">1</span>, -<span class="number">1</span> &#125;;</span><br><span class="line">		<span class="keyword">if</span> (nums == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> ans;</span><br><span class="line">		<span class="keyword">int</span> len = nums.length;</span><br><span class="line">		<span class="keyword">int</span> left = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> right = nums.length;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (nums[<span class="number">0</span>]==target&amp;&amp;nums[right-<span class="number">1</span>]==target) <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">0</span>,len-<span class="number">1</span>&#125;;</span><br><span class="line">		<span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">			<span class="keyword">int</span> mid = (right - left) / <span class="number">2</span> + left;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> (nums[mid] == target) &#123;</span><br><span class="line"></span><br><span class="line">				left = mid;</span><br><span class="line">				right = mid;</span><br><span class="line">				<span class="keyword">while</span> (left &gt;=<span class="number">0</span> &amp;&amp; nums[left] == target)</span><br><span class="line">					left--;</span><br><span class="line">				<span class="keyword">while</span> (right &lt; len &amp;&amp; nums[right] == target)</span><br><span class="line">					right++;</span><br><span class="line">				ans[<span class="number">0</span>] = left + <span class="number">1</span>;</span><br><span class="line">				ans[<span class="number">1</span>] = right - <span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (nums[mid] &gt; target) &#123;</span><br><span class="line">				right = mid;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (nums[mid] &lt; target) &#123;</span><br><span class="line">				left = mid + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
+<h3 id="4-一些总结：宛如智障的拿mid-与target比较调了好久bug-TUT"><a href="#4-一些总结：宛如智障的拿mid-与target比较调了好久bug-TUT" class="headerlink" title="4.一些总结：宛如智障的拿mid 与target比较调了好久bug.TUT"></a>4.一些总结：宛如智障的拿mid 与target比较调了好久bug.TUT</h3>
       
     </div>
     
@@ -228,18 +228,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/11/p34/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p34
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/08/05/p41/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p41</div>
+    <a href="/2016/08/06/p75/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p75</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -255,7 +246,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p75" data-title="p75" data-url="http://yoursite.com/2016/08/06/p75/"></div>
+	<div class="ds-thread" data-thread-key="p34" data-title="p34" data-url="http://yoursite.com/2016/08/11/p34/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
