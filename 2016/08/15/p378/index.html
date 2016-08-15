@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p383 | ZMR小站</title>
+  <title>p378 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode 383 Ransom Note 题解1.题目：
-  canConstruct(“a”, “b”) -&amp;gt; falsecanConstruct(“aa”, “ab”) -&amp;gt; falsecanConstruct(“aa”, “aab”) -&amp;gt; true">
+  <meta name="description" content="LeetCode 378 Kth Smallest Element in a Sorted Matrix 题解1.题目：
+  Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.Note t">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p383">
-<meta property="og:url" content="http://yoursite.com/2016/08/14/p383/index.html">
+<meta property="og:title" content="p378">
+<meta property="og:url" content="http://yoursite.com/2016/08/15/p378/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode 383 Ransom Note 题解1.题目：
-  canConstruct(“a”, “b”) -&amp;gt; falsecanConstruct(“aa”, “ab”) -&amp;gt; falsecanConstruct(“aa”, “aab”) -&amp;gt; true">
-<meta property="og:updated_time" content="2016-08-14T09:40:12.260Z">
+<meta property="og:description" content="LeetCode 378 Kth Smallest Element in a Sorted Matrix 题解1.题目：
+  Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.Note t">
+<meta property="og:updated_time" content="2016-08-15T09:41:09.164Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p383">
-<meta name="twitter:description" content="LeetCode 383 Ransom Note 题解1.题目：
-  canConstruct(“a”, “b”) -&amp;gt; falsecanConstruct(“aa”, “ab”) -&amp;gt; falsecanConstruct(“aa”, “aab”) -&amp;gt; true">
+<meta name="twitter:title" content="p378">
+<meta name="twitter:description" content="LeetCode 378 Kth Smallest Element in a Sorted Matrix 题解1.题目：
+  Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.Note t">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +166,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p383" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p378" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/14/p383/" class="article-date">
-  	<time datetime="2016-08-14T09:35:41.000Z" itemprop="datePublished">2016-08-14</time>
+      <a href="/2016/08/15/p378/" class="article-date">
+  	<time datetime="2016-08-15T09:32:10.000Z" itemprop="datePublished">2016-08-15</time>
 </a>
     </div>
   
@@ -183,7 +183,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p383
+      p378
     </h1>
   
 
@@ -207,19 +207,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-383-Ransom-Note-题解"><a href="#LeetCode-383-Ransom-Note-题解" class="headerlink" title="LeetCode 383 Ransom Note 题解"></a>LeetCode 383 Ransom Note 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>  canConstruct(“a”, “b”) -&gt; false<br>canConstruct(“aa”, “ab”) -&gt; false<br>canConstruct(“aa”, “aab”) -&gt; true</p>
+        <h2 id="LeetCode-378-Kth-Smallest-Element-in-a-Sorted-Matrix-题解"><a href="#LeetCode-378-Kth-Smallest-Element-in-a-Sorted-Matrix-题解" class="headerlink" title="LeetCode 378 Kth Smallest Element in a Sorted Matrix 题解"></a>LeetCode 378 Kth Smallest Element in a Sorted Matrix 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>  Given a n x n matrix where each of the rows and columns are sorted in ascending order, find the kth smallest element in the matrix.<br>Note that it is the kth smallest element in the sorted order, not the kth distinct element.<br>Example:<br>matrix = [<br>   [ 1,  5,  9],<br>   [10, 11, 13],<br>   [12, 13, 15]<br>],<br>k = 8,<br>return 13.</p>
 </blockquote>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>两个字符串，r,m。用m中的字母（一个字母只能用一次）能否构成r.</p>
-<h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><p>见代码</p>
+<p>给一个二维数组，每一行都是有序的（仅限于此行）所以整个数组不是蛇形的。<br>求第K小的数。</p>
+<h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><p>如下的解题方法，时间复杂度还是有点高捂脸。我使用优先队列，构造了一个堆。<br>一直维护这个堆的大小为k,最后弹出最大的那个数，就是第k小的数。<br>最后TUT虽然ac了,时间复杂度还是高了捂脸。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canConstruct</span><span class="params">(String ransomNote, String magazine)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> ans=<span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (ransomNote.equals(<span class="string">""</span>)) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (magazine.equals(<span class="string">""</span>)) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">int</span>[] m=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>+<span class="number">5</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;magazine.length();i++)</span><br><span class="line">        &#123;</span><br><span class="line">        	m[magazine.charAt(i)-<span class="string">'a'</span>]++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;ransomNote.length();i++)</span><br><span class="line">        &#123;</span><br><span class="line">        	<span class="keyword">if</span> (m[ransomNote.charAt(i)-<span class="string">'a'</span>]&lt;<span class="number">1</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        	m[ransomNote.charAt(i)-<span class="string">'a'</span>]--;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">kthSmallest</span><span class="params">(<span class="keyword">int</span>[][] matrix, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> len = matrix.length;</span><br><span class="line">		<span class="keyword">int</span> count = <span class="number">1</span>;</span><br><span class="line">		PriorityQueue&lt;Integer&gt; queue=<span class="keyword">new</span> PriorityQueue&lt;Integer&gt;(k,<span class="keyword">new</span> Comparator&lt;Integer&gt;() &#123;</span><br><span class="line">		</span><br><span class="line">			<span class="meta">@Override</span></span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Integer o1, Integer o2)</span> </span>&#123;</span><br><span class="line">				<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line">				<span class="keyword">return</span> o2-o1;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line">		<span class="keyword">int</span> min=Math.min(len, k);<span class="comment">//小小优化</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; min; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;min;j++)</span><br><span class="line">			&#123;</span><br><span class="line">				queue.offer(matrix[i][j]);</span><br><span class="line">				<span class="keyword">if</span> (queue.size()&gt;k)</span><br><span class="line">					queue.poll();</span><br><span class="line"></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> queue.peek();</span><br><span class="line">		</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
+<h3 id="4-一些总结：-其他实现的可能性？"><a href="#4-一些总结：-其他实现的可能性？" class="headerlink" title="4.一些总结：//其他实现的可能性？"></a>4.一些总结：//其他实现的可能性？</h3>
       
     </div>
     
@@ -228,18 +228,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/14/p384/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/15/p318/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p384
+          p318
         
       </div>
     </a>
   
   
-    <a href="/2016/08/14/p382/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p382</div>
+    <a href="/2016/08/15/p52/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p52</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -255,7 +255,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p383" data-title="p383" data-url="http://yoursite.com/2016/08/14/p383/"></div>
+	<div class="ds-thread" data-thread-key="p378" data-title="p378" data-url="http://yoursite.com/2016/08/15/p378/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
