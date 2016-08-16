@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="ZMR小站">
 <meta property="og:description" content="LeetCode 312 Burst Balloons 题解1.题目：
    Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the y">
-<meta property="og:updated_time" content="2016-08-16T10:52:35.342Z">
+<meta property="og:updated_time" content="2016-08-16T13:19:20.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="p312">
 <meta name="twitter:description" content="LeetCode 312 Burst Balloons 题解1.题目：
@@ -210,7 +210,7 @@
         <h2 id="LeetCode-312-Burst-Balloons-题解"><a href="#LeetCode-312-Burst-Balloons-题解" class="headerlink" title="LeetCode 312 Burst Balloons 题解"></a>LeetCode 312 Burst Balloons 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
 <p>   Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the you burst balloon i you will get nums[left] <em> nums[i] </em> nums[right] coins. Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent.<br>Find the maximum coins you can collect by bursting the balloons wisely.<br>Note:<br>(1) You may imagine nums[-1] = nums[n] = 1. They are not real therefore you can not burst them.<br>(2) 0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100<br>Example:<br>Given [3, 1, 5, 8]<br>Return 167<br>    nums = [3,1,5,8] –&gt; [3,5,8] –&gt;   [3,8]   –&gt;  [8]  –&gt; []<br>   coins =  3<em>1</em>5      +  3<em>5</em>8    +  1<em>3</em>8      + 1<em>8</em>1   = 167</p>
 </blockquote>
-<!-- smore --> 
+<a id="more"></a> 
 <p>题意：</p>
 <blockquote>
 <p>输入一个数组，每个气球都有值，你扎气球，扎破一个获得这个气球和它两边的气球价值乘积<br>的硬币，求你能够获得的最多硬币。</p>
