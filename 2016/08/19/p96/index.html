@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p216 | ZMR小站</title>
+  <title>p96 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p216 Combination Sum III 题解1.题目：
-Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique">
+  <meta name="description" content="LeetCode p96 Unique Binary Search Trees 题解1.题目：
+  Given n, how many structurally unique BST’s (binary search trees) that store values 1…n?For example,Given n = 3, there are a total of 5 unique BST’s.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p216">
-<meta property="og:url" content="http://yoursite.com/2016/08/18/p216/index.html">
+<meta property="og:title" content="p96">
+<meta property="og:url" content="http://yoursite.com/2016/08/19/p96/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p216 Combination Sum III 题解1.题目：
-Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique">
-<meta property="og:updated_time" content="2016-08-18T15:55:58.435Z">
+<meta property="og:description" content="LeetCode p96 Unique Binary Search Trees 题解1.题目：
+  Given n, how many structurally unique BST’s (binary search trees) that store values 1…n?For example,Given n = 3, there are a total of 5 unique BST’s.">
+<meta property="og:updated_time" content="2016-08-19T06:11:45.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p216">
-<meta name="twitter:description" content="LeetCode p216 Combination Sum III 题解1.题目：
-Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique">
+<meta name="twitter:title" content="p96">
+<meta name="twitter:description" content="LeetCode p96 Unique Binary Search Trees 题解1.题目：
+  Given n, how many structurally unique BST’s (binary search trees) that store values 1…n?For example,Given n = 3, there are a total of 5 unique BST’s.">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +166,11 @@ Find all possible combinations of k numbers that add up to a number n, given tha
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p216" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p96" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/08/18/p216/" class="article-date">
-  	<time datetime="2016-08-18T15:51:03.000Z" itemprop="datePublished">2016-08-18</time>
+      <a href="/2016/08/19/p96/" class="article-date">
+  	<time datetime="2016-08-19T06:04:37.000Z" itemprop="datePublished">2016-08-19</time>
 </a>
     </div>
   
@@ -183,7 +183,7 @@ Find all possible combinations of k numbers that add up to a number n, given tha
         
   
     <h1 class="article-title" itemprop="name">
-      p216
+      p96
     </h1>
   
 
@@ -207,19 +207,19 @@ Find all possible combinations of k numbers that add up to a number n, given tha
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p216-Combination-Sum-III-题解"><a href="#LeetCode-p216-Combination-Sum-III-题解" class="headerlink" title="LeetCode p216 Combination Sum III 题解"></a>LeetCode p216 Combination Sum III 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Find all possible combinations of k numbers that add up to a number n, given that only numbers from 1 to 9 can be used and each combination should be a unique set of numbers.<br>Example 1:<br>Input: k = 3, n = 7<br>Output:<br>[[1,2,4]]<br>Example 2:<br>Input: k = 3, n = 9<br>Output:<br>[[1,2,6], [1,3,5], [2,3,4]]</p>
+        <h2 id="LeetCode-p96-Unique-Binary-Search-Trees-题解"><a href="#LeetCode-p96-Unique-Binary-Search-Trees-题解" class="headerlink" title="LeetCode p96 Unique Binary Search Trees 题解"></a>LeetCode p96 Unique Binary Search Trees 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>  Given n, how many structurally unique BST’s (binary search trees) that store values 1…n?<br>For example,<br>Given n = 3, there are a total of 5 unique BST’s.<br>   1         3     3      2      1<br>    \       /     /      / \      \<br>     3     2     1      1   3      2<br>    /     /       \                 \<br>   2     1         2                 3</p>
 </blockquote>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入k,n。希望可以由K个数，相加得n.输出所有可能。（只能含有1到9之间的数）。</p>
+<p>输入一个整数，输出这个整数能够有的BST的个数。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>递归。注意数字不能重复出现，以及边界条件。</p>
+<p>dp,取某个数为中间父节点，计算他左右节点可能的种类，相乘为所求。<br>用一个数组记录每个n对应的答案，避免重复的计算。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;List&lt;Integer&gt;&gt; combinationSum3(<span class="keyword">int</span> k, <span class="keyword">int</span> n) &#123;</span><br><span class="line"></span><br><span class="line">		List&lt;List&lt;Integer&gt;&gt; ansList = <span class="keyword">new</span> ArrayList&lt;List&lt;Integer&gt;&gt;();</span><br><span class="line">		List&lt;Integer&gt; list = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">		dp(k, n, list, ansList, <span class="number">1</span>);</span><br><span class="line">		<span class="keyword">return</span> ansList;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dp</span><span class="params">(<span class="keyword">int</span> k, <span class="keyword">int</span> n, List&lt;Integer&gt; list,</span><br><span class="line">			List&lt;List&lt;Integer&gt;&gt; ansList, <span class="keyword">int</span> b)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (k == <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (n &gt; <span class="number">0</span> &amp;&amp; n &lt; <span class="number">10</span>) &#123;</span><br><span class="line">				list.add(n);</span><br><span class="line">				List&lt;Integer&gt; aList=<span class="keyword">new</span> ArrayList&lt;Integer&gt;(list);<span class="comment">//新对象</span></span><br><span class="line">				ansList.add(aList);</span><br><span class="line">				<span class="comment">// System.out.println(list);</span></span><br><span class="line">				list.remove(list.size() - <span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = b; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (n - i &gt; i)</span><br><span class="line"></span><br><span class="line">			&#123;</span><br><span class="line">				list.add(i);</span><br><span class="line">				dp(k - <span class="number">1</span>, n - i, list, ansList, i + <span class="number">1</span>);</span><br><span class="line">				list.remove(list.size() - <span class="number">1</span>);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="keyword">return</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">numTrees</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span>[] list = <span class="keyword">new</span> <span class="keyword">int</span>[n + <span class="number">1</span>];</span><br><span class="line">		<span class="keyword">if</span> (n &lt; <span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> ans;</span><br><span class="line">		<span class="keyword">if</span> (n &lt; <span class="number">3</span>)</span><br><span class="line">			<span class="keyword">return</span> n;</span><br><span class="line">		list[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">		list[<span class="number">2</span>] = <span class="number">2</span>;</span><br><span class="line">		<span class="comment">// System.out.println(n);</span></span><br><span class="line">		<span class="comment">// if (n==3) return 5;</span></span><br><span class="line">		<span class="comment">// int mid=n/2;</span></span><br><span class="line">		<span class="keyword">return</span> dp(list, n);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">dp</span><span class="params">(<span class="keyword">int</span>[] list, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (n == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (list[n] != <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> list[n];</span><br><span class="line">		<span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> mid = i;</span><br><span class="line">			ans = dp(list, mid - <span class="number">1</span>) * dp(list, n - mid);<span class="comment">//关系式</span></span><br><span class="line">			sum = sum + ans;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		list[n] = sum;</span><br><span class="line">		<span class="keyword">return</span> list[n];</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -230,18 +230,18 @@ Find all possible combinations of k numbers that add up to a number n, given tha
     
 <nav id="article-nav">
   
-    <a href="/2016/08/19/p108/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/08/19/p309/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p108
+          p309
         
       </div>
     </a>
   
   
-    <a href="/2016/08/17/p137/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p137</div>
+    <a href="/2016/08/19/p108/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p108</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -257,7 +257,7 @@ Find all possible combinations of k numbers that add up to a number n, given tha
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p216" data-title="p216" data-url="http://yoursite.com/2016/08/18/p216/"></div>
+	<div class="ds-thread" data-thread-key="p96" data-title="p96" data-url="http://yoursite.com/2016/08/19/p96/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
