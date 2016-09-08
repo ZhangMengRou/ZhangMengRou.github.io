@@ -4,21 +4,24 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p89 | ZMR小站</title>
+  <title>p83 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p89 Gray Code 题解1.题目：
-   The gray code is a binary numeral system where two successive values differ in only one bit.Given a non-negative integer n representing the total number of bits in th">
+  <meta name="description" content="LeetCode p83 Remove Duplicates from Sorted List 题解1.题目：
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+For example,Given 1-&amp;gt;1-&amp;gt;2, return 1-&amp;gt;2.Given">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p89">
-<meta property="og:url" content="http://yoursite.com/2016/09/07/p89/index.html">
+<meta property="og:title" content="p83">
+<meta property="og:url" content="http://yoursite.com/2016/09/08/p83/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p89 Gray Code 题解1.题目：
-   The gray code is a binary numeral system where two successive values differ in only one bit.Given a non-negative integer n representing the total number of bits in th">
-<meta property="og:updated_time" content="2016-09-07T07:42:19.396Z">
+<meta property="og:description" content="LeetCode p83 Remove Duplicates from Sorted List 题解1.题目：
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+For example,Given 1-&amp;gt;1-&amp;gt;2, return 1-&amp;gt;2.Given">
+<meta property="og:updated_time" content="2016-09-08T07:02:53.350Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p89">
-<meta name="twitter:description" content="LeetCode p89 Gray Code 题解1.题目：
-   The gray code is a binary numeral system where two successive values differ in only one bit.Given a non-negative integer n representing the total number of bits in th">
+<meta name="twitter:title" content="p83">
+<meta name="twitter:description" content="LeetCode p83 Remove Duplicates from Sorted List 题解1.题目：
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+For example,Given 1-&amp;gt;1-&amp;gt;2, return 1-&amp;gt;2.Given">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +169,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p89" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p83" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/07/p89/" class="article-date">
-  	<time datetime="2016-09-07T07:27:00.000Z" itemprop="datePublished">2016-09-07</time>
+      <a href="/2016/09/08/p83/" class="article-date">
+  	<time datetime="2016-09-08T07:01:00.000Z" itemprop="datePublished">2016-09-08</time>
 </a>
     </div>
   
@@ -183,7 +186,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p89
+      p83
     </h1>
   
 
@@ -207,19 +210,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p89-Gray-Code-题解"><a href="#LeetCode-p89-Gray-Code-题解" class="headerlink" title="LeetCode p89 Gray Code 题解"></a>LeetCode p89 Gray Code 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>   The gray code is a binary numeral system where two successive values differ in only one bit.<br>Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.<br>For example, given n = 2, return [0,1,3,2]. Its gray code sequence is:<br>00 - 0<br>01 - 1<br>11 - 3<br>10 - 2</p>
+        <h2 id="LeetCode-p83-Remove-Duplicates-from-Sorted-List-题解"><a href="#LeetCode-p83-Remove-Duplicates-from-Sorted-List-题解" class="headerlink" title="LeetCode p83 Remove Duplicates from Sorted List 题解"></a>LeetCode p83 Remove Duplicates from Sorted List 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<pre><code>Given a sorted linked list, delete all duplicates such that each element appear only once.
+</code></pre><p>For example,<br>Given 1-&gt;1-&gt;2, return 1-&gt;2.<br>Given 1-&gt;1-&gt;2-&gt;3-&gt;3, return 1-&gt;2-&gt;3.<br><a id="more"></a> </p>
 </blockquote>
-<a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入一个数字，就给你这么多位的空间。每位上放上0或者1，组成一个二进制数。相邻两个二进制数中间只能有一个位置上的数不同。从0开始，按顺序输出所有的书。<br>以2为例的话应该是00 01 11 10 对应的数是0 1 3 2</p>
+<p>去掉一个有序链表中重复的数。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>每次只能动一个位置，则当n从2变为3时，就多了一个最高位为1.即 00 01 11 10 先化成 000 001 011 010 值不变再加上 100 101 111 110<br>又按照规则，应该采用一种对称排列的策略：000 001 011 010 （对称轴） 110 111 101 100<br>可以发现以对称轴为中心每个值都比它的对称点多2的（n-1)次方。这就是递归的规律。</p>
+<p>见代码</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">grayCode</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        List&lt;Integer&gt; ans = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">		<span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</span><br><span class="line">			ans.add(<span class="number">0</span>);</span><br><span class="line">			<span class="keyword">return</span> ans;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">			ans.add(<span class="number">0</span>);</span><br><span class="line">			ans.add(<span class="number">1</span>);</span><br><span class="line">			<span class="keyword">return</span> ans;</span><br><span class="line">		&#125;</span><br><span class="line">		ans = grayCode(n - <span class="number">1</span>);</span><br><span class="line">		<span class="keyword">int</span> len = ans.size();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = len - <span class="number">1</span>; i &gt; -<span class="number">1</span>; i--) &#123;</span><br><span class="line">			ans.add((<span class="keyword">int</span>) (ans.get(i) + Math.pow(<span class="number">2</span>, n - <span class="number">1</span>)));</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">deleteDuplicates</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        ListNode ans = head;</span><br><span class="line">		<span class="keyword">if</span> (head == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">while</span> (head != <span class="keyword">null</span> &amp;&amp; head.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (head.next.val == head.val) &#123;</span><br><span class="line">				head.next = head.next.next;</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			head = head.next;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -230,18 +233,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/09/08/p46/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/08/p191/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p46
+          p191
         
       </div>
     </a>
   
   
-    <a href="/2016/09/07/p352/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p352</div>
+    <a href="/2016/09/08/p46/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p46</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -257,7 +260,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p89" data-title="p89" data-url="http://yoursite.com/2016/09/07/p89/"></div>
+	<div class="ds-thread" data-thread-key="p83" data-title="p83" data-url="http://yoursite.com/2016/09/08/p83/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
