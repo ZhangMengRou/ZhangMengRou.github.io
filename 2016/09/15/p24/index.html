@@ -4,42 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p116 | ZMR小站</title>
+  <title>p24 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p116 Populating Next Right Pointers in Each Node 题解1.题目：
- Given a binary tree
-
-struct TreeLinkNode {
-  TreeLinkNode *left;
-  TreeLinkNode *right;
-  TreeLinkNode *next;
-}
-Populate each next po">
+  <meta name="description" content="LeetCode p24 Swap Nodes in Pairs 题解1.题目：
+ Given a linked list, swap every two adjacent nodes and return its head.For example,Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4, you should return the list as 2-&amp;gt;1-&amp;gt;4-&amp;gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p116">
-<meta property="og:url" content="http://yoursite.com/2016/09/14/p116/index.html">
+<meta property="og:title" content="p24">
+<meta property="og:url" content="http://yoursite.com/2016/09/15/p24/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p116 Populating Next Right Pointers in Each Node 题解1.题目：
- Given a binary tree
-
-struct TreeLinkNode {
-  TreeLinkNode *left;
-  TreeLinkNode *right;
-  TreeLinkNode *next;
-}
-Populate each next po">
-<meta property="og:updated_time" content="2016-09-14T05:05:45.460Z">
+<meta property="og:description" content="LeetCode p24 Swap Nodes in Pairs 题解1.题目：
+ Given a linked list, swap every two adjacent nodes and return its head.For example,Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4, you should return the list as 2-&amp;gt;1-&amp;gt;4-&amp;gt;">
+<meta property="og:updated_time" content="2016-09-15T07:44:59.789Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p116">
-<meta name="twitter:description" content="LeetCode p116 Populating Next Right Pointers in Each Node 题解1.题目：
- Given a binary tree
-
-struct TreeLinkNode {
-  TreeLinkNode *left;
-  TreeLinkNode *right;
-  TreeLinkNode *next;
-}
-Populate each next po">
+<meta name="twitter:title" content="p24">
+<meta name="twitter:description" content="LeetCode p24 Swap Nodes in Pairs 题解1.题目：
+ Given a linked list, swap every two adjacent nodes and return its head.For example,Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4, you should return the list as 2-&amp;gt;1-&amp;gt;4-&amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -187,11 +166,11 @@ Populate each next po">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p116" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p24" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/09/14/p116/" class="article-date">
-  	<time datetime="2016-09-14T05:04:06.000Z" itemprop="datePublished">2016-09-14</time>
+      <a href="/2016/09/15/p24/" class="article-date">
+  	<time datetime="2016-09-15T07:42:55.000Z" itemprop="datePublished">2016-09-15</time>
 </a>
     </div>
   
@@ -204,7 +183,7 @@ Populate each next po">
         
   
     <h1 class="article-title" itemprop="name">
-      p116
+      p24
     </h1>
   
 
@@ -228,41 +207,18 @@ Populate each next po">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p116-Populating-Next-Right-Pointers-in-Each-Node-题解"><a href="#LeetCode-p116-Populating-Next-Right-Pointers-in-Each-Node-题解" class="headerlink" title="LeetCode p116 Populating Next Right Pointers in Each Node 题解"></a>LeetCode p116 Populating Next Right Pointers in Each Node 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> Given a binary tree</p>
+        <h2 id="LeetCode-p24-Swap-Nodes-in-Pairs-题解"><a href="#LeetCode-p24-Swap-Nodes-in-Pairs-题解" class="headerlink" title="LeetCode p24 Swap Nodes in Pairs 题解"></a>LeetCode p24 Swap Nodes in Pairs 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Given a linked list, swap every two adjacent nodes and return its head.<br>For example,<br>Given 1-&gt;2-&gt;3-&gt;4, you should return the list as 2-&gt;1-&gt;4-&gt;3.<br>Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.<br><a id="more"></a> </p>
 </blockquote>
-<pre><code>struct TreeLinkNode {
-  TreeLinkNode *left;
-  TreeLinkNode *right;
-  TreeLinkNode *next;
-}
-</code></pre><p>Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.</p>
-<p>Initially, all next pointers are set to NULL.</p>
-<p>Note:</p>
-<pre><code>You may only use constant extra space.
-You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
-</code></pre><p>For example,<br>Given the following perfect binary tree,</p>
-<pre><code>     1
-   /  \
-  2    3
- / \  / \
-4  5  6  7
-</code></pre><p>After calling your function, the tree should look like:</p>
-<pre><code>     1 -&gt; NULL
-   /  \
-  2 -&gt; 3 -&gt; NULL
- / \  / \
-4-&gt;5-&gt;6-&gt;7 -&gt; NULL
-</code></pre><a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>按如上要求改变一个二叉树的数据结构</p>
+<p>按如上方式每2个交换链表中的值</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码，每行存储最右。</p>
+<p>见代码，直接交换值，注意边界。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for binary tree with next pointer.</span><br><span class="line"> * public class TreeLinkNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeLinkNode left, right, next;</span><br><span class="line"> *     TreeLinkNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> HashMap&lt;Integer, TreeLinkNode&gt; d = <span class="keyword">new</span> HashMap&lt;Integer, TreeLinkNode&gt;();</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">connect</span><span class="params">(TreeLinkNode root)</span> </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		root.next = <span class="keyword">null</span>;</span><br><span class="line">		connect(root, <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">connect</span><span class="params">(TreeLinkNode root, <span class="keyword">int</span> deep)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		<span class="keyword">if</span> (d.containsKey(deep)) &#123;</span><br><span class="line">			<span class="comment">// System.out.println(deep);</span></span><br><span class="line">			root.next = d.get(deep);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			root.next = <span class="keyword">null</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// System.out.println(deep);</span></span><br><span class="line">		d.put(deep, root);</span><br><span class="line"></span><br><span class="line">		connect(root.right, deep + <span class="number">1</span>);</span><br><span class="line">		connect(root.left, deep + <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">swapPairs</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        ListNode ans = head;</span><br><span class="line">		<span class="keyword">while</span> (head != <span class="keyword">null</span> &amp;&amp; head.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">int</span> c = head.val;</span><br><span class="line">			head.val = head.next.val;</span><br><span class="line">			head.next.val = c;</span><br><span class="line">			head = head.next.next;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -273,18 +229,18 @@ You may assume that it is a perfect binary tree (ie, all leaves are at the same 
     
 <nav id="article-nav">
   
-    <a href="/2016/09/14/p77/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/09/15/p64/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p77
+          p64
         
       </div>
     </a>
   
   
-    <a href="/2016/09/13/p59/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p59</div>
+    <a href="/2016/09/15/p342/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p342</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -300,7 +256,7 @@ You may assume that it is a perfect binary tree (ie, all leaves are at the same 
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p116" data-title="p116" data-url="http://yoursite.com/2016/09/14/p116/"></div>
+	<div class="ds-thread" data-thread-key="p24" data-title="p24" data-url="http://yoursite.com/2016/09/15/p24/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
