@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>一次逆向失败 | ZMR小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="记一次失败的逆向&amp;amp;未完待续？？？据说失败是成功之母。。汪汪汪。。
+于是记录下这次失败的逆向过程。。汪汪汪。。希望有朝一日能够成功~蠢真脸。
+一次逆向获取接口的过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次逆向失败">
+<meta property="og:url" content="http://yoursite.com/2016/09/21/一次逆向失败/index.html">
+<meta property="og:site_name" content="ZMR小站">
+<meta property="og:description" content="记一次失败的逆向&amp;amp;未完待续？？？据说失败是成功之母。。汪汪汪。。
+于是记录下这次失败的逆向过程。。汪汪汪。。希望有朝一日能够成功~蠢真脸。
+一次逆向获取接口的过程">
+<meta property="og:image" content="http://7xttd4.com1.z0.glb.clouddn.com/921S7T%5BDQ%7D9V_15%7BFJ%7B%251W%25WGD.png">
+<meta property="og:image" content="http://7xttd4.com1.z0.glb.clouddn.com/9250~7B%5BR37~BH4Q~KF%5D%5DWL~%5B1.png">
+<meta property="og:updated_time" content="2016-09-25T08:18:49.214Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一次逆向失败">
+<meta name="twitter:description" content="记一次失败的逆向&amp;amp;未完待续？？？据说失败是成功之母。。汪汪汪。。
+于是记录下这次失败的逆向过程。。汪汪汪。。希望有朝一日能够成功~蠢真脸。
+一次逆向获取接口的过程">
+<meta name="twitter:image" content="http://7xttd4.com1.z0.glb.clouddn.com/921S7T%5BDQ%7D9V_15%7BFJ%7B%251W%25WGD.png">
+  
+    <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://www.qq1234.org/uploads/allimg/150410/3_150410170543_14.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">ZhangMengRou</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">很高兴遇见你~</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/categories/blog">博客</a></li>
+				        
+							<li><a href="/categories/other">其它</a></li>
+				        
+							<li><a href="/categories/life">生活</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/ZhangMengRou" title="github">github</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qing-ding-78" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/LeetCode/" style="font-size: 20px;">LeetCode</a> <a href="/tags/The-source-code/" style="font-size: 10px;">The source code</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/其它/" style="font-size: 16.67px;">其它</a> <a href="/tags/生活/" style="font-size: 13.33px;">生活</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/逆向-安全/" style="font-size: 10px;">逆向,安全</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">ZhangMengRou</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://www.qq1234.org/uploads/allimg/150410/3_150410170543_14.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">ZhangMengRou</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">很高兴遇见你~</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/categories/blog">博客</a></li>
+		        
+					<li><a href="/categories/other">其它</a></li>
+		        
+					<li><a href="/categories/life">生活</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/ZhangMengRou" title="github">github</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qing-ding-78" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-一次逆向失败" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/21/一次逆向失败/" class="article-date">
+  	<time datetime="2016-09-21T07:54:44.000Z" itemprop="datePublished">2016-09-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      一次逆向失败
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/逆向-安全/">逆向,安全</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/blog/">blog</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="记一次失败的逆向-amp-未完待续？？？"><a href="#记一次失败的逆向-amp-未完待续？？？" class="headerlink" title="记一次失败的逆向&amp;未完待续？？？"></a>记一次失败的逆向&amp;未完待续？？？</h2><p>据说失败是成功之母。。汪汪汪。。</p>
+<p>于是记录下这次失败的逆向过程。。汪汪汪。。<br>希望有朝一日能够成功~蠢真脸。</p>
+<p>一次逆向获取接口的过程</p>
+<a id="more"></a> 
+<h3 id="抓包过程"><a href="#抓包过程" class="headerlink" title="抓包过程"></a>抓包过程</h3><p><img src="http://7xttd4.com1.z0.glb.clouddn.com/921S7T%5BDQ%7D9V_15%7BFJ%7B%251W%25WGD.png" alt="抓包图片"></p>
+<p>返回的值做一些处理可以得到查询者的个人信息~</p>
+<p>这些值不会变动一次获得可以反复使用~</p>
+<p>以上已经验证~所以现在只要知道每个参数应该怎么填写就可以了</p>
+<h3 id="逆向apk搜索关键字"><a href="#逆向apk搜索关键字" class="headerlink" title="逆向apk搜索关键字"></a>逆向apk搜索关键字</h3><p>使用的工具是apkIDE 和 jadx</p>
+<p>接下来就是搜索定位关键代码。首先通过反复抓包可以定位些固定值。这样我们除去了：<br>username，是提交的信息，<br>signatureMethod signatureVersion format appId 是固定值，<br>timestamp 为时间戳。</p>
+<p>所以只剩下了<br>signatureNonce signature </p>
+<p>逆向中没有 .so文件 所以加密算法应该都存在于代码中。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">doPost</span><span class="params">(String url, String appId, String appKey, Map&lt;String, String&gt; params, String agent)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        Map&lt;String, String&gt; apiparamsMap = <span class="keyword">new</span> HashMap();</span><br><span class="line">        <span class="keyword">if</span> (params != <span class="keyword">null</span>) &#123;</span><br><span class="line">            apiparamsMap.putAll(params);</span><br><span class="line">        &#125;</span><br><span class="line">        apiparamsMap.put(<span class="string">"appId"</span>, appId);</span><br><span class="line">        apiparamsMap.put(<span class="string">"format"</span>, <span class="string">"json"</span>);</span><br><span class="line">        apiparamsMap.put(<span class="string">"timestamp"</span>, formatTimestamp(<span class="keyword">new</span> Date(System.currentTimeMillis())));</span><br><span class="line">        apiparamsMap.put(<span class="string">"signatureMethod"</span>, <span class="string">"HMAC-SHA1"</span>);</span><br><span class="line">        apiparamsMap.put(<span class="string">"signatureVersion"</span>, <span class="string">"1.0"</span>);</span><br><span class="line">        apiparamsMap.put(<span class="string">"signatureNonce"</span>, UUID.randomUUID().toString());</span><br><span class="line">        apiparamsMap.put(<span class="string">"signature"</span>, computeSignature(apiparamsMap, appKey));</span><br><span class="line">        <span class="keyword">return</span> getResult(url, paramsToQueryString(apiparamsMap), agent);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>发现”signatureNonce”是由 UUID.randomUUID().toString()随机生成的~所以只剩下了signature。<br>同样查找signaturesc生成的方法。</p>
+<h3 id="继续探索signature的生成"><a href="#继续探索signature的生成" class="headerlink" title="继续探索signature的生成"></a>继续探索signature的生成</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">computeSignature</span><span class="params">(Map&lt;String, String&gt; parameters, String accessKeySecret)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        String[] sortedKeys = (String[]) parameters.keySet().toArray(<span class="keyword">new</span> String[<span class="number">0</span>]);</span><br><span class="line">        Arrays.sort(sortedKeys);</span><br><span class="line">        String SEPARATOR = <span class="string">"&amp;"</span>;</span><br><span class="line">        StringBuilder canonicalizedQueryString = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        <span class="keyword">for</span> (String key : sortedKeys) &#123;</span><br><span class="line">            canonicalizedQueryString.append(<span class="string">"&amp;"</span>).append(percentEncode(key)).append(<span class="string">"="</span>).append(percentEncode((String) parameters.get(key)));</span><br><span class="line">        &#125;</span><br><span class="line">        StringBuilder stringToSign = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        stringToSign.append(HttpPostHC4.METHOD_NAME).append(<span class="string">"&amp;"</span>);</span><br><span class="line">        stringToSign.append(percentEncode(<span class="string">"/"</span>)).append(<span class="string">"&amp;"</span>);</span><br><span class="line">        stringToSign.append(percentEncode(canonicalizedQueryString.toString().substring(<span class="number">1</span>)));</span><br><span class="line">        <span class="keyword">return</span> calculateSignature(accessKeySecret + <span class="string">"&amp;"</span>, stringToSign.toString());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>将经过处理的字符串传到了另外一个方法 进行加密</p>
+<p>以这样的方式可以找出涉及到的方法和主要参数<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">calculateSignature</span><span class="params">(String key, String stringToSign)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        String ALGORITHM = <span class="string">"HmacSHA1"</span>;</span><br><span class="line">        Mac mac = Mac.getInstance(<span class="string">"HmacSHA1"</span>);</span><br><span class="line">        mac.init(<span class="keyword">new</span> SecretKeySpec(key.getBytes(CharEncoding.UTF_8), <span class="string">"HmacSHA1"</span>));</span><br><span class="line">        <span class="keyword">return</span> Base64.encodeToString(mac.doFinal(stringToSign.getBytes(CharEncoding.UTF_8)), <span class="keyword">false</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
+<p>…以下省略部分加密函数和参数。<br>然后全部找齐了<br>注：这个过程中可能会涉及到一些java包里面的方法。需要自行下载添加。而不是一直找下去。因为逆向的文件会把依赖的java包<br>全部以代码的形式表示出来，所以每次从其他包找到需要的方法时，都要看一看是不是依赖的java包。否则会一直找下去。</p>
+<p>现在所有方法都齐了。</p>
+<p>然而问题来了。。签名错误。。<br>这是一个失败了也没找出错在哪的过程【掩面<br>所有的参数都可以生成来着..</p>
+<p>跟进。。在核对签名方式小进展+1</p>
+<p>希望可以来写后记TUT</p>
+<p>9.25 更新!加密方式已破解！撒花撒花撒花~<br>突破点 base64加密用的包是import android.util.Base64;<br>用AS码了一遍就对了~<br><img src="http://7xttd4.com1.z0.glb.clouddn.com/9250~7B%5BR37~BH4Q~KF%5D%5DWL~%5B1.png" alt="解密成功"><br>。。此贴终结</p>
+<p>备注：以上只是为了个人学习所做的尝试</p>
+<p>```</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/09/24/p313/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          p313
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/09/19/p198/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p198</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="一次逆向失败" data-title="一次逆向失败" data-url="http://yoursite.com/2016/09/21/一次逆向失败/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zhangmengrou"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+ 
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 ZhangMengRou
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+ </br>本站总访问量<span id="busuanzi_value_site_pv"></span>次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+  </div>
+  <a href="https://github.com/ZhangMengRou"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+</body>
+</html>
