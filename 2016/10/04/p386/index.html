@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p27 | ZMR小站</title>
+  <title>p386 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p27 Remove Element 题解1.题目：
-Given an array and a value, remove all instances of that value in place and return the new length.Do not allocate extra space for another array, you must do this in">
+  <meta name="description" content="LeetCode p386 Lexicographical Numbers 题解1.题目：
+ Given an integer n, return 1 - n in lexicographical order.For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].Please optimize your algorithm t">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p27">
-<meta property="og:url" content="http://yoursite.com/2016/10/03/p27/index.html">
+<meta property="og:title" content="p386">
+<meta property="og:url" content="http://yoursite.com/2016/10/04/p386/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p27 Remove Element 题解1.题目：
-Given an array and a value, remove all instances of that value in place and return the new length.Do not allocate extra space for another array, you must do this in">
-<meta property="og:updated_time" content="2016-10-03T11:11:43.326Z">
+<meta property="og:description" content="LeetCode p386 Lexicographical Numbers 题解1.题目：
+ Given an integer n, return 1 - n in lexicographical order.For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].Please optimize your algorithm t">
+<meta property="og:updated_time" content="2016-10-04T07:43:34.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p27">
-<meta name="twitter:description" content="LeetCode p27 Remove Element 题解1.题目：
-Given an array and a value, remove all instances of that value in place and return the new length.Do not allocate extra space for another array, you must do this in">
+<meta name="twitter:title" content="p386">
+<meta name="twitter:description" content="LeetCode p386 Lexicographical Numbers 题解1.题目：
+ Given an integer n, return 1 - n in lexicographical order.For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].Please optimize your algorithm t">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +166,11 @@ Given an array and a value, remove all instances of that value in place and retu
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p27" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p386" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/10/03/p27/" class="article-date">
-  	<time datetime="2016-10-03T11:07:26.000Z" itemprop="datePublished">2016-10-03</time>
+      <a href="/2016/10/04/p386/" class="article-date">
+  	<time datetime="2016-10-04T07:40:32.000Z" itemprop="datePublished">2016-10-04</time>
 </a>
     </div>
   
@@ -183,7 +183,7 @@ Given an array and a value, remove all instances of that value in place and retu
         
   
     <h1 class="article-title" itemprop="name">
-      p27
+      p386
     </h1>
   
 
@@ -207,18 +207,18 @@ Given an array and a value, remove all instances of that value in place and retu
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p27-Remove-Element-题解"><a href="#LeetCode-p27-Remove-Element-题解" class="headerlink" title="LeetCode p27 Remove Element 题解"></a>LeetCode p27 Remove Element 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Given an array and a value, remove all instances of that value in place and return the new length.<br>Do not allocate extra space for another array, you must do this in place with constant memory.<br>The order of elements can be changed. It doesn’t matter what you leave beyond the new length.<br>Example:<br>Given input array nums = [3,2,2,3], val = 3<br>Your function should return length = 2, with the first two elements of nums being 2.<br><a id="more"></a> </p>
+        <h2 id="LeetCode-p386-Lexicographical-Numbers-题解"><a href="#LeetCode-p386-Lexicographical-Numbers-题解" class="headerlink" title="LeetCode p386 Lexicographical Numbers 题解"></a>LeetCode p386 Lexicographical Numbers 题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Given an integer n, return 1 - n in lexicographical order.<br>For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].<br>Please optimize your algorithm to use less time and space. The input size may be as large as 5,000,000.<br><a id="more"></a> </p>
 </blockquote>
 <p>题意：</p>
 <blockquote>
-<p>给一个数组，移除指定元素。并返回移除后的数组长度。</p>
+<p>给一个数n,返回1-n的字典序排列。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码</p>
+<p>见代码，注意0的出现。如1-100 1 10 100 101…..109 11 110</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">removeElement</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> val)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = nums.length;</span><br><span class="line">		<span class="keyword">int</span> t = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> a : nums) &#123;</span><br><span class="line">			<span class="keyword">if</span> (a == val)</span><br><span class="line">				ans--;</span><br><span class="line">			<span class="keyword">else</span> &#123;</span><br><span class="line">				nums[t] = a;</span><br><span class="line">				t++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">lexicalOrder</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">       List&lt;Integer&gt; ans = <span class="keyword">new</span> ArrayList&lt;&gt;(n);</span><br><span class="line">		<span class="keyword">if</span> (n &lt; <span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> ans;</span><br><span class="line">		ans.add(<span class="number">1</span>);</span><br><span class="line">		<span class="keyword">int</span> c = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (c * <span class="number">10</span> &lt;= n) &#123;</span><br><span class="line">				c = c * <span class="number">10</span>;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="keyword">while</span> (c % <span class="number">10</span> == <span class="number">9</span> || c == n) &#123; <span class="comment">//出现9回退</span></span><br><span class="line">					c = c / <span class="number">10</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				c++;</span><br><span class="line">			&#125;</span><br><span class="line">			ans.add(c);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -229,18 +229,18 @@ Given an array and a value, remove all instances of that value in place and retu
     
 <nav id="article-nav">
   
-    <a href="/2016/10/04/p101/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/10/04/p289/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p101
+          p289
         
       </div>
     </a>
   
   
-    <a href="/2016/10/03/p399/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p399</div>
+    <a href="/2016/10/04/p101/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p101</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -256,7 +256,7 @@ Given an array and a value, remove all instances of that value in place and retu
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p27" data-title="p27" data-url="http://yoursite.com/2016/10/03/p27/"></div>
+	<div class="ds-thread" data-thread-key="p386" data-title="p386" data-url="http://yoursite.com/2016/10/04/p386/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
