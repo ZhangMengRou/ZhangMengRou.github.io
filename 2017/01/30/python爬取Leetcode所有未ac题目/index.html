@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>python爬取Leetcode所有未ac题目 | ZMR小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="python爬取Leetcode所有未ac题目事情起源于寒假刚开始的时候立下假期要好好学习的flag决定继续刷leetcode 然而在不知道从什么时候开始刷leetcode到现在居然从三百多题增长到了四百多题 感觉自己刷题速度都要跟不上增长了按以前的列表刷难免漏题 决定写个”爬虫”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python爬取Leetcode所有未ac题目">
+<meta property="og:url" content="http://yoursite.com/2017/01/30/python爬取Leetcode所有未ac题目/index.html">
+<meta property="og:site_name" content="ZMR小站">
+<meta property="og:description" content="python爬取Leetcode所有未ac题目事情起源于寒假刚开始的时候立下假期要好好学习的flag决定继续刷leetcode 然而在不知道从什么时候开始刷leetcode到现在居然从三百多题增长到了四百多题 感觉自己刷题速度都要跟不上增长了按以前的列表刷难免漏题 决定写个”爬虫”">
+<meta property="og:updated_time" content="2017-01-30T07:28:44.919Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python爬取Leetcode所有未ac题目">
+<meta name="twitter:description" content="python爬取Leetcode所有未ac题目事情起源于寒假刚开始的时候立下假期要好好学习的flag决定继续刷leetcode 然而在不知道从什么时候开始刷leetcode到现在居然从三百多题增长到了四百多题 感觉自己刷题速度都要跟不上增长了按以前的列表刷难免漏题 决定写个”爬虫”">
+  
+    <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://www.qq1234.org/uploads/allimg/150410/3_150410170543_14.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">ZhangMengRou</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">很高兴遇见你~</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/categories/blog">博客</a></li>
+				        
+							<li><a href="/categories/other">其它</a></li>
+				        
+							<li><a href="/categories/life">生活</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/ZhangMengRou" title="github">github</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qing-ding-78" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/LeetCode/" style="font-size: 20px;">LeetCode</a> <a href="/tags/The-source-code/" style="font-size: 10px;">The source code</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/其它/" style="font-size: 17.5px;">其它</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/安全/" style="font-size: 12.5px;">安全</a> <a href="/tags/生活/" style="font-size: 12.5px;">生活</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/逆向/" style="font-size: 10px;">逆向</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">ZhangMengRou</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://www.qq1234.org/uploads/allimg/150410/3_150410170543_14.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">ZhangMengRou</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">很高兴遇见你~</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/categories/blog">博客</a></li>
+		        
+					<li><a href="/categories/other">其它</a></li>
+		        
+					<li><a href="/categories/life">生活</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/ZhangMengRou" title="github">github</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qing-ding-78" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-python爬取Leetcode所有未ac题目" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/01/30/python爬取Leetcode所有未ac题目/" class="article-date">
+  	<time datetime="2017-01-30T05:09:25.000Z" itemprop="datePublished">2017-01-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      python爬取Leetcode所有未ac题目
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/blog/">blog</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="python爬取Leetcode所有未ac题目"><a href="#python爬取Leetcode所有未ac题目" class="headerlink" title="python爬取Leetcode所有未ac题目"></a>python爬取Leetcode所有未ac题目</h2><p>事情起源于寒假刚开始的时候<br>立下假期要好好学习的flag<br>决定继续刷leetcode 然而在不知道从什么时候开始刷leetcode到现在<br>居然从三百多题增长到了四百多题 感觉自己刷题速度都要跟不上增长了<br>按以前的列表刷难免漏题 决定写个”爬虫”<br><a id="more"></a> </p>
+<h3 id="0-前言"><a href="#0-前言" class="headerlink" title="0.前言"></a>0.前言</h3><blockquote>
+<p> 立个flag 某狗狗说刷完leetcode 带我去玩耍<br> 再分析需求的时候查了很多博客。。完全无压力直接访问-解析html-提取所需信息一气呵成<br> 然而leetcode改版了。。。我还没有查到改版后的爬取博客orz<br> 随着前端的发展。。很多网页的主要信息已经变成js异步加载的了<br> 大概leetcode改版之后题目列表就是动态加载的了：判断依据就是查看网页源代码的html里面没有table表格<br> 而使用F12审查元素时可以看到table表格以及题目的各种信息</p>
+<h3 id="1-方案"><a href="#1-方案" class="headerlink" title="1.方案"></a>1.方案</h3><p> 为了解决这个问题可以采取以下几个途径：<br>    0.5：爬取量不大时直接审查元素右键另存为嘛2333333<br>        然后直接写个解析就好了嘛（作为一只咸鱼我首先想到的真的是这个QAQ)<br>    1：模拟浏览器登录，等js加载完毕之后再解析。<br>    2：先抓个包试试<br> 以下将会详细分析</p>
+</blockquote>
+<h3 id="2-流程-amp-方案执行"><a href="#2-流程-amp-方案执行" class="headerlink" title="2.流程&amp;方案执行"></a>2.流程&amp;方案执行</h3><pre><code>整个流程规划如下：
+由于是自己的未完成题目： 模拟登录-进入题目列表-访问题目列表知道没有下一页
+由于题目一直在增加想隔一段时间执行一次执行脚本 抛弃方案0.5
+首先选择的是模拟浏览器 代码比较简单 
+{% codeblock [title] [lang:python] [url] [link text] %} 
+	browser = spynner.Browser()
+
+	browser.create_webview()
+
+	browser.set_html_parser(pyquery.PyQuery)
+
+	browser.load("https://leetcode.com/problemset/algorithms/", 50)
+
+	try:
+
+		browser.wait_load(10)
+
+	except:
+
+		pass
+
+	string = browser.html
+
+	browser.close()
+	{% endcodeblock %}
+然而在实际操作的过程中发现运行太慢 资源占用比太大 家里网络不好常常直接timeout
+然后我个智障某天拿手机开了个热点调试。。。。成功耗尽一个月的流量包。。
+
+最后选择抓包尝试
+网络请求如下图：
+![img](http://7xttd4.com1.z0.glb.clouddn.com/20170130001.png)
+
+前3个请求为：https://leetcode.com/accounts/login/
+            https://leetcode.com/problemset/
+            https://leetcode.com/problemset/algorithms/
+
+登录-进入题目列表 
+
+查看倒数第六个请求的返回值：
+![img](http://7xttd4.com1.z0.glb.clouddn.com/20170130144126.png)
+
+调用的是一个api接口：https://leetcode.com/api/problems/algorithms/
+
+返回的是json数据～还是全部的orz 此文终结
+
+最后提一下模拟登录的坑 需要提交一个csrftoken值 所以网络请求有4次    
+
+成果图
+![img](http://7xttd4.com1.z0.glb.clouddn.com/20170130152132.png)
+
+
+主要代码：
+{% codeblock [title] [lang:python] [url] [link text] %} 
+	# coding=utf-8
+	import json
+	import sys
+
+	import MySQLdb
+	import requests
+	from bs4 import BeautifulSoup
+
+	db = MySQLdb.connect("localhost", "数据库用户名", "数据库密码", "leetcode_search")
+
+	cursor = db.cursor()
+
+
+
+	s = requests.session()
+	headers_base = {
+		'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+		'Accept-Encoding': 'gzip, deflate, sdch',
+		'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2',
+		'Connection': 'keep-alive',
+		'Host': 'leetcode.com',
+		'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36',
+		'Referer': 'https://leetcode.com/accounts/login/',
+	}
+	headers1 = {
+		'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+		'Accept-Encoding': 'gzip, deflate, sdch',
+		'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2',
+		'Connection': 'keep-alive',
+		'Host': 'leetcode.com',
+		'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36',
+		'Referer': 'https://leetcode.com/problemset/algorithms/',
+	}
+	headers2 = {
+		'Accept': 'application/json, text/javascript, */*; q=0.01',
+		'Accept-Encoding': 'gzip, deflate, sdch, br',
+		'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2',
+		'Connection': 'keep-alive',
+		'Host': 'leetcode.com',
+		'Content-Type': 'application/json',
+		'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36',
+		'Referer': 'https://leetcode.com/problemset/algorithms/',
+		'X-Requested-With': 'XMLHttpRequest',
+	}
+	login_data = {}
+	login_html = "404"
+
+
+	def search():
+		#获取csrfmiddlewaretoken
+		url = "https://leetcode.com/accounts/login/"
+		res = s.get(url=url, headers=headers_base)
+		cookie = res.cookies['csrftoken']
+
+		 #登录
+		url = "https://leetcode.com/accounts/login/"
+		res = s.get(url=url, headers=headers_base)
+		cookie = res.cookies['csrftoken']
+		#post数据
+		login_data['csrfmiddlewaretoken'] = res.cookies['csrftoken']
+		login_data['login'] = "用户名"
+		login_data['password'] = "密码"
+		res = s.post(url, headers=headers_base, data=login_data)
+
+		headers2['csrfmiddlewaretoken'] = cookie
+
+		# print res.text
+		url = "https://leetcode.com/problemset/algorithms/"
+		res2 = s.get(url=url, headers=headers1)
+
+		# print res2.text
+		url = "https://leetcode.com/api/problems/algorithms/"
+		res3 = s.get(url=url, headers=headers2)
+
+		# print res3.text
+		hjson = json.loads(res3.text)
+
+		count = 0
+		a = hjson['stat_status_pairs']
+		#存入数据库
+		for i in a:
+			if i["status"] != 'ac':
+				status = i["status"]
+
+				total_acs = i["stat"]["total_acs"]
+				question__title = i["stat"]["question__title"]
+				question__article__slug = i["stat"]["question__article__slug"]
+				total_submitted = i["stat"]["total_submitted"]
+				question__title_slug = i["stat"]["question__title_slug"]
+				question__article__live = i["stat"]["question__article__live"]
+				question__hide = i["stat"]["question__hide"]
+				question_id = i["stat"]["question_id"]
+
+				count = count + 1
+				print count
+				is_favor = i["is_favor"]
+				paid_only = i["paid_only"]
+				difficulty_level = i["difficulty"]["level"]
+
+				print status
+
+				try:
+
+					sql = """INSERT INTO UNFINISHED(
+					id,
+					status,
+					total_acs,
+					question__title,
+					question__article__slug,
+					total_submitted,
+					question__title_slug ,
+					question__article__live,
+					question__hide,
+					question_id,
+					is_favor,
+					paid_only,
+					difficulty_level,
+					url
+					)
+							VALUES (%s,%s,%s,%s,%s,
+						   %s,%s,%s,%s,%s,
+						   %s,%s,%s,%s
+						   )
+							"""
+					cursor.execute(sql, (
+						count,
+						status,
+						total_acs,
+						question__title,
+						question__article__slug,
+						total_submitted,
+						question__title_slug,
+						question__article__live,
+						question__hide,
+						question_id,
+						is_favor,
+						paid_only,
+						difficulty_level,
+						"https://leetcode.com/problems/"+question__title_slug
+
+					))
+					# hp_img_original_url, hp_author, ipad_url, hp_content,
+					# hp_makettime, hide_flag, last_update_date, web_url, wb_img_url, image_authors, text_authors, image_from,
+					#     text_from, content_bgcolor, template_category, praisenum, sharenum, commentnum
+					print "yes"
+					db.commit()
+				except Exception, err:
+					sys.stderr.write('Exception Error: %s' % str(err))
+					# Rollback in case there is any error
+					#print  "e"
+					db.rollback()
+
+		print
+
+
+
+	search()
+
+	
+	
+	
+	
+	
+	#数据库SQL：
+	/*
+	Navicat MySQL Data Transfer
+
+	Source Server         : mysql
+	Source Server Version : 100119
+	Source Host           : localhost:3306
+	Source Database       : leetcode_search
+
+	Target Server Type    : MYSQL
+	Target Server Version : 100119
+	File Encoding         : 65001
+
+	Date: 2017-01-30 15:20:49
+	*/
+
+	SET FOREIGN_KEY_CHECKS=0;
+
+	-- ----------------------------
+	-- Table structure for unfinished
+	-- ----------------------------
+	DROP TABLE IF EXISTS `unfinished`;
+	CREATE TABLE `unfinished` (
+	  `id` int(11) NOT NULL,
+	  `total_acs` varchar(255) DEFAULT NULL,
+	  `question__title` varchar(255) DEFAULT NULL,
+	  `question__article__slug` varchar(255) DEFAULT NULL,
+	  `total_submitted` varchar(255) DEFAULT NULL,
+	  `question__title_slug` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+	  `question__article__live` varchar(255) DEFAULT NULL,
+	  `question__hide` varchar(255) DEFAULT NULL,
+	  `question_id` int(11) DEFAULT NULL,
+	  `is_favor` varchar(255) DEFAULT NULL,
+	  `paid_only` varchar(255) DEFAULT NULL,
+	  `difficulty_level` varchar(255) DEFAULT NULL,
+	  `url` varchar(255) DEFAULT NULL,
+	  `status` varchar(255) DEFAULT NULL,
+	  PRIMARY KEY (`id`)
+	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+	SET FOREIGN_KEY_CHECKS=1;
+
+	{% endcodeblock %}
+</code></pre>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/01/26/gitTips/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">gitTips</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="python爬取Leetcode所有未ac题目" data-title="python爬取Leetcode所有未ac题目" data-url="http://yoursite.com/2017/01/30/python爬取Leetcode所有未ac题目/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zhangmengrou"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+ 
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 ZhangMengRou
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+ </br>本站总访问量<span id="busuanzi_value_site_pv"></span>次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+  </div>
+  <a href="https://github.com/ZhangMengRou"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+</body>
+</html>

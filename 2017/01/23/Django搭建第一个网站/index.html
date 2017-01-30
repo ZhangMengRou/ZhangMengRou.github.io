@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>Django搭建第一个网站 | ZMR小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Django搭建MyOne过程记录接触django也有一段时间，因为期末考试忙也没有写博客～这几天打算把自己写的练手项目重头梳理一遍部署到云端～就把过程记录下来啦使用django1.10 python2.7">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Django搭建第一个网站">
+<meta property="og:url" content="http://yoursite.com/2017/01/23/Django搭建第一个网站/index.html">
+<meta property="og:site_name" content="ZMR小站">
+<meta property="og:description" content="Django搭建MyOne过程记录接触django也有一段时间，因为期末考试忙也没有写博客～这几天打算把自己写的练手项目重头梳理一遍部署到云端～就把过程记录下来啦使用django1.10 python2.7">
+<meta property="og:updated_time" content="2017-01-25T07:39:36.031Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Django搭建第一个网站">
+<meta name="twitter:description" content="Django搭建MyOne过程记录接触django也有一段时间，因为期末考试忙也没有写博客～这几天打算把自己写的练手项目重头梳理一遍部署到云端～就把过程记录下来啦使用django1.10 python2.7">
+  
+    <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://www.qq1234.org/uploads/allimg/150410/3_150410170543_14.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">ZhangMengRou</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">很高兴遇见你~</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>Menu</li>
+						<li>Tags</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/categories/blog">博客</a></li>
+				        
+							<li><a href="/categories/other">其它</a></li>
+				        
+							<li><a href="/categories/life">生活</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/ZhangMengRou" title="github">github</a>
+					        
+								<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qing-ding-78" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/LeetCode/" style="font-size: 20px;">LeetCode</a> <a href="/tags/The-source-code/" style="font-size: 10px;">The source code</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/其它/" style="font-size: 17.5px;">其它</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/安全/" style="font-size: 12.5px;">安全</a> <a href="/tags/生活/" style="font-size: 12.5px;">生活</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/逆向/" style="font-size: 10px;">逆向</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">ZhangMengRou</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://www.qq1234.org/uploads/allimg/150410/3_150410170543_14.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">ZhangMengRou</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">很高兴遇见你~</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/categories/blog">博客</a></li>
+		        
+					<li><a href="/categories/other">其它</a></li>
+		        
+					<li><a href="/categories/life">生活</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/ZhangMengRou" title="github">github</a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/qing-ding-78" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-Django搭建第一个网站" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/01/23/Django搭建第一个网站/" class="article-date">
+  	<time datetime="2017-01-23T04:18:40.000Z" itemprop="datePublished">2017-01-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Django搭建第一个网站
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/blog/">blog</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Django搭建MyOne过程记录"><a href="#Django搭建MyOne过程记录" class="headerlink" title="Django搭建MyOne过程记录"></a>Django搭建MyOne过程记录</h2><p>接触django也有一段时间，因为期末考试忙也没有写博客～<br>这几天打算把自己写的练手项目重头梳理一遍部署到云端～<br>就把过程记录下来啦<br>使用django1.10 python2.7<br><a id="more"></a> </p>
+<h3 id="0-前言"><a href="#0-前言" class="headerlink" title="0.前言"></a>0.前言</h3><blockquote>
+<pre><code>Tango with Django 中文文档： http://hackerxu.com/Twd/
+所有网站素材均来源与网络，仅供个人学习使用。
+素材来自于《One.一个》
+</code></pre></blockquote>
+<h3 id="1-新建一个Django项目"><a href="#1-新建一个Django项目" class="headerlink" title="1.新建一个Django项目"></a>1.新建一个Django项目</h3><blockquote>
+<pre><code>使用的编译器是pycharm
+</code></pre><p>生成之后：<br>    <strong>init</strong>.py:这是一个空的脚本,用来告诉Python编译器这个目录是一个Python包.<br>    settings.py:用来存储Django项目设置的文件.<br>    urls.py:用来存储项目里的URL模式.<br>    wsgi.py:用来帮助你运行开发服务,同时可以帮助部署你的生产环境.<br>    在项目里还有一个叫做manage.py的文件.这个文件是我们开发项目时经常使用的文件,它为我们提供了一系列的Django命令.<br>    例：python manage.py runserver</p>
+</blockquote>
+<pre><code>创建名字叫One的应用.在你的Django项目的目录里,运行如下命令.
+
+$ python manage.py startapp one
+这个命令在你的项目根目录里创建了一个新的名叫one的目录 - 这里面包含了5个Python脚本.
+
+__init__.py,和我们前面说过的功能一样.
+models.py,一个存储你的应用中数据模型的地方 - 在这里描述数据的实体和关系.
+tests.py,存储你应用的测试代码.
+views.py,在这里处理用户请求和响应.
+admin.py,在这里你可以向Django注册你的模型,它会为你创建Django的管理界面.
+</code></pre><p>###2.配置<br>&gt;<br>    规划如图，首页用来展示最近的图文。<br>    所有的图文已经爬取下来放入数据库中，这一步不做详细描述啦。</p>
+<pre><code>先改setting配置：
+{% codeblock [title] [lang:python] [url] [link text] %} 
+	INSTALLED_APPS = [
+		'django.contrib.admin',
+		'django.contrib.auth',
+		'django.contrib.contenttypes',
+		'django.contrib.sessions',
+		'django.contrib.messages',
+		'django.contrib.staticfiles',
+		'one'
+		]
+	#数据库
+	DATABASES = {
+    'default': {
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'webone',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'CHARSET': 'utf8',
+        'TEST_CHARSET': 'utf8',
+        'TEST_COLLATION': 'utf8_general_ci',
+    }
+	}
+	#语言和静媒
+	LANGUAGE_CODE = 'zh_Hans'
+
+	TIME_ZONE = 'UTC'
+
+	USE_I18N = True
+
+	USE_L10N = True
+
+	USE_TZ = True
+
+	# Static files (CSS, JavaScript, Images)
+	# https://docs.djangoproject.com/en/1.10/howto/static-files/
+	STATIC_URL = '/static/'  # You may find this is already defined as such.
+
+	TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+	TEMPLATE_DIRS = [
+		# Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+		# Always use forward slashes, even on Windows.
+		# Don't forget to use absolute paths, not relative paths.
+		TEMPLATE_PATH,
+	]
+
+	STATIC_PATH = os.path.join(BASE_DIR, 'static')
+	STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
+
+	STATICFILES_DIRS = (
+		STATIC_PATH,
+		('css', os.path.join(STATIC_ROOT, 'css').replace('\\', '/')),
+		('js', os.path.join(STATIC_ROOT, 'js').replace('\\', '/')),
+		('images', os.path.join(STATIC_ROOT, 'images').replace('\\', '/')),
+		('upload', os.path.join(STATIC_ROOT, 'upload').replace('\\', '/')),
+	)
+
+	MEDIA_URL = '/media/'
+	MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Absolute path to the media directory
+
+	{% endcodeblock %}
+
+myone url 添加：    url(r&apos;^&apos;, include(&apos;one.urls&apos;)),  # ADD THIS NEW TUPLE!
+</code></pre><p>###3.生成models</p>
+<pre><code>{% codeblock [title] [lang:python] [url] [link text] %}
+	# This is an auto-generated Django model module.
+	# You'll have to do the following manually to clean this up:
+	#   * Rearrange models' order
+	#   * Make sure each model has one field with primary_key=True
+	#   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
+	#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+	# Feel free to rename the models, but don't rename db_table values or field names.
+	from __future__ import unicode_literals
+
+	from django.db import models
+	import sys
+	reload(sys)
+	sys.setdefaultencoding('utf8')
+
+	class AuthGroup(models.Model):
+		name = models.CharField(unique=True, max_length=80)
+
+		class Meta:
+			managed = False
+			db_table = 'auth_group'
+
+
+	class AuthGroupPermissions(models.Model):
+		group = models.ForeignKey(AuthGroup, models.DO_NOTHING)
+		permission = models.ForeignKey('AuthPermission', models.DO_NOTHING)
+
+		class Meta:
+			managed = False
+			db_table = 'auth_group_permissions'
+			unique_together = (('group', 'permission'),)
+
+
+	class AuthPermission(models.Model):
+		name = models.CharField(max_length=255)
+		content_type = models.ForeignKey('DjangoContentType', models.DO_NOTHING)
+		codename = models.CharField(max_length=100)
+
+		class Meta:
+			managed = False
+			db_table = 'auth_permission'
+			unique_together = (('content_type', 'codename'),)
+
+
+	class AuthUser(models.Model):
+		password = models.CharField(max_length=128)
+		last_login = models.DateTimeField(blank=True, null=True)
+		is_superuser = models.IntegerField()
+		username = models.CharField(unique=True, max_length=150)
+		first_name = models.CharField(max_length=30)
+		last_name = models.CharField(max_length=30)
+		email = models.CharField(max_length=254)
+		is_staff = models.IntegerField()
+		is_active = models.IntegerField()
+		date_joined = models.DateTimeField()
+
+		class Meta:
+			managed = False
+			db_table = 'auth_user'
+
+
+	class AuthUserGroups(models.Model):
+		user = models.ForeignKey(AuthUser, models.DO_NOTHING)
+		group = models.ForeignKey(AuthGroup, models.DO_NOTHING)
+
+		class Meta:
+			managed = False
+			db_table = 'auth_user_groups'
+			unique_together = (('user', 'group'),)
+
+
+	class AuthUserUserPermissions(models.Model):
+		user = models.ForeignKey(AuthUser, models.DO_NOTHING)
+		permission = models.ForeignKey(AuthPermission, models.DO_NOTHING)
+
+		class Meta:
+			managed = False
+			db_table = 'auth_user_user_permissions'
+			unique_together = (('user', 'permission'),)
+
+
+	class Daily(models.Model):
+		id = models.IntegerField(primary_key=True)
+		hpcontent_id = models.CharField(max_length=11, blank=True, null=True)
+		hp_title = models.CharField(max_length=255, blank=True, null=True)
+		author_id = models.IntegerField(blank=True, null=True)
+		hp_img_url = models.CharField(max_length=255, blank=True, null=True)
+		hp_img_original_url = models.CharField(max_length=255, blank=True, null=True)
+		hp_author = models.CharField(max_length=255, blank=True, null=True)
+		ipad_url = models.CharField(max_length=255, blank=True, null=True)
+		hp_content = models.CharField(max_length=800, blank=True, null=True)
+		hp_makettime = models.CharField(max_length=255, blank=True, null=True)
+		hide_flag = models.CharField(max_length=255, blank=True, null=True)
+		last_update_date = models.CharField(max_length=255, blank=True, null=True)
+		web_url = models.CharField(max_length=255, blank=True, null=True)
+		wb_img_url = models.CharField(max_length=255, blank=True, null=True)
+		image_authors = models.CharField(max_length=255, blank=True, null=True)
+		text_authors = models.CharField(max_length=255, blank=True, null=True)
+		image_from = models.CharField(max_length=255, blank=True, null=True)
+		text_from = models.CharField(max_length=255, blank=True, null=True)
+		content_bgcolor = models.CharField(max_length=255, blank=True, null=True)
+		maketime = models.CharField(max_length=255, blank=True, null=True)
+		praisenum = models.IntegerField(blank=True, null=True)
+		sharenum = models.IntegerField(blank=True, null=True)
+		commentnum = models.IntegerField(blank=True, null=True)
+		template_category = models.CharField(max_length=255, blank=True, null=True)
+
+		class Meta:
+			managed = False
+			db_table = 'daily'
+
+
+	class DjangoAdminLog(models.Model):
+		action_time = models.DateTimeField()
+		object_id = models.TextField(blank=True, null=True)
+		object_repr = models.CharField(max_length=200)
+		action_flag = models.SmallIntegerField()
+		change_message = models.TextField()
+		content_type = models.ForeignKey('DjangoContentType', models.DO_NOTHING, blank=True, null=True)
+		user = models.ForeignKey(AuthUser, models.DO_NOTHING)
+
+		class Meta:
+			managed = False
+			db_table = 'django_admin_log'
+
+
+	class DjangoContentType(models.Model):
+		app_label = models.CharField(max_length=100)
+		model = models.CharField(max_length=100)
+
+		class Meta:
+			managed = False
+			db_table = 'django_content_type'
+			unique_together = (('app_label', 'model'),)
+
+
+	class DjangoMigrations(models.Model):
+		app = models.CharField(max_length=255)
+		name = models.CharField(max_length=255)
+		applied = models.DateTimeField()
+
+		class Meta:
+			managed = False
+			db_table = 'django_migrations'
+
+
+	class DjangoSession(models.Model):
+		session_key = models.CharField(primary_key=True, max_length=40)
+		session_data = models.TextField()
+		expire_date = models.DateTimeField()
+
+		class Meta:
+			managed = False
+			db_table = 'django_session'
+
+
+	class RangoCategory(models.Model):
+		name = models.CharField(unique=True, max_length=128)
+
+		class Meta:
+			managed = False
+			db_table = 'rango_category'
+
+
+	class RangoPage(models.Model):
+		title = models.CharField(max_length=128)
+		url = models.CharField(max_length=200)
+		views = models.IntegerField()
+		category = models.ForeignKey(RangoCategory, models.DO_NOTHING)
+
+		class Meta:
+			managed = False
+			db_table = 'rango_page'
+
+	{% endcodeblock %}
+</code></pre><p>###4.编写view</p>
+<p>&gt;<br><figure class="highlight python"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line">	<span class="comment"># coding=utf-8</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> django.core.paginator <span class="keyword">import</span> EmptyPage</span><br><span class="line"><span class="keyword">from</span> django.core.paginator <span class="keyword">import</span> PageNotAnInteger</span><br><span class="line"><span class="keyword">from</span> django.core.paginator <span class="keyword">import</span> Paginator</span><br><span class="line"><span class="keyword">from</span> django.shortcuts <span class="keyword">import</span> render</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> models <span class="keyword">import</span> Daily</span><br><span class="line"></span><br><span class="line">default_encoding = <span class="string">'utf-8'</span></span><br><span class="line"><span class="keyword">if</span> sys.getdefaultencoding() != default_encoding:</span><br><span class="line">    reload(sys)</span><br><span class="line">    sys.setdefaultencoding(default_encoding)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="comment"># Construct a dictionary to pass to the template engine as its context.</span></span><br><span class="line">    <span class="comment"># Note the key boldmessage is the same as  in the template!</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Return a rendered response to send to the client.</span></span><br><span class="line">    <span class="comment"># We make use of the shortcut function to make our lives easier.</span></span><br><span class="line">    <span class="comment"># Note that the first parameter is the template we wish to use.</span></span><br><span class="line"></span><br><span class="line">    dailylist = Daily.objects.order_by(<span class="string">'-id'</span>).all()[:<span class="number">5</span>]  <span class="comment"># 查询所有的信息</span></span><br><span class="line">    print(type(dailylist))  <span class="comment"># 打印结果类型与结果值</span></span><br><span class="line">    <span class="keyword">for</span> s <span class="keyword">in</span> dailylist:</span><br><span class="line">        <span class="keyword">print</span> (s.hp_title.decode(<span class="string">'utf-8'</span>))</span><br><span class="line">    context_dict = &#123;<span class="string">'content'</span>: dailylist&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">'one/index.html'</span>, context_dict)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">about</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="comment"># Construct a dictionary to pass to the template engine as its context.</span></span><br><span class="line">    <span class="comment"># Note the key boldmessage is the same as  in the template!</span></span><br><span class="line">    context_dict = &#123;<span class="string">'boldmessage'</span>: <span class="string">"I am bold font from the context"</span>&#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Return a rendered response to send to the client.</span></span><br><span class="line">    <span class="comment"># We make use of the shortcut function to make our lives easier.</span></span><br><span class="line">    <span class="comment"># Note that the first parameter is the template we wish to use.</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">'one/about.html'</span>, context_dict)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">search</span><span class="params">(request)</span>:</span></span><br><span class="line">    result_list = []</span><br><span class="line">    limit = <span class="number">5</span>  <span class="comment"># 每页显示的记录数</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> request.method == <span class="string">'POST'</span>:</span><br><span class="line">        query = request.POST[<span class="string">'query'</span>].strip()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> query:</span><br><span class="line">            <span class="comment"># Run our Bing function to get the results list!</span></span><br><span class="line">            result_list = Daily.objects.order_by(<span class="string">'-id'</span>).filter(hp_content__contains=query)</span><br><span class="line">            paginator = Paginator(result_list, limit)  <span class="comment"># 实例化一个分页对象</span></span><br><span class="line"></span><br><span class="line">            page = request.GET.get(<span class="string">'page'</span>)  <span class="comment"># 获取页码</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                result_list = paginator.page(page)  <span class="comment"># 获取某页对应的记录</span></span><br><span class="line">            <span class="keyword">except</span> PageNotAnInteger:  <span class="comment"># 如果页码不是个整数</span></span><br><span class="line">                result_list = paginator.page(<span class="number">1</span>)  <span class="comment"># 取第一页的记录</span></span><br><span class="line">            <span class="keyword">except</span> EmptyPage:  <span class="comment"># 如果页码太大，没有相应的记录</span></span><br><span class="line">                result_list = paginator.page(paginator.num_pages)  <span class="comment"># 取最后一页的记录</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        query = request.GET.get(<span class="string">'query'</span>)</span><br><span class="line">        result_list = Daily.objects.order_by(<span class="string">'-id'</span>).filter(hp_content__contains=query)</span><br><span class="line">        paginator = Paginator(result_list, limit)  <span class="comment"># 实例化一个分页对象</span></span><br><span class="line"></span><br><span class="line">        page = request.GET.get(<span class="string">'page'</span>)  <span class="comment"># 获取页码</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            result_list = paginator.page(page)  <span class="comment"># 获取某页对应的记录</span></span><br><span class="line">        <span class="keyword">except</span> PageNotAnInteger:  <span class="comment"># 如果页码不是个整数</span></span><br><span class="line">            result_list = paginator.page(<span class="number">1</span>)  <span class="comment"># 取第一页的记录</span></span><br><span class="line">        <span class="keyword">except</span> EmptyPage:  <span class="comment"># 如果页码太大，没有相应的记录</span></span><br><span class="line">            result_list = paginator.page(paginator.num_pages)  <span class="comment"># 取最后一页的记录</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">'one/search.html'</span>, &#123;<span class="string">'result_list'</span>: result_list, <span class="string">'query'</span>: query&#125;)</span><br><span class="line">	</span><br></pre></td></tr></table></figure></p>
+<p>###5.添加映射<br>one/urls<br><figure class="highlight python"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">urlpatterns = [</span><br><span class="line">    url(<span class="string">r'^$'</span>, views.index, name=<span class="string">'index'</span>),</span><br><span class="line">    url(<span class="string">r'^about'</span>, views.about, name=<span class="string">'about'</span>),</span><br><span class="line">    url(<span class="string">r'^search'</span>, views.search, name=<span class="string">'search'</span>),</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">###myone/urls</span></span><br><span class="line">urlpatterns = [</span><br><span class="line">    url(<span class="string">r'^admin/'</span>, admin.site.urls),</span><br><span class="line">    url(<span class="string">r'^'</span>, include(<span class="string">'one.urls'</span>)),  <span class="comment"># ADD THIS NEW TUPLE!</span></span><br><span class="line"></span><br><span class="line">]</span><br><span class="line">	</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/01/26/gitTips/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          gitTips
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/01/20/Django学习Tips/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Django学习Tips</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Django搭建第一个网站" data-title="Django搭建第一个网站" data-url="http://yoursite.com/2017/01/23/Django搭建第一个网站/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zhangmengrou"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+ 
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 ZhangMengRou
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+ </br>本站总访问量<span id="busuanzi_value_site_pv"></span>次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="totop"><img src="/img/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
+  </div>
+  <a href="https://github.com/ZhangMengRou"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+</body>
+</html>

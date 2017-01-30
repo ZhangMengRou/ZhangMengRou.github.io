@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>Django学习Tips | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Django学习Tips *部分踩坑总结在踩了无数坑后爬过来～记录自己的学习tips～">
+  <meta name="description" content="Django学习Tips *部分踩坑总结在踩了无数坑后爬过来～记录自己的学习tips～使用django1.10 python2.7">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django学习Tips">
 <meta property="og:url" content="http://yoursite.com/2017/01/20/Django学习Tips/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="Django学习Tips *部分踩坑总结在踩了无数坑后爬过来～记录自己的学习tips～">
-<meta property="og:updated_time" content="2017-01-20T16:17:08.912Z">
+<meta property="og:description" content="Django学习Tips *部分踩坑总结在踩了无数坑后爬过来～记录自己的学习tips～使用django1.10 python2.7">
+<meta property="og:updated_time" content="2017-01-26T14:03:48.973Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Django学习Tips">
-<meta name="twitter:description" content="Django学习Tips *部分踩坑总结在踩了无数坑后爬过来～记录自己的学习tips～">
+<meta name="twitter:description" content="Django学习Tips *部分踩坑总结在踩了无数坑后爬过来～记录自己的学习tips～使用django1.10 python2.7">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -103,7 +103,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/LeetCode/" style="font-size: 20px;">LeetCode</a> <a href="/tags/The-source-code/" style="font-size: 10px;">The source code</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/其它/" style="font-size: 16.67px;">其它</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/安全/" style="font-size: 13.33px;">安全</a> <a href="/tags/生活/" style="font-size: 13.33px;">生活</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/逆向/" style="font-size: 10px;">逆向</a>
+						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/LeetCode/" style="font-size: 20px;">LeetCode</a> <a href="/tags/The-source-code/" style="font-size: 10px;">The source code</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/其它/" style="font-size: 17.5px;">其它</a> <a href="/tags/动画/" style="font-size: 10px;">动画</a> <a href="/tags/安全/" style="font-size: 12.5px;">安全</a> <a href="/tags/生活/" style="font-size: 12.5px;">生活</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/逆向/" style="font-size: 10px;">逆向</a>
 					</div>
 				</section>
 				
@@ -204,11 +204,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Django学习Tips-部分踩坑总结"><a href="#Django学习Tips-部分踩坑总结" class="headerlink" title="Django学习Tips *部分踩坑总结"></a>Django学习Tips *部分踩坑总结</h2><p>在踩了无数坑后爬过来～记录自己的学习tips～<br><a id="more"></a> </p>
+        <h2 id="Django学习Tips-部分踩坑总结"><a href="#Django学习Tips-部分踩坑总结" class="headerlink" title="Django学习Tips *部分踩坑总结"></a>Django学习Tips *部分踩坑总结</h2><p>在踩了无数坑后爬过来～记录自己的学习tips～<br>使用django1.10 python2.7<br><a id="more"></a> </p>
 <h3 id="0-学习资源"><a href="#0-学习资源" class="headerlink" title="0.学习资源"></a>0.学习资源</h3><blockquote>
-<p> Tango with Django 中文文档： <a href="http://hackerxu.com/Twd/" target="_blank" rel="external">http://hackerxu.com/Twd/</a></p>
+<p> Tango with Django 中文文档： <a href="http://hackerxu.com/Twd/" target="_blank" rel="external">http://hackerxu.com/Twd/</a><br> 官方文档：<a href="https://docs.djangoproject.com/en/1.10/" target="_blank" rel="external">https://docs.djangoproject.com/en/1.10/</a></p>
 </blockquote>
+<p> BAE部署Django项目流程整理：<a href="http://www.cnblogs.com/calmman/p/6265655.html" target="_blank" rel="external">http://www.cnblogs.com/calmman/p/6265655.html</a></p>
+<p>  centos6下部署django环境：<a href="http://blog.chinaunix.net/uid-531464-id-4767884.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-531464-id-4767884.html</a><br>                            <a href="http://blog.everlose.com/set-up-python-on-centos.html" target="_blank" rel="external">http://blog.everlose.com/set-up-python-on-centos.html</a><br>                            <a href="http://www.cnblogs.com/xz1024/p/6134359.html" target="_blank" rel="external">http://www.cnblogs.com/xz1024/p/6134359.html</a><br>                            <a href="http://www.wtoutiao.com/p/2b0B7LT.html" target="_blank" rel="external">http://www.wtoutiao.com/p/2b0B7LT.html</a><br>                            <a href="http://blog.csdn.net/zhyh1435589631/article/details/51946439" target="_blank" rel="external">http://blog.csdn.net/zhyh1435589631/article/details/51946439</a></p>
+<p>   helloworld教程：<a href="http://blog.csdn.net/zez11/article/details/52253488" target="_blank" rel="external">http://blog.csdn.net/zez11/article/details/52253488</a><br>                    <a href="http://blog.csdn.net/LABLENET/article/details/53321260" target="_blank" rel="external">http://blog.csdn.net/LABLENET/article/details/53321260</a><br>                    <a href="http://www.cnblogs.com/lhj588/archive/2012/02/17/2356478.html" target="_blank" rel="external">http://www.cnblogs.com/lhj588/archive/2012/02/17/2356478.html</a><br>                    <a href="https://www.cnhzz.com/django-basic-command/" target="_blank" rel="external">https://www.cnhzz.com/django-basic-command/</a><br>                    <a href="http://blog.csdn.net/donggege214/article/details/51648304" target="_blank" rel="external">http://blog.csdn.net/donggege214/article/details/51648304</a></p>
+<h3 id="1-rom-django-conf-urls-import-找不到patterns模块"><a href="#1-rom-django-conf-urls-import-找不到patterns模块" class="headerlink" title="1.rom django.conf.urls import * 找不到patterns模块"></a>1.rom django.conf.urls import * 找不到patterns模块</h3><blockquote>
+<p> django 1.10 已经移除此特性</p>
+</blockquote>
+<p>###2.保存并同步数据库</p>
+<pre><code>Python manage.py syncdb
+</code></pre><p>###3.使用Django生成Model</p>
+<pre><code>python manage.py inspectdb 
+</code></pre><p>###4.汉化</p>
+<pre><code>django1.9以上 注意不同系统下_与-
+LANGUAGE_CODE = &apos;zh_Hans&apos;
+</code></pre><p>###5.连接MySql乱码问题</p>
+<pre><code>关于修改my.ini：http://blog.csdn.net/red4711/article/details/6007248
 
+深坑。。就算输入show variables like &apos;character%&apos;;
+出来的全是utf8也没用
+请用：
+CREATE DATABASE db_name DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+来建表。。辛酸脸orz
+</code></pre><p>###6.创建管理员用户名密码</p>
+<pre><code>python manage.py migrate  
+
+python manage.py shell  
+from django.contrib.auth.models import User  
+user=User.objects.create_superuser(&apos;用户名&apos;,&apos;邮箱&apos;,&apos;密码&apos;)  
+</code></pre><p>###7.实现分页</p>
+<pre><code>使用Paginator实现分页功能 ：https://mozillazg.com/2013/01/django-pagination-by-use-paginator.html
+文档：https://docs.djangoproject.com/en/1.10/topics/pagination/
+</code></pre>
       
     </div>
     
@@ -216,6 +246,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2017/01/23/Django搭建第一个网站/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Django搭建第一个网站
+        
+      </div>
+    </a>
   
   
     <a href="/2016/12/15/p434/" id="article-nav-older" class="article-nav-link-wrap">
