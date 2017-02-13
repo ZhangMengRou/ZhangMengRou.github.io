@@ -4,21 +4,33 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p447 | ZMR小站</title>
+  <title>p7 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p447 Number of Boomerangs  题解1.题目：
-Given n points in the plane that are all pairwise distinct, a “boomerang” is a tuple of points (i, j, k) such that the distance between i and j equals the d">
+  <meta name="description" content="LeetCode p7 Reverse Integer  题解1.题目：
+Reverse digits of an integer.
+
+Example1: x = 123, return 321Example2: x = -123, return -321
+click to show spoilers.
+Have you thought about this?Here are some good">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p447">
-<meta property="og:url" content="http://yoursite.com/2017/02/13/p447/index.html">
+<meta property="og:title" content="p7">
+<meta property="og:url" content="http://yoursite.com/2017/02/13/p7/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p447 Number of Boomerangs  题解1.题目：
-Given n points in the plane that are all pairwise distinct, a “boomerang” is a tuple of points (i, j, k) such that the distance between i and j equals the d">
-<meta property="og:updated_time" content="2017-02-13T04:52:42.241Z">
+<meta property="og:description" content="LeetCode p7 Reverse Integer  题解1.题目：
+Reverse digits of an integer.
+
+Example1: x = 123, return 321Example2: x = -123, return -321
+click to show spoilers.
+Have you thought about this?Here are some good">
+<meta property="og:updated_time" content="2017-02-13T05:51:28.179Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p447">
-<meta name="twitter:description" content="LeetCode p447 Number of Boomerangs  题解1.题目：
-Given n points in the plane that are all pairwise distinct, a “boomerang” is a tuple of points (i, j, k) such that the distance between i and j equals the d">
+<meta name="twitter:title" content="p7">
+<meta name="twitter:description" content="LeetCode p7 Reverse Integer  题解1.题目：
+Reverse digits of an integer.
+
+Example1: x = 123, return 321Example2: x = -123, return -321
+click to show spoilers.
+Have you thought about this?Here are some good">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +178,11 @@ Given n points in the plane that are all pairwise distinct, a “boomerang” is
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p447" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p7" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/13/p447/" class="article-date">
-  	<time datetime="2017-02-13T04:42:34.000Z" itemprop="datePublished">2017-02-13</time>
+      <a href="/2017/02/13/p7/" class="article-date">
+  	<time datetime="2017-02-13T05:47:25.000Z" itemprop="datePublished">2017-02-13</time>
 </a>
     </div>
   
@@ -183,7 +195,7 @@ Given n points in the plane that are all pairwise distinct, a “boomerang” is
         
   
     <h1 class="article-title" itemprop="name">
-      p447
+      p7
     </h1>
   
 
@@ -207,22 +219,26 @@ Given n points in the plane that are all pairwise distinct, a “boomerang” is
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p447-Number-of-Boomerangs-题解"><a href="#LeetCode-p447-Number-of-Boomerangs-题解" class="headerlink" title="LeetCode p447 Number of Boomerangs  题解"></a>LeetCode p447 Number of Boomerangs  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Given n points in the plane that are all pairwise distinct, a “boomerang” is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).</p>
+        <h2 id="LeetCode-p7-Reverse-Integer-题解"><a href="#LeetCode-p7-Reverse-Integer-题解" class="headerlink" title="LeetCode p7 Reverse Integer  题解"></a>LeetCode p7 Reverse Integer  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Reverse digits of an integer.</p>
 </blockquote>
-<p>Find the number of boomerangs. You may assume that n will be at most 500 and coordinates of points are all in the range [-10000, 10000] (inclusive).</p>
-<p>Example:<br>Input:<br>[[0,0],[1,0],[2,0]]</p>
-<p>Output:<br>2</p>
-<p>Explanation:<br>The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]<br><a id="more"></a> </p>
+<p>Example1: x = 123, return 321<br>Example2: x = -123, return -321</p>
+<p>click to show spoilers.</p>
+<p>Have you thought about this?<br>Here are some good questions to ask before coding. Bonus points for you if you have already thought through this!</p>
+<p>If the integer’s last digit is 0, what should the output be? ie, cases such as 10, 100.</p>
+<p>Did you notice that the reversed integer might overflow? Assume the input is a 32-bit integer, then the reverse of 1000000003 overflows. How should you handle such cases?</p>
+<p>For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
+<p>Note:<br>The input is assumed to be a 32-bit signed integer. Your function should return 0 when the reversed integer overflows.</p>
+<a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入一个二维数组，数组中储存的是点的坐标。<br>设符合要求的点的数组中含有3个点【1，2，3】<br>第一个点到第二个点的距离等于第一个点到第三个点的距离。<br>输出这样的三点数组有多少个。</p>
+<p>输入一个数字，返回它反转之后的数字，不能改变正负。<br>如果输出的数字大于整形大小，则输出0。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>使用HashMap<br>写一个求两点之间距离的函数getd<br>在第一个循环中设循环到此的数为第一个点。然后循环全部数组储存其他点到这点的距离。<br>在HashMap中储存相同距离的点的个数，res累加，每次累加的数即从n个数中取两个数。<br>方法有 A = n*(n-1) 种。<br>假设的每个点循环完毕之后记得将Map清空。</p>
+<p>见代码，注释里面是去年左大大直播的算法课里讲过的，不过无法完成<br>“如果输出的数字大于整形大小，则输出0。”这个需求。<br>题目标签为Math 则选择数学方法。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">numberOfBoomerangs</span><span class="params">(<span class="keyword">int</span>[][] points)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> n = points.length;</span><br><span class="line">		Map&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;Integer, Integer&gt;();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (j == i)</span><br><span class="line">					<span class="keyword">continue</span>;</span><br><span class="line">				<span class="keyword">int</span> d = getd(points[i], points[j]);</span><br><span class="line">				map.put(d, map.getOrDefault(d, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> v : map.values()) &#123;</span><br><span class="line">				ans += v * (v - <span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			map.clear();<span class="comment">// 记得清空</span></span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getd</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span>[] b)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> i = a[<span class="number">0</span>] - b[<span class="number">0</span>];</span><br><span class="line">		<span class="keyword">int</span> j = a[<span class="number">1</span>] - b[<span class="number">1</span>];</span><br><span class="line">		<span class="keyword">return</span> i * i + j * j;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span> (x != <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="keyword">int</span> tail = x % <span class="number">10</span>;</span><br><span class="line">			<span class="keyword">int</span> c = ans * <span class="number">10</span> + tail;</span><br><span class="line">			<span class="keyword">if</span> ((c - tail) / <span class="number">10</span> != ans)</span><br><span class="line">				<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">			ans = c;</span><br><span class="line">			x = x / <span class="number">10</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// int flag = 0;</span></span><br><span class="line">		<span class="comment">//</span></span><br><span class="line">		<span class="comment">// if (x &lt; 0) &#123;</span></span><br><span class="line">		<span class="comment">// flag = 1;</span></span><br><span class="line">		<span class="comment">// x = -x;</span></span><br><span class="line">		<span class="comment">// &#125;</span></span><br><span class="line">		<span class="comment">// String string = x + "";</span></span><br><span class="line">		<span class="comment">// int c = (string.length() - 1) / 2;</span></span><br><span class="line">		<span class="comment">// StringBuilder left = new StringBuilder();</span></span><br><span class="line">		<span class="comment">// left.append(string.substring(0, c));</span></span><br><span class="line">		<span class="comment">// StringBuilder right = new StringBuilder();</span></span><br><span class="line">		<span class="comment">// right.append(string.subSequence(c, string.length()));</span></span><br><span class="line">		<span class="comment">// int ans = Integer.parseInt(right.reverse().toString()</span></span><br><span class="line">		<span class="comment">// + left.reverse().toString());</span></span><br><span class="line">		<span class="comment">//</span></span><br><span class="line">		<span class="comment">// return flag == 0 ? ans : -ans;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -233,18 +249,18 @@ Given n points in the plane that are all pairwise distinct, a “boomerang” is
     
 <nav id="article-nav">
   
-    <a href="/2017/02/13/p7/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/02/13/p9/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p7
+          p9
         
       </div>
     </a>
   
   
-    <a href="/2017/02/13/p494/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p494</div>
+    <a href="/2017/02/13/p447/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p447</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -260,7 +276,7 @@ Given n points in the plane that are all pairwise distinct, a “boomerang” is
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p447" data-title="p447" data-url="http://yoursite.com/2017/02/13/p447/"></div>
+	<div class="ds-thread" data-thread-key="p7" data-title="p7" data-url="http://yoursite.com/2017/02/13/p7/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
