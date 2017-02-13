@@ -4,21 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p14 | ZMR小站</title>
+  <title>p125 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p14 Longest Common Prefix  题解1.题目：
-Write a function to find the longest common prefix string amongst an array of strings.">
+  <meta name="description" content="LeetCode p125 Valid Palindrome  题解1.题目：
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+For example,“A man, a plan, a canal: Panama” is a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p14">
-<meta property="og:url" content="http://yoursite.com/2017/02/13/p14/index.html">
+<meta property="og:title" content="p125">
+<meta property="og:url" content="http://yoursite.com/2017/02/13/p125/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p14 Longest Common Prefix  题解1.题目：
-Write a function to find the longest common prefix string amongst an array of strings.">
-<meta property="og:updated_time" content="2017-02-13T07:33:40.266Z">
+<meta property="og:description" content="LeetCode p125 Valid Palindrome  题解1.题目：
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+For example,“A man, a plan, a canal: Panama” is a">
+<meta property="og:updated_time" content="2017-02-13T13:26:33.266Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p14">
-<meta name="twitter:description" content="LeetCode p14 Longest Common Prefix  题解1.题目：
-Write a function to find the longest common prefix string amongst an array of strings.">
+<meta name="twitter:title" content="p125">
+<meta name="twitter:description" content="LeetCode p125 Valid Palindrome  题解1.题目：
+Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+For example,“A man, a plan, a canal: Panama” is a">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +172,11 @@ Write a function to find the longest common prefix string amongst an array of st
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p14" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p125" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/13/p14/" class="article-date">
-  	<time datetime="2017-02-13T07:11:04.000Z" itemprop="datePublished">2017-02-13</time>
+      <a href="/2017/02/13/p125/" class="article-date">
+  	<time datetime="2017-02-13T13:24:29.000Z" itemprop="datePublished">2017-02-13</time>
 </a>
     </div>
   
@@ -183,7 +189,7 @@ Write a function to find the longest common prefix string amongst an array of st
         
   
     <h1 class="article-title" itemprop="name">
-      p14
+      p125
     </h1>
   
 
@@ -207,18 +213,21 @@ Write a function to find the longest common prefix string amongst an array of st
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p14-Longest-Common-Prefix-题解"><a href="#LeetCode-p14-Longest-Common-Prefix-题解" class="headerlink" title="LeetCode p14 Longest Common Prefix  题解"></a>LeetCode p14 Longest Common Prefix  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Write a function to find the longest common prefix string amongst an array of strings.<br><a id="more"></a> </p>
+        <h2 id="LeetCode-p125-Valid-Palindrome-题解"><a href="#LeetCode-p125-Valid-Palindrome-题解" class="headerlink" title="LeetCode p125 Valid Palindrome  题解"></a>LeetCode p125 Valid Palindrome  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.</p>
 </blockquote>
+<p>For example,<br>“A man, a plan, a canal: Panama” is a palindrome.<br>“race a car” is not a palindrome.</p>
+<p>Note:<br>Have you consider that the string might be empty? This is a good question to ask during an interview.</p>
+<p>For the purpose of this problem, we define empty string as valid palindrome.<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入一个字符数组，找出他们最长的共同前缀字符串。</p>
+<p>只考虑数字和字母，判断一个字符串是否回文。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码<br>strs[i].indexOf(s) //查找字符或者子串第一次出现的地方</p>
+<p>见代码，从两头往中间找。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">longestCommonPrefix</span><span class="params">(String[] strs)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (strs == <span class="keyword">null</span> || strs.length &lt; <span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">		String s = strs[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; strs.length; i++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (s.equals(<span class="string">""</span>))</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">while</span> (strs[i].indexOf(s) != <span class="number">0</span>) &#123;</span><br><span class="line">				s = (String) s.subSequence(<span class="number">0</span>, s.length() - <span class="number">1</span>);</span><br><span class="line">			</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> s;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">char</span>[] a = s.toCharArray();</span><br><span class="line">		<span class="keyword">int</span> len = a.length;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>, r = len - <span class="number">1</span>; l &lt; r; l++, r--) &#123;</span><br><span class="line">			<span class="keyword">while</span> (!check(a[l]) &amp;&amp; l &lt; r)</span><br><span class="line">				l++;</span><br><span class="line">			<span class="keyword">while</span> (!check(a[r]) &amp;&amp; l &lt; r)</span><br><span class="line">				r--;</span><br><span class="line">			<span class="keyword">if</span> (a[l] == a[r]</span><br><span class="line">					|| ((a[l] &lt; <span class="string">'0'</span> || a[l] &gt; <span class="string">'9'</span>) &amp;&amp; Math.abs(a[l] - a[r]) == <span class="number">32</span>)) <span class="comment">// 注意差值为32</span></span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">check</span><span class="params">(<span class="keyword">char</span> a)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (a &gt;= <span class="string">'A'</span> &amp;&amp; a &lt;= <span class="string">'Z'</span>) || (a &gt;= <span class="string">'a'</span> &amp;&amp; a &lt;= <span class="string">'z'</span>)</span><br><span class="line">				|| (a &gt;= <span class="string">'0'</span> &amp;&amp; a &lt;= <span class="string">'9'</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -229,18 +238,9 @@ Write a function to find the longest common prefix string amongst an array of st
     
 <nav id="article-nav">
   
-    <a href="/2017/02/13/p20/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p20
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/13/p9/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p9</div>
+    <a href="/2017/02/13/p20/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p20</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -256,7 +256,7 @@ Write a function to find the longest common prefix string amongst an array of st
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p14" data-title="p14" data-url="http://yoursite.com/2017/02/13/p14/"></div>
+	<div class="ds-thread" data-thread-key="p125" data-title="p125" data-url="http://yoursite.com/2017/02/13/p125/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
