@@ -4,30 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p160 | ZMR小站</title>
+  <title>p234 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p160 Intersection of Two Linked Lists   题解1.题目：
-Write a program to find the node at which the intersection of two singly linked lists begins.
+  <meta name="description" content="LeetCode p234 Palindrome Linked List   题解1.题目：
+Given a singly linked list, determine if it is a palindrome.
 
-For example, the following two linked lists:
-A:">
+Follow up:Could you do it in O(n) time and O(1) space?">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p160">
-<meta property="og:url" content="http://yoursite.com/2017/02/14/p160/index.html">
+<meta property="og:title" content="p234">
+<meta property="og:url" content="http://yoursite.com/2017/02/15/p234/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p160 Intersection of Two Linked Lists   题解1.题目：
-Write a program to find the node at which the intersection of two singly linked lists begins.
+<meta property="og:description" content="LeetCode p234 Palindrome Linked List   题解1.题目：
+Given a singly linked list, determine if it is a palindrome.
 
-For example, the following two linked lists:
-A:">
-<meta property="og:updated_time" content="2017-02-14T13:41:30.885Z">
+Follow up:Could you do it in O(n) time and O(1) space?">
+<meta property="og:updated_time" content="2017-02-15T07:13:04.340Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p160">
-<meta name="twitter:description" content="LeetCode p160 Intersection of Two Linked Lists   题解1.题目：
-Write a program to find the node at which the intersection of two singly linked lists begins.
+<meta name="twitter:title" content="p234">
+<meta name="twitter:description" content="LeetCode p234 Palindrome Linked List   题解1.题目：
+Given a singly linked list, determine if it is a palindrome.
 
-For example, the following two linked lists:
-A:">
+Follow up:Could you do it in O(n) time and O(1) space?">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -175,11 +172,11 @@ A:">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p160" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p234" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/14/p160/" class="article-date">
-  	<time datetime="2017-02-14T13:35:52.000Z" itemprop="datePublished">2017-02-14</time>
+      <a href="/2017/02/15/p234/" class="article-date">
+  	<time datetime="2017-02-15T07:10:55.000Z" itemprop="datePublished">2017-02-15</time>
 </a>
     </div>
   
@@ -192,7 +189,7 @@ A:">
         
   
     <h1 class="article-title" itemprop="name">
-      p160
+      p234
     </h1>
   
 
@@ -216,21 +213,20 @@ A:">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p160-Intersection-of-Two-Linked-Lists-题解"><a href="#LeetCode-p160-Intersection-of-Two-Linked-Lists-题解" class="headerlink" title="LeetCode p160 Intersection of Two Linked Lists   题解"></a>LeetCode p160 Intersection of Two Linked Lists   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Write a program to find the node at which the intersection of two singly linked lists begins.</p>
+        <h2 id="LeetCode-p234-Palindrome-Linked-List-题解"><a href="#LeetCode-p234-Palindrome-Linked-List-题解" class="headerlink" title="LeetCode p234 Palindrome Linked List   题解"></a>LeetCode p234 Palindrome Linked List   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a singly linked list, determine if it is a palindrome.</p>
 </blockquote>
-<p>For example, the following two linked lists:</p>
-<p>A:          a1 → a2<br>                   ↘<br>                     c1 → c2 → c3<br>                   ↗<br>B:     b1 → b2 → b3</p>
+<p>Follow up:<br>Could you do it in O(n) time and O(1) space?</p>
 <a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输出两个链表重合的链表段的首端。<br>如果没有输出空</p>
+<p>判断一个单向链表是否回文</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>假设一段绳子，尾端是重合的。<br>我们每次只能移动一位找到重合的点，要想同时移动到这一位。<br>我们先把绳子的尾端对齐，在在开头处将长的那根绳子减去多余的长度。<br>因为那段多出的长度中不可能存在重合点。</p>
+<p>使用递归，再逆序匹配，也可以反转链表。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123;</span><br><span class="line"> *         val = x;</span><br><span class="line"> *         next = null;</span><br><span class="line"> *     &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">getIntersectionNode</span><span class="params">(ListNode headA, ListNode headB)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> lena = <span class="number">0</span>, lenb = <span class="number">0</span>;</span><br><span class="line">		ListNode a = headA;</span><br><span class="line">		ListNode b = headB;</span><br><span class="line">		<span class="keyword">while</span> (a != <span class="keyword">null</span>) &#123;</span><br><span class="line">			lena++;</span><br><span class="line">			a = a.next;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span> (b != <span class="keyword">null</span>) &#123;</span><br><span class="line">			lenb++;</span><br><span class="line">			b = b.next;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (lena &gt; lenb) &#123;</span><br><span class="line">			<span class="keyword">int</span> x = lena - lenb;</span><br><span class="line">			<span class="keyword">for</span> (; x &gt; <span class="number">0</span>; x--)</span><br><span class="line">				headA = headA.next;</span><br><span class="line"></span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="keyword">int</span> x = lenb - lena;</span><br><span class="line">			<span class="keyword">for</span> (; x &gt; <span class="number">0</span>; x--)</span><br><span class="line">				headB = headB.next;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span> (headA != <span class="keyword">null</span> &amp;&amp; headA.val != headB.val) &#123;</span><br><span class="line">			headA = headA.next;</span><br><span class="line">			headB = headB.next;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> headA;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">public</span> ListNode a;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (head == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		a = head;</span><br><span class="line">		dp(head);</span><br><span class="line">		<span class="keyword">return</span> flag == <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dp</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (head.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">			dp(head.next);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (flag == <span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		<span class="keyword">if</span> (a.val != head.val) &#123;</span><br><span class="line">			flag = <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		a = a.next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -241,18 +237,18 @@ A:">
     
 <nav id="article-nav">
   
-    <a href="/2017/02/15/p234/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/02/15/p415/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p234
+          p415
         
       </div>
     </a>
   
   
-    <a href="/2017/02/14/p155/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p155</div>
+    <a href="/2017/02/14/p160/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p160</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -268,7 +264,7 @@ A:">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p160" data-title="p160" data-url="http://yoursite.com/2017/02/14/p160/"></div>
+	<div class="ds-thread" data-thread-key="p234" data-title="p234" data-url="http://yoursite.com/2017/02/15/p234/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
