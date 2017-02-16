@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p172 | ZMR小站</title>
+  <title>p189 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p172  Factorial Trailing Zeroes   题解1.题目：
-Given an integer n, return the number of trailing zeroes in n!.
+  <meta name="description" content="LeetCode p189   Rotate Array   题解1.题目：
+Rotate an array of n elements to the right by k steps.
 
-Note: Your solution should be in logarithmic time complexity.">
+For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p172">
-<meta property="og:url" content="http://yoursite.com/2017/02/15/p172/index.html">
+<meta property="og:title" content="p189">
+<meta property="og:url" content="http://yoursite.com/2017/02/16/p189/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p172  Factorial Trailing Zeroes   题解1.题目：
-Given an integer n, return the number of trailing zeroes in n!.
+<meta property="og:description" content="LeetCode p189   Rotate Array   题解1.题目：
+Rotate an array of n elements to the right by k steps.
 
-Note: Your solution should be in logarithmic time complexity.">
-<meta property="og:updated_time" content="2017-02-15T13:52:58.722Z">
+For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].">
+<meta property="og:updated_time" content="2017-02-16T05:13:37.589Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p172">
-<meta name="twitter:description" content="LeetCode p172  Factorial Trailing Zeroes   题解1.题目：
-Given an integer n, return the number of trailing zeroes in n!.
+<meta name="twitter:title" content="p189">
+<meta name="twitter:description" content="LeetCode p189   Rotate Array   题解1.题目：
+Rotate an array of n elements to the right by k steps.
 
-Note: Your solution should be in logarithmic time complexity.">
+For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -172,11 +172,11 @@ Note: Your solution should be in logarithmic time complexity.">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p172" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p189" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/15/p172/" class="article-date">
-  	<time datetime="2017-02-15T13:50:15.000Z" itemprop="datePublished">2017-02-15</time>
+      <a href="/2017/02/16/p189/" class="article-date">
+  	<time datetime="2017-02-16T05:09:36.000Z" itemprop="datePublished">2017-02-16</time>
 </a>
     </div>
   
@@ -189,7 +189,7 @@ Note: Your solution should be in logarithmic time complexity.">
         
   
     <h1 class="article-title" itemprop="name">
-      p172
+      p189
     </h1>
   
 
@@ -213,19 +213,19 @@ Note: Your solution should be in logarithmic time complexity.">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p172-Factorial-Trailing-Zeroes-题解"><a href="#LeetCode-p172-Factorial-Trailing-Zeroes-题解" class="headerlink" title="LeetCode p172  Factorial Trailing Zeroes   题解"></a>LeetCode p172  Factorial Trailing Zeroes   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Given an integer n, return the number of trailing zeroes in n!.</p>
+        <h2 id="LeetCode-p189-Rotate-Array-题解"><a href="#LeetCode-p189-Rotate-Array-题解" class="headerlink" title="LeetCode p189   Rotate Array   题解"></a>LeetCode p189   Rotate Array   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Rotate an array of n elements to the right by k steps.</p>
 </blockquote>
-<p>Note: Your solution should be in logarithmic time complexity.<br><a id="more"></a> </p>
+<p>For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入n输出n的阶乘的末尾有多少个0.</p>
+<p>输入一个数组，输入一个数字K，将数组末尾的K个数放到数组前面来。<br>如1234567 输入 3<br>输出567 1234</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>10=2×5<br>由于2比5多。所以统计因子中所有的5.</p>
-<h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">trailingZeroes</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span> (n &gt; <span class="number">4</span>) &#123;</span><br><span class="line">			ans = ans + n / <span class="number">5</span>;</span><br><span class="line">			n = n / <span class="number">5</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>把数组分两段1234 567<br>分别反转 4321 765<br>整体反转 567 1234</p>
 </blockquote>
+<h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">rotate</span><span class="params">(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        k = k % nums.length; <span class="comment">// 整数倍等于无操作</span></span><br><span class="line">        reverse(nums, <span class="number">0</span>, nums.length - <span class="number">1</span> - k);</span><br><span class="line">		reverse(nums, nums.length - k, nums.length - <span class="number">1</span>);</span><br><span class="line">		reverse(nums, <span class="number">0</span>, nums.length - <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">reverse</span><span class="params">(<span class="keyword">int</span>[] n, <span class="keyword">int</span> s, <span class="keyword">int</span> e)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">while</span> (s &lt; e) &#123;</span><br><span class="line">			<span class="keyword">int</span> c = n[s];</span><br><span class="line">			n[s] = n[e];</span><br><span class="line">			n[e] = c;</span><br><span class="line">			s++;</span><br><span class="line">			e--;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -236,18 +236,18 @@ Note: Your solution should be in logarithmic time complexity.">
     
 <nav id="article-nav">
   
-    <a href="/2017/02/16/p189/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/02/16/p190/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p189
+          p190
         
       </div>
     </a>
   
   
-    <a href="/2017/02/15/p415/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p415</div>
+    <a href="/2017/02/15/p172/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p172</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -263,7 +263,7 @@ Note: Your solution should be in logarithmic time complexity.">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p172" data-title="p172" data-url="http://yoursite.com/2017/02/15/p172/"></div>
+	<div class="ds-thread" data-thread-key="p189" data-title="p189" data-url="http://yoursite.com/2017/02/16/p189/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
