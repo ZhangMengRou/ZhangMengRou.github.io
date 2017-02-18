@@ -4,21 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p278 | ZMR小站</title>
+  <title>p290 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p278  First Bad Version   题解1.题目：
- You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check.">
+  <meta name="description" content="LeetCode p290 Word Pattern  题解1.题目：
+Given a pattern and a string str, find if str follows the same pattern.
+
+Here follow means a full match, such that there is a bijection between a letter in pattern">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p278">
-<meta property="og:url" content="http://yoursite.com/2017/02/17/p278/index.html">
+<meta property="og:title" content="p290">
+<meta property="og:url" content="http://yoursite.com/2017/02/18/p290/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p278  First Bad Version   题解1.题目：
- You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check.">
-<meta property="og:updated_time" content="2017-02-17T13:49:18.280Z">
+<meta property="og:description" content="LeetCode p290 Word Pattern  题解1.题目：
+Given a pattern and a string str, find if str follows the same pattern.
+
+Here follow means a full match, such that there is a bijection between a letter in pattern">
+<meta property="og:updated_time" content="2017-02-18T13:50:57.096Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p278">
-<meta name="twitter:description" content="LeetCode p278  First Bad Version   题解1.题目：
- You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check.">
+<meta name="twitter:title" content="p290">
+<meta name="twitter:description" content="LeetCode p290 Word Pattern  题解1.题目：
+Given a pattern and a string str, find if str follows the same pattern.
+
+Here follow means a full match, such that there is a bijection between a letter in pattern">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +172,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p278" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p290" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/17/p278/" class="article-date">
-  	<time datetime="2017-02-17T13:47:05.000Z" itemprop="datePublished">2017-02-17</time>
+      <a href="/2017/02/18/p290/" class="article-date">
+  	<time datetime="2017-02-18T13:38:53.000Z" itemprop="datePublished">2017-02-18</time>
 </a>
     </div>
   
@@ -183,7 +189,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p278
+      p290
     </h1>
   
 
@@ -207,20 +213,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p278-First-Bad-Version-题解"><a href="#LeetCode-p278-First-Bad-Version-题解" class="headerlink" title="LeetCode p278  First Bad Version   题解"></a>LeetCode p278  First Bad Version   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.</p>
+        <h2 id="LeetCode-p290-Word-Pattern-题解"><a href="#LeetCode-p290-Word-Pattern-题解" class="headerlink" title="LeetCode p290 Word Pattern  题解"></a>LeetCode p290 Word Pattern  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a pattern and a string str, find if str follows the same pattern.</p>
 </blockquote>
-<p>Suppose you have n versions [1, 2, …, n] and you want to find out the first bad one, which causes all the following ones to be bad.</p>
-<p>You are given an API bool isBadVersion(version) which will return whether version is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.<br><a id="more"></a> </p>
+<p>Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in str.</p>
+<p>Examples:</p>
+<pre><code>pattern = &quot;abba&quot;, str = &quot;dog cat cat dog&quot; should return true.
+pattern = &quot;abba&quot;, str = &quot;dog cat cat fish&quot; should return false.
+pattern = &quot;aaaa&quot;, str = &quot;dog cat cat dog&quot; should return false.
+pattern = &quot;abba&quot;, str = &quot;dog dog dog dog&quot; should return false.
+</code></pre><p>Notes:<br>You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入n有n个版本 isBadVersion(version) 可以查到版本是否是坏的<br>找到第一个坏的版本</p>
+<p>判断字符串格式是否与图章一致。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>二分<br>注意防止溢出</p>
+<p>使用hashmap和hashset</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/* The isBadVersion API is defined in the parent class VersionControl.</span><br><span class="line">      boolean isBadVersion(int version); */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> <span class="keyword">extends</span> <span class="title">VersionControl</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">firstBadVersion</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (isBadVersion(<span class="number">1</span>) == <span class="keyword">true</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">1</span>, right = n;</span><br><span class="line">		<span class="keyword">int</span> mid = left / <span class="number">2</span> + right / <span class="number">2</span>;  <span class="comment">//防止溢出</span></span><br><span class="line">		<span class="keyword">while</span> (left &lt; right + <span class="number">1</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (isBadVersion(mid) == <span class="keyword">false</span> &amp;&amp; isBadVersion(mid + <span class="number">1</span>) == <span class="keyword">true</span>) &#123;</span><br><span class="line">				<span class="keyword">return</span> mid + <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (isBadVersion(mid)) &#123;</span><br><span class="line">				right = mid ;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				left = mid + <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			mid = left / <span class="number">2</span> + right / <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> right;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">wordPattern</span><span class="params">(String pattern, String str)</span> </span>&#123;</span><br><span class="line">        String[] list = str.split(<span class="string">" "</span>);</span><br><span class="line">		<span class="keyword">if</span> (pattern.length() != list.length)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		HashMap&lt;Character, String&gt; hashMap = <span class="keyword">new</span> HashMap&lt;Character, String&gt;();</span><br><span class="line">		HashSet&lt;String&gt; set = <span class="keyword">new</span> HashSet&lt;String&gt;();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; pattern.length(); i++) &#123;</span><br><span class="line">			String aString = hashMap.get(pattern.charAt(i));</span><br><span class="line">			<span class="keyword">if</span> (aString == <span class="keyword">null</span>) &#123;</span><br><span class="line">				<span class="keyword">if</span> (set.contains(list[i]))</span><br><span class="line">					<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">				hashMap.put(pattern.charAt(i), list[i]);</span><br><span class="line">				set.add(list[i]);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				<span class="keyword">if</span> (!list[i].equals(aString))</span><br><span class="line">					<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -231,18 +242,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/02/18/p290/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p290
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/17/p257/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p257</div>
+    <a href="/2017/02/17/p278/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p278</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -258,7 +260,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p278" data-title="p278" data-url="http://yoursite.com/2017/02/17/p278/"></div>
+	<div class="ds-thread" data-thread-key="p290" data-title="p290" data-url="http://yoursite.com/2017/02/18/p290/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
