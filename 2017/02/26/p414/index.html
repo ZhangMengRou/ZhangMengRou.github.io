@@ -4,27 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p409 | ZMR小站</title>
+  <title>p414 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p409  Longest Palindrome   题解1.题目：
-Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
-
-This is c">
+  <meta name="description" content="LeetCode p414  Third Maximum Number   题解1.题目：
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p409">
-<meta property="og:url" content="http://yoursite.com/2017/02/26/p409/index.html">
+<meta property="og:title" content="p414">
+<meta property="og:url" content="http://yoursite.com/2017/02/26/p414/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p409  Longest Palindrome   题解1.题目：
-Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
-
-This is c">
-<meta property="og:updated_time" content="2017-02-26T05:29:00.876Z">
+<meta property="og:description" content="LeetCode p414  Third Maximum Number   题解1.题目：
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity m">
+<meta property="og:updated_time" content="2017-02-26T06:55:00.596Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p409">
-<meta name="twitter:description" content="LeetCode p409  Longest Palindrome   题解1.题目：
-Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
-
-This is c">
+<meta name="twitter:title" content="p414">
+<meta name="twitter:description" content="LeetCode p414  Third Maximum Number   题解1.题目：
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity m">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -172,11 +166,11 @@ This is c">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p409" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p414" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/26/p409/" class="article-date">
-  	<time datetime="2017-02-26T05:26:19.000Z" itemprop="datePublished">2017-02-26</time>
+      <a href="/2017/02/26/p414/" class="article-date">
+  	<time datetime="2017-02-26T06:50:18.000Z" itemprop="datePublished">2017-02-26</time>
 </a>
     </div>
   
@@ -189,7 +183,7 @@ This is c">
         
   
     <h1 class="article-title" itemprop="name">
-      p409
+      p414
     </h1>
   
 
@@ -213,24 +207,26 @@ This is c">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p409-Longest-Palindrome-题解"><a href="#LeetCode-p409-Longest-Palindrome-题解" class="headerlink" title="LeetCode p409  Longest Palindrome   题解"></a>LeetCode p409  Longest Palindrome   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.</p>
+        <h2 id="LeetCode-p414-Third-Maximum-Number-题解"><a href="#LeetCode-p414-Third-Maximum-Number-题解" class="headerlink" title="LeetCode p414  Third Maximum Number   题解"></a>LeetCode p414  Third Maximum Number   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).</p>
 </blockquote>
-<p>This is case sensitive, for example “Aa” is not considered a palindrome here.</p>
-<p>Note:<br>Assume the length of given string will not exceed 1,010.</p>
-<p>Example:</p>
-<p>Input:<br>“abccccdd”</p>
-<p>Output:<br>7</p>
-<p>Explanation:<br>One longest palindrome that can be built is “dccaccd”, whose length is 7.<br><a id="more"></a> </p>
+<p>Example 1:<br>Input: [3, 2, 1]</p>
+<p>Output: 1</p>
+<p>Explanation: The third maximum is 1.<br>Example 2:<br>Input: [1, 2]</p>
+<p>Output: 2</p>
+<p>Explanation: The third maximum does not exist, so the maximum (2) is returned instead.<br>Example 3:<br>Input: [2, 2, 3, 1]</p>
+<p>Output: 1</p>
+<p>Explanation: Note that the third maximum here means the third maximum distinct number.<br>Both numbers with value 2 are both considered as second maximum.</p>
+<a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入一个字符串，求用这个字符串中的字符可以组成的最长回文字符串的长度。</p>
+<p>输入一个数组，输出其中第三大的数。<br>重复的数并列<br>没有第三大的数，则输出最大的数</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>HashMap储存相同字符的个数。</p>
+<p>见代码<br>注意类型orz<br>我开始时用int型初始化为虽小值的。。然后测试数据里面有Integer.MIN_VALUE的值。。<br>//其实也可以flag标记解决</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">longestPalindrome</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">		HashMap&lt;Character, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;Character, Integer&gt;();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">			map.put(s.charAt(i), map.getOrDefault(s.charAt(i), <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">char</span> c : map.keySet()) &#123;</span><br><span class="line">			<span class="keyword">int</span> k = map.getOrDefault(c, <span class="number">0</span>);</span><br><span class="line">			ans = ans + (k / <span class="number">2</span>) * <span class="number">2</span>;</span><br><span class="line">			<span class="keyword">if</span> (k % <span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">				flag = <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans + flag;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">thirdMax</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        Integer max1 = <span class="keyword">null</span>;</span><br><span class="line">		Integer max2 = <span class="keyword">null</span>;</span><br><span class="line">		Integer max3 = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">			Integer k = nums[i];</span><br><span class="line">			<span class="keyword">if</span> (k.equals(max1) || k.equals(max2) || k.equals(max3))</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span> (max1 == <span class="keyword">null</span> || k &gt; max1) &#123;</span><br><span class="line">				max3 = max2;</span><br><span class="line">				max2 = max1;</span><br><span class="line">				max1 = k;</span><br><span class="line">				<span class="comment">// System.out.println(max1+"  "+max2+" "+max3);</span></span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (max2 == <span class="keyword">null</span> || k &gt; max2) &#123;</span><br><span class="line">				max3 = max2;</span><br><span class="line">				max2 = k;</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (max3 == <span class="keyword">null</span> || k &gt; max3) &#123;</span><br><span class="line">				max3 = k;</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (max3 == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> max1;</span><br><span class="line">		<span class="comment">// return max2 == Integer.MIN_VALUE ? max1 : max2;</span></span><br><span class="line">		<span class="keyword">return</span> max3;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -241,18 +237,18 @@ This is c">
     
 <nav id="article-nav">
   
-    <a href="/2017/02/26/p412/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/02/26/p438/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          p412
+          p438
         
       </div>
     </a>
   
   
-    <a href="/2017/02/26/p405/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p405</div>
+    <a href="/2017/02/26/p412/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p412</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -268,7 +264,7 @@ This is c">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p409" data-title="p409" data-url="http://yoursite.com/2017/02/26/p409/"></div>
+	<div class="ds-thread" data-thread-key="p414" data-title="p414" data-url="http://yoursite.com/2017/02/26/p414/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
