@@ -4,27 +4,21 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p438 | ZMR小站</title>
+  <title>p109 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p438  Find All Anagrams in a String   题解1.题目：
-Given a string s and a non-empty string p, find all the start indices of p’s anagrams in s.
-
-Strings consists of lowercase English letters only a">
+  <meta name="description" content="LeetCode p109 Convert Sorted List to Binary Search Tree   题解1.题目：
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p438">
-<meta property="og:url" content="http://yoursite.com/2017/02/26/p438/index.html">
+<meta property="og:title" content="p109">
+<meta property="og:url" content="http://yoursite.com/2017/03/11/p109/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p438  Find All Anagrams in a String   题解1.题目：
-Given a string s and a non-empty string p, find all the start indices of p’s anagrams in s.
-
-Strings consists of lowercase English letters only a">
-<meta property="og:updated_time" content="2017-02-26T07:23:17.272Z">
+<meta property="og:description" content="LeetCode p109 Convert Sorted List to Binary Search Tree   题解1.题目：
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.">
+<meta property="og:updated_time" content="2017-03-11T12:25:42.748Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p438">
-<meta name="twitter:description" content="LeetCode p438  Find All Anagrams in a String   题解1.题目：
-Given a string s and a non-empty string p, find all the start indices of p’s anagrams in s.
-
-Strings consists of lowercase English letters only a">
+<meta name="twitter:title" content="p109">
+<meta name="twitter:description" content="LeetCode p109 Convert Sorted List to Binary Search Tree   题解1.题目：
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -172,11 +166,11 @@ Strings consists of lowercase English letters only a">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p438" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p109" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/02/26/p438/" class="article-date">
-  	<time datetime="2017-02-26T07:19:41.000Z" itemprop="datePublished">2017-02-26</time>
+      <a href="/2017/03/11/p109/" class="article-date">
+  	<time datetime="2017-03-11T12:07:47.000Z" itemprop="datePublished">2017-03-11</time>
 </a>
     </div>
   
@@ -189,7 +183,7 @@ Strings consists of lowercase English letters only a">
         
   
     <h1 class="article-title" itemprop="name">
-      p438
+      p109
     </h1>
   
 
@@ -213,27 +207,18 @@ Strings consists of lowercase English letters only a">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p438-Find-All-Anagrams-in-a-String-题解"><a href="#LeetCode-p438-Find-All-Anagrams-in-a-String-题解" class="headerlink" title="LeetCode p438  Find All Anagrams in a String   题解"></a>LeetCode p438  Find All Anagrams in a String   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Given a string s and a non-empty string p, find all the start indices of p’s anagrams in s.</p>
+        <h2 id="LeetCode-p109-Convert-Sorted-List-to-Binary-Search-Tree-题解"><a href="#LeetCode-p109-Convert-Sorted-List-to-Binary-Search-Tree-题解" class="headerlink" title="LeetCode p109 Convert Sorted List to Binary Search Tree   题解"></a>LeetCode p109 Convert Sorted List to Binary Search Tree   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.<br><a id="more"></a> </p>
 </blockquote>
-<p>Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.</p>
-<p>The order of output does not matter.</p>
-<p>Example 1:</p>
-<p>Input:<br>s: “cbaebabacd” p: “abc”</p>
-<p>Output:<br>[0, 6]</p>
-<p>Explanation:<br>The substring with start index = 0 is “cba”, which is an anagram of “abc”.<br>The substring with start index = 6 is “bac”, which is an anagram of “abc”.<br>Example 2:</p>
-<p>Input:<br>s: “abab” p: “ab”</p>
-<p>Output:<br>[0, 1, 2]</p>
-<p>Explanation:<br>The substring with start index = 0 is “ab”, which is an anagram of “ab”.<br>The substring with start index = 1 is “ba”, which is an anagram of “ab”.<br>The substring with start index = 2 is “ab”, which is an anagram of “ab”.<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入字符串s,p。输出s中所有能用p中所有字母（可以任意调换位置）组成的子字符串。<br>输出符合要求的字符串首字母的下标。</p>
+<p>输入一个递增的链表，输出它的平衡二叉树。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码<br>用数组记录字母出现的次数。</p>
+<p>快慢指针找中间，递归。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">findAnagrams</span><span class="params">(String s, String p)</span> </span>&#123;</span><br><span class="line">        List&lt;Integer&gt; ans = <span class="keyword">new</span> ArrayList&lt;Integer&gt;();</span><br><span class="line">		<span class="keyword">int</span>[] c = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">char</span> a : p.toCharArray()) &#123;</span><br><span class="line">			c[a - <span class="string">'a'</span>]++;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span> len = p.length();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i + len &lt;= s.length(); i++) &#123;</span><br><span class="line">			<span class="keyword">int</span>[] x = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">26</span>];</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">26</span>; j++) &#123;</span><br><span class="line">				x[j] = c[j];</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; i + len; j++) &#123;</span><br><span class="line">				x[s.charAt(j) - <span class="string">'a'</span>]--;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> y : x) &#123;</span><br><span class="line">				<span class="keyword">if</span> (y != <span class="number">0</span>) &#123;</span><br><span class="line">					flag = <span class="number">1</span>;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (flag == <span class="number">0</span>)</span><br><span class="line">				ans.add(i);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * public class TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode left;</span><br><span class="line"> *     TreeNode right;</span><br><span class="line"> *     TreeNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">sortedListToBST</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">return</span> ToBst(head, <span class="keyword">null</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> TreeNode <span class="title">ToBst</span><span class="params">(ListNode head, ListNode tail)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (head == tail)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		ListNode fast = head;</span><br><span class="line">		ListNode slow = head;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">while</span> (fast.next != tail &amp;&amp; fast.next.next != tail) &#123;</span><br><span class="line">			fast = fast.next.next;</span><br><span class="line">			slow = slow.next;</span><br><span class="line">		&#125;</span><br><span class="line">		TreeNode node = <span class="keyword">new</span> TreeNode(slow.val);</span><br><span class="line">		node.left = ToBst(head, slow);</span><br><span class="line">		node.right = ToBst(slow.next, tail);</span><br><span class="line">		<span class="keyword">return</span> node;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -244,18 +229,9 @@ Strings consists of lowercase English letters only a">
     
 <nav id="article-nav">
   
-    <a href="/2017/03/11/p109/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p109
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/02/26/p414/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p414</div>
+    <a href="/2017/02/26/p438/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p438</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -271,7 +247,7 @@ Strings consists of lowercase English letters only a">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p438" data-title="p438" data-url="http://yoursite.com/2017/02/26/p438/"></div>
+	<div class="ds-thread" data-thread-key="p109" data-title="p109" data-url="http://yoursite.com/2017/03/11/p109/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
