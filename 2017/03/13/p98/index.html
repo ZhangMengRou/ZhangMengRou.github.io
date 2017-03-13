@@ -4,21 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p106 | ZMR小站</title>
+  <title>p98 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p106  Construct Binary Tree from Inorder and Postorder Traversal   题解1.题目：
-Given inorder and postorder traversal of a tree, construct the binary tree.">
+  <meta name="description" content="LeetCode p98 Validate Binary Search Tree  题解1.题目：
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+The left subtree of a node contains onl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p106">
-<meta property="og:url" content="http://yoursite.com/2017/03/12/p106/index.html">
+<meta property="og:title" content="p98">
+<meta property="og:url" content="http://yoursite.com/2017/03/13/p98/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p106  Construct Binary Tree from Inorder and Postorder Traversal   题解1.题目：
-Given inorder and postorder traversal of a tree, construct the binary tree.">
-<meta property="og:updated_time" content="2017-03-13T12:04:28.410Z">
+<meta property="og:description" content="LeetCode p98 Validate Binary Search Tree  题解1.题目：
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+The left subtree of a node contains onl">
+<meta property="og:updated_time" content="2017-03-13T13:21:24.636Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p106">
-<meta name="twitter:description" content="LeetCode p106  Construct Binary Tree from Inorder and Postorder Traversal   题解1.题目：
-Given inorder and postorder traversal of a tree, construct the binary tree.">
+<meta name="twitter:title" content="p98">
+<meta name="twitter:description" content="LeetCode p98 Validate Binary Search Tree  题解1.题目：
+Given a binary tree, determine if it is a valid binary search tree (BST).
+
+Assume a BST is defined as follows:
+The left subtree of a node contains onl">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +175,11 @@ Given inorder and postorder traversal of a tree, construct the binary tree.">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p106" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p98" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/12/p106/" class="article-date">
-  	<time datetime="2017-03-12T12:14:39.000Z" itemprop="datePublished">2017-03-12</time>
+      <a href="/2017/03/13/p98/" class="article-date">
+  	<time datetime="2017-03-13T13:19:23.000Z" itemprop="datePublished">2017-03-13</time>
 </a>
     </div>
   
@@ -183,7 +192,7 @@ Given inorder and postorder traversal of a tree, construct the binary tree.">
         
   
     <h1 class="article-title" itemprop="name">
-      p106
+      p98
     </h1>
   
 
@@ -207,18 +216,20 @@ Given inorder and postorder traversal of a tree, construct the binary tree.">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal-题解"><a href="#LeetCode-p106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal-题解" class="headerlink" title="LeetCode p106  Construct Binary Tree from Inorder and Postorder Traversal   题解"></a>LeetCode p106  Construct Binary Tree from Inorder and Postorder Traversal   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Given inorder and postorder traversal of a tree, construct the binary tree.<br><a id="more"></a> </p>
+        <h2 id="LeetCode-p98-Validate-Binary-Search-Tree-题解"><a href="#LeetCode-p98-Validate-Binary-Search-Tree-题解" class="headerlink" title="LeetCode p98 Validate Binary Search Tree  题解"></a>LeetCode p98 Validate Binary Search Tree  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a binary tree, determine if it is a valid binary search tree (BST).</p>
 </blockquote>
+<p>Assume a BST is defined as follows:</p>
+<p>The left subtree of a node contains only nodes with keys less than the node’s key.<br>The right subtree of a node contains only nodes with keys greater than the node’s key.<br>Both the left and right subtrees must also be binary search trees.<br>Example 1:<br>    2<br>   / \<br>  1   3<br>Binary tree [2,1,3], return true.<br>Example 2:<br>    1<br>   / \<br>  2   3<br>Binary tree [1,2,3], return false.<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入一二叉树的中序遍历，后续遍历，返回这个二叉树。</p>
+<p>输入一二叉树，判断它是否为二叉搜索树。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>后续的最后一个为头，切分中序，递归。</p>
+<p>见代码。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * public class TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode left;</span><br><span class="line"> *     TreeNode right;</span><br><span class="line"> *     TreeNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> TreeNode <span class="title">buildTree</span><span class="params">(<span class="keyword">int</span>[] inorder, <span class="keyword">int</span>[] postorder)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (inorder.length == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">int</span> len = postorder.length;</span><br><span class="line">		HashMap&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;Integer, Integer&gt;();</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; len; i++) &#123;</span><br><span class="line">			map.put(inorder[i], i);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> buildTree(inorder, <span class="number">0</span>, len - <span class="number">1</span>, postorder, <span class="number">0</span>, len - <span class="number">1</span>, map);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> TreeNode <span class="title">buildTree</span><span class="params">(<span class="keyword">int</span>[] inorder, <span class="keyword">int</span> is, <span class="keyword">int</span> ie,</span><br><span class="line">			<span class="keyword">int</span>[] postorder, <span class="keyword">int</span> ps, <span class="keyword">int</span> pe, HashMap&lt;Integer, Integer&gt; map)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (is &gt; ie || ps &gt; pe)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		TreeNode node = <span class="keyword">new</span> TreeNode(postorder[pe]);</span><br><span class="line">		<span class="comment">//System.out.println(postorder[pe]);</span></span><br><span class="line">		<span class="keyword">int</span> k = map.get(postorder[pe]);</span><br><span class="line">		node.left = buildTree(inorder, is, k - <span class="number">1</span>, postorder, ps, ps+k-<span class="number">1</span>-is, map);</span><br><span class="line">		node.right = buildTree(inorder, k + <span class="number">1</span>, ie, postorder, ps+k-is, pe-<span class="number">1</span>, map);</span><br><span class="line">		<span class="keyword">return</span> node;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * public class TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode left;</span><br><span class="line"> *     TreeNode right;</span><br><span class="line"> *     TreeNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidBST</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE); <span class="comment">//Int会被卡数</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidBST</span><span class="params">(TreeNode root, Long min, Long max)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">if</span> (root.val &lt;= min || root.val &gt;= max)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">boolean</span> b1 = root.left == <span class="keyword">null</span></span><br><span class="line">				|| (root.left != <span class="keyword">null</span> &amp;&amp; root.left.val &lt; root.val);</span><br><span class="line">		<span class="keyword">boolean</span> b2 = root.right == <span class="keyword">null</span></span><br><span class="line">				|| (root.right != <span class="keyword">null</span> &amp;&amp; root.right.val &gt; root.val);</span><br><span class="line">		<span class="keyword">if</span> (b1 &amp;&amp; b2) &#123;</span><br><span class="line">			<span class="keyword">return</span> isValidBST(root.left, min, (<span class="keyword">long</span>) root.val)</span><br><span class="line">					&amp;&amp; isValidBST(root.right, (<span class="keyword">long</span>) root.val, max);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -229,18 +240,9 @@ Given inorder and postorder traversal of a tree, construct the binary tree.">
     
 <nav id="article-nav">
   
-    <a href="/2017/03/13/p105/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p105
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/03/11/p109/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p109</div>
+    <a href="/2017/03/13/p103/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p103</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -256,7 +258,7 @@ Given inorder and postorder traversal of a tree, construct the binary tree.">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p106" data-title="p106" data-url="http://yoursite.com/2017/03/12/p106/"></div>
+	<div class="ds-thread" data-thread-key="p98" data-title="p98" data-url="http://yoursite.com/2017/03/13/p98/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
