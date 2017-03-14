@@ -4,30 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p98 | ZMR小站</title>
+  <title>p61 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p98 Validate Binary Search Tree  题解1.题目：
-Given a binary tree, determine if it is a valid binary search tree (BST).
+  <meta name="description" content="LeetCode p61  Rotate List   题解1.题目：
+ Given a list, rotate the list to the right by k places, where k is non-negative.
 
-Assume a BST is defined as follows:
-The left subtree of a node contains onl">
+For example:Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL and k = 2,return 4-&amp;gt;5-&amp;gt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p98">
-<meta property="og:url" content="http://yoursite.com/2017/03/13/p98/index.html">
+<meta property="og:title" content="p61">
+<meta property="og:url" content="http://yoursite.com/2017/03/14/p61/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p98 Validate Binary Search Tree  题解1.题目：
-Given a binary tree, determine if it is a valid binary search tree (BST).
+<meta property="og:description" content="LeetCode p61  Rotate List   题解1.题目：
+ Given a list, rotate the list to the right by k places, where k is non-negative.
 
-Assume a BST is defined as follows:
-The left subtree of a node contains onl">
-<meta property="og:updated_time" content="2017-03-13T13:21:24.636Z">
+For example:Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL and k = 2,return 4-&amp;gt;5-&amp;gt">
+<meta property="og:updated_time" content="2017-03-14T05:46:30.468Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p98">
-<meta name="twitter:description" content="LeetCode p98 Validate Binary Search Tree  题解1.题目：
-Given a binary tree, determine if it is a valid binary search tree (BST).
+<meta name="twitter:title" content="p61">
+<meta name="twitter:description" content="LeetCode p61  Rotate List   题解1.题目：
+ Given a list, rotate the list to the right by k places, where k is non-negative.
 
-Assume a BST is defined as follows:
-The left subtree of a node contains onl">
+For example:Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL and k = 2,return 4-&amp;gt;5-&amp;gt">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -175,11 +172,11 @@ The left subtree of a node contains onl">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p98" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p61" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/13/p98/" class="article-date">
-  	<time datetime="2017-03-13T13:19:23.000Z" itemprop="datePublished">2017-03-13</time>
+      <a href="/2017/03/14/p61/" class="article-date">
+  	<time datetime="2017-03-14T05:44:12.000Z" itemprop="datePublished">2017-03-14</time>
 </a>
     </div>
   
@@ -192,7 +189,7 @@ The left subtree of a node contains onl">
         
   
     <h1 class="article-title" itemprop="name">
-      p98
+      p61
     </h1>
   
 
@@ -216,20 +213,19 @@ The left subtree of a node contains onl">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p98-Validate-Binary-Search-Tree-题解"><a href="#LeetCode-p98-Validate-Binary-Search-Tree-题解" class="headerlink" title="LeetCode p98 Validate Binary Search Tree  题解"></a>LeetCode p98 Validate Binary Search Tree  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p>Given a binary tree, determine if it is a valid binary search tree (BST).</p>
+        <h2 id="LeetCode-p61-Rotate-List-题解"><a href="#LeetCode-p61-Rotate-List-题解" class="headerlink" title="LeetCode p61  Rotate List   题解"></a>LeetCode p61  Rotate List   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Given a list, rotate the list to the right by k places, where k is non-negative.</p>
 </blockquote>
-<p>Assume a BST is defined as follows:</p>
-<p>The left subtree of a node contains only nodes with keys less than the node’s key.<br>The right subtree of a node contains only nodes with keys greater than the node’s key.<br>Both the left and right subtrees must also be binary search trees.<br>Example 1:<br>    2<br>   / \<br>  1   3<br>Binary tree [2,1,3], return true.<br>Example 2:<br>    1<br>   / \<br>  2   3<br>Binary tree [1,2,3], return false.<br><a id="more"></a> </p>
+<p>For example:<br>Given 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL and k = 2,<br>return 4-&gt;5-&gt;1-&gt;2-&gt;3-&gt;NULL.<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入一二叉树，判断它是否为二叉搜索树。</p>
+<p>输入一个链表转置它末尾的K个数。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码。</p>
+<p>见代码，输入的K可能会超过链表长度。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for a binary tree node.</span><br><span class="line"> * public class TreeNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     TreeNode left;</span><br><span class="line"> *     TreeNode right;</span><br><span class="line"> *     TreeNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidBST</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE); <span class="comment">//Int会被卡数</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isValidBST</span><span class="params">(TreeNode root, Long min, Long max)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">if</span> (root.val &lt;= min || root.val &gt;= max)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">boolean</span> b1 = root.left == <span class="keyword">null</span></span><br><span class="line">				|| (root.left != <span class="keyword">null</span> &amp;&amp; root.left.val &lt; root.val);</span><br><span class="line">		<span class="keyword">boolean</span> b2 = root.right == <span class="keyword">null</span></span><br><span class="line">				|| (root.right != <span class="keyword">null</span> &amp;&amp; root.right.val &gt; root.val);</span><br><span class="line">		<span class="keyword">if</span> (b1 &amp;&amp; b2) &#123;</span><br><span class="line">			<span class="keyword">return</span> isValidBST(root.left, min, (<span class="keyword">long</span>) root.val)</span><br><span class="line">					&amp;&amp; isValidBST(root.right, (<span class="keyword">long</span>) root.val, max);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">rotateRight</span><span class="params">(ListNode head, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (head == <span class="keyword">null</span> || k == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> head;</span><br><span class="line">		<span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">		ListNode fast = head;</span><br><span class="line">		ListNode slow = head;</span><br><span class="line">		<span class="keyword">while</span> (fast != <span class="keyword">null</span>) &#123;</span><br><span class="line">			fast = fast.next;</span><br><span class="line">			count++;</span><br><span class="line">		&#125;</span><br><span class="line">		count = k % count;</span><br><span class="line">		<span class="keyword">if</span> (count == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> head;</span><br><span class="line">		fast = head;</span><br><span class="line">		<span class="keyword">while</span> (count &gt; <span class="number">0</span> &amp;&amp; fast != <span class="keyword">null</span>) &#123;</span><br><span class="line">			fast = fast.next;</span><br><span class="line">			count--;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (fast == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> head;</span><br><span class="line">		<span class="keyword">while</span> (fast.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">			fast = fast.next;</span><br><span class="line">			slow = slow.next;</span><br><span class="line">		&#125;</span><br><span class="line">		ListNode ans = slow.next;</span><br><span class="line">		fast.next = head;</span><br><span class="line">		slow.next = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -240,18 +236,9 @@ The left subtree of a node contains onl">
     
 <nav id="article-nav">
   
-    <a href="/2017/03/14/p61/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p61
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/03/13/p103/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p103</div>
+    <a href="/2017/03/13/p98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p98</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -267,7 +254,7 @@ The left subtree of a node contains onl">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p98" data-title="p98" data-url="http://yoursite.com/2017/03/13/p98/"></div>
+	<div class="ds-thread" data-thread-key="p61" data-title="p61" data-url="http://yoursite.com/2017/03/14/p61/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
