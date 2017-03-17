@@ -4,21 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p6 | ZMR小站</title>
+  <title>p43 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p6   ZigZag Conversion   题解1.题目：
- The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for bet">
+  <meta name="description" content="LeetCode p43   Multiply Strings   题解1.题目：
+ Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
+
+Note:
+The length of both num1 and num2 is &amp;lt; 11">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p6">
-<meta property="og:url" content="http://yoursite.com/2017/03/16/p6/index.html">
+<meta property="og:title" content="p43">
+<meta property="og:url" content="http://yoursite.com/2017/03/17/p43/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p6   ZigZag Conversion   题解1.题目：
- The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for bet">
-<meta property="og:updated_time" content="2017-03-16T07:57:12.563Z">
+<meta property="og:description" content="LeetCode p43   Multiply Strings   题解1.题目：
+ Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
+
+Note:
+The length of both num1 and num2 is &amp;lt; 11">
+<meta property="og:updated_time" content="2017-03-17T06:44:14.385Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p6">
-<meta name="twitter:description" content="LeetCode p6   ZigZag Conversion   题解1.题目：
- The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for bet">
+<meta name="twitter:title" content="p43">
+<meta name="twitter:description" content="LeetCode p43   Multiply Strings   题解1.题目：
+ Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
+
+Note:
+The length of both num1 and num2 is &amp;lt; 11">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -166,11 +175,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p6" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p43" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/16/p6/" class="article-date">
-  	<time datetime="2017-03-16T07:54:59.000Z" itemprop="datePublished">2017-03-16</time>
+      <a href="/2017/03/17/p43/" class="article-date">
+  	<time datetime="2017-03-17T06:42:01.000Z" itemprop="datePublished">2017-03-17</time>
 </a>
     </div>
   
@@ -183,7 +192,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      p6
+      p43
     </h1>
   
 
@@ -207,20 +216,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p6-ZigZag-Conversion-题解"><a href="#LeetCode-p6-ZigZag-Conversion-题解" class="headerlink" title="LeetCode p6   ZigZag Conversion   题解"></a>LeetCode p6   ZigZag Conversion   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)</p>
+        <h2 id="LeetCode-p43-Multiply-Strings-题解"><a href="#LeetCode-p43-Multiply-Strings-题解" class="headerlink" title="LeetCode p43   Multiply Strings   题解"></a>LeetCode p43   Multiply Strings   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.</p>
 </blockquote>
-<p>P   A   H   N<br>A P L S I I G<br>Y   I   R<br>And then read line by line: “PAHNAPLSIIGYIR”<br>Write the code that will take a string and make this conversion given a number of rows:</p>
-<p>string convert(string text, int nRows);<br>convert(“PAYPALISHIRING”, 3) should return “PAHNAPLSIIGYIR”.<br><a id="more"></a> </p>
+<p>Note:</p>
+<p>The length of both num1 and num2 is &lt; 110.<br>Both num1 and num2 contains only digits 0-9.<br>Both num1 and num2 does not contain any leading zero.<br>You must not use any built-in BigInteger library or convert the inputs to integer directly.<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入一个字符串，和一个行数，将字符串如上Z字型排列，输出排列后的字符串。</p>
+<p>输入两个字符串，输出他们相乘的积。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码</p>
+<p>用字符串模拟相乘，见代码。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">convert</span><span class="params">(String s, <span class="keyword">int</span> numRows)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s.length() &lt;= numRows)</span><br><span class="line">			<span class="keyword">return</span> s;</span><br><span class="line">		<span class="keyword">char</span>[] c = s.toCharArray();</span><br><span class="line">		StringBuilder[] slist = <span class="keyword">new</span> StringBuilder[numRows];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numRows; i++)</span><br><span class="line">			slist[i] = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; c.length;) &#123;</span><br><span class="line">			<span class="comment">// down</span></span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; numRows &amp;&amp; i &lt; c.length; j++, i++) &#123;</span><br><span class="line">				slist[j].append(c[i]);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="comment">// up</span></span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = numRows - <span class="number">2</span>; j &gt; <span class="number">0</span> &amp;&amp; i &lt; c.length; j--, i++) &#123;</span><br><span class="line">				slist[j].append(c[i]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		StringBuilder sBuilder = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numRows; i++) &#123;</span><br><span class="line">			sBuilder.append(slist[i].toString());</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> sBuilder.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">multiply</span><span class="params">(String num1, String num2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (num1.equals(<span class="string">"0"</span>) || num2.equals(<span class="string">"0"</span>))</span><br><span class="line">			<span class="keyword">return</span> <span class="string">"0"</span>;</span><br><span class="line">		StringBuilder ansBuilder = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		<span class="keyword">int</span> len1 = num1.length();</span><br><span class="line">		<span class="keyword">int</span> len2 = num2.length();</span><br><span class="line">		<span class="keyword">int</span>[] ans = <span class="keyword">new</span> <span class="keyword">int</span>[len1 + len2];</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = len1 - <span class="number">1</span>; i &gt; -<span class="number">1</span>; i--) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = len2 - <span class="number">1</span>; j &gt; -<span class="number">1</span>; j--) &#123;</span><br><span class="line"></span><br><span class="line">				<span class="keyword">int</span> a = (num1.charAt(i) - <span class="string">'0'</span>) * (num2.charAt(j) - <span class="string">'0'</span>);</span><br><span class="line">				ans[i + j + <span class="number">1</span>] += a;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = len1 + len2 - <span class="number">1</span>; i &gt; -<span class="number">1</span>; i--) &#123;</span><br><span class="line">			<span class="keyword">int</span> sum = c + ans[i];</span><br><span class="line">			ans[i] = sum % <span class="number">10</span>;</span><br><span class="line">			c = sum / <span class="number">10</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span> (i &lt; len1 + len2 &amp;&amp; ans[i] == <span class="number">0</span>)</span><br><span class="line">			i++;</span><br><span class="line">		<span class="keyword">for</span> (; i &lt; len1 + len2; i++) &#123;</span><br><span class="line">			ansBuilder.append((<span class="keyword">char</span>) (ans[i] + <span class="string">'0'</span>));</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ansBuilder.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -231,18 +240,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/03/17/p43/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p43
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/03/16/p8/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p8</div>
+    <a href="/2017/03/16/p6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p6</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -258,7 +258,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p6" data-title="p6" data-url="http://yoursite.com/2017/03/16/p6/"></div>
+	<div class="ds-thread" data-thread-key="p43" data-title="p43" data-url="http://yoursite.com/2017/03/17/p43/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
