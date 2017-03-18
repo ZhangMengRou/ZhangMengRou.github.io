@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p82 | ZMR小站</title>
+  <title>p56 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p82  Remove Duplicates from Sorted List II   题解1.题目：
- Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+  <meta name="description" content="LeetCode p56  Merge Intervals   题解1.题目：
+ Given a collection of intervals, merge all overlapping intervals.
 
-For exam">
+For example,Given [1,3],[2,6],[8,10],[15,18],return [1,6],[8,10],[15,18].">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p82">
-<meta property="og:url" content="http://yoursite.com/2017/03/17/p82/index.html">
+<meta property="og:title" content="p56">
+<meta property="og:url" content="http://yoursite.com/2017/03/18/p56/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p82  Remove Duplicates from Sorted List II   题解1.题目：
- Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+<meta property="og:description" content="LeetCode p56  Merge Intervals   题解1.题目：
+ Given a collection of intervals, merge all overlapping intervals.
 
-For exam">
-<meta property="og:updated_time" content="2017-03-17T13:46:44.544Z">
+For example,Given [1,3],[2,6],[8,10],[15,18],return [1,6],[8,10],[15,18].">
+<meta property="og:updated_time" content="2017-03-18T12:04:13.875Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p82">
-<meta name="twitter:description" content="LeetCode p82  Remove Duplicates from Sorted List II   题解1.题目：
- Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+<meta name="twitter:title" content="p56">
+<meta name="twitter:description" content="LeetCode p56  Merge Intervals   题解1.题目：
+ Given a collection of intervals, merge all overlapping intervals.
 
-For exam">
+For example,Given [1,3],[2,6],[8,10],[15,18],return [1,6],[8,10],[15,18].">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -172,11 +172,11 @@ For exam">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p82" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p56" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/17/p82/" class="article-date">
-  	<time datetime="2017-03-17T13:45:27.000Z" itemprop="datePublished">2017-03-17</time>
+      <a href="/2017/03/18/p56/" class="article-date">
+  	<time datetime="2017-03-18T12:01:32.000Z" itemprop="datePublished">2017-03-18</time>
 </a>
     </div>
   
@@ -189,7 +189,7 @@ For exam">
         
   
     <h1 class="article-title" itemprop="name">
-      p82
+      p56
     </h1>
   
 
@@ -213,19 +213,19 @@ For exam">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p82-Remove-Duplicates-from-Sorted-List-II-题解"><a href="#LeetCode-p82-Remove-Duplicates-from-Sorted-List-II-题解" class="headerlink" title="LeetCode p82  Remove Duplicates from Sorted List II   题解"></a>LeetCode p82  Remove Duplicates from Sorted List II   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.</p>
+        <h2 id="LeetCode-p56-Merge-Intervals-题解"><a href="#LeetCode-p56-Merge-Intervals-题解" class="headerlink" title="LeetCode p56  Merge Intervals   题解"></a>LeetCode p56  Merge Intervals   题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> Given a collection of intervals, merge all overlapping intervals.</p>
 </blockquote>
-<p>For example,<br>Given 1-&gt;2-&gt;3-&gt;3-&gt;4-&gt;4-&gt;5, return 1-&gt;2-&gt;5.<br>Given 1-&gt;1-&gt;1-&gt;2-&gt;3, return 2-&gt;3.<br><a id="more"></a> </p>
+<p>For example,<br>Given [1,3],[2,6],[8,10],[15,18],<br>return [1,6],[8,10],[15,18].<br><a id="more"></a> </p>
 <p>题意：</p>
 <blockquote>
-<p>输入一个链表，剔除其中所有重复出现过的数字。</p>
+<p>合并所有重叠部分。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>见代码</p>
+<p>先排序再覆盖，见代码。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">deleteDuplicates</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        ListNode ans = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">		ans.next = head;</span><br><span class="line">		HashMap&lt;Integer, Integer&gt; map = <span class="keyword">new</span> HashMap&lt;Integer, Integer&gt;();</span><br><span class="line">		<span class="keyword">while</span> (head != <span class="keyword">null</span>) &#123;</span><br><span class="line">			map.put(head.val, map.getOrDefault(head.val, <span class="number">0</span>) + <span class="number">1</span>);</span><br><span class="line">			head = head.next;</span><br><span class="line">		&#125;</span><br><span class="line">		head = ans;</span><br><span class="line">		<span class="keyword">while</span> (head != <span class="keyword">null</span> &amp;&amp; head.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (map.get(head.next.val) &gt; <span class="number">1</span>) &#123;</span><br><span class="line">				head.next = head.next.next;</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			head = head.next;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ans.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for an interval.</span><br><span class="line"> * public class Interval &#123;</span><br><span class="line"> *     int start;</span><br><span class="line"> *     int end;</span><br><span class="line"> *     Interval() &#123; start = 0; end = 0; &#125;</span><br><span class="line"> *     Interval(int s, int e) &#123; start = s; end = e; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;Interval&gt; <span class="title">merge</span><span class="params">(List&lt;Interval&gt; intervals)</span> </span>&#123;</span><br><span class="line">        List&lt;Interval&gt; ans = <span class="keyword">new</span> ArrayList&lt;Interval&gt;();</span><br><span class="line">		<span class="keyword">if</span> (intervals.size() &lt; <span class="number">1</span>)</span><br><span class="line">			<span class="keyword">return</span> ans;</span><br><span class="line">		Collections.sort(intervals, <span class="keyword">new</span> Comparator&lt;Interval&gt;() &#123;</span><br><span class="line">			<span class="meta">@Override</span></span><br><span class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Interval a, Interval b)</span> </span>&#123;</span><br><span class="line">				<span class="keyword">return</span> (<span class="keyword">int</span>) (a.start - b.start);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> start = intervals.get(<span class="number">0</span>).start;</span><br><span class="line">		<span class="keyword">int</span> end = intervals.get(<span class="number">0</span>).end;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; intervals.size() ; i++) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> (end &gt;= intervals.get(i).start) &#123;</span><br><span class="line">				end = Math.max(intervals.get(i).end, end);</span><br><span class="line"></span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				ans.add(<span class="keyword">new</span> Interval(start, end));</span><br><span class="line">				start = intervals.get(i).start;</span><br><span class="line">				end = intervals.get(i).end;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		ans.add(<span class="keyword">new</span> Interval(start, end));</span><br><span class="line">		<span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -236,18 +236,9 @@ For exam">
     
 <nav id="article-nav">
   
-    <a href="/2017/03/18/p56/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p56
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/03/17/p79/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p79</div>
+    <a href="/2017/03/17/p82/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p82</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -263,7 +254,7 @@ For exam">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p82" data-title="p82" data-url="http://yoursite.com/2017/03/17/p82/"></div>
+	<div class="ds-thread" data-thread-key="p56" data-title="p56" data-url="http://yoursite.com/2017/03/18/p56/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
