@@ -4,17 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Tag: LeetCode | ZMR小站</title>
+  <title>p19 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ZMR小站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZMR小站">
-<meta property="og:url" content="http://yoursite.com/tags/LeetCode/page/30/index.html">
+  <meta name="description" content="LeetCode p19   Remove Nth Node From End of List    题解1.题目：
+Given a linked list, remove the nth node from the end of list and return its head.
+
+For example,
+   Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="p19">
+<meta property="og:url" content="http://yoursite.com/2017/03/26/p19/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="ZMR小站">
+<meta property="og:description" content="LeetCode p19   Remove Nth Node From End of List    题解1.题目：
+Given a linked list, remove the nth node from the end of list and return its head.
+
+For example,
+   Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;g">
+<meta property="og:updated_time" content="2017-03-26T06:36:31.061Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZMR小站">
-<meta name="twitter:description" content="ZMR小站">
+<meta name="twitter:title" content="p19">
+<meta name="twitter:description" content="LeetCode p19   Remove Nth Node From End of List    题解1.题目：
+Given a linked list, remove the nth node from the end of list and return its head.
+
+For example,
+   Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;g">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -162,202 +175,114 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-p19" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/2017/03/26/p19/" class="article-date">
+  	<time datetime="2017-03-26T06:34:23.000Z" itemprop="datePublished">2017-03-26</time>
+</a>
+    </div>
   
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      p19
+    </h1>
+  
+
+      </header>
       
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/blog/">blog</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/05/11/p258/" class="archive-article-date">
-  	<time datetime="2016-05-11T05:51:11.000Z" itemprop="datePublished">5月 11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/11/p258/">p258</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/blog/">blog</a>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="LeetCode-p19-Remove-Nth-Node-From-End-of-List-题解"><a href="#LeetCode-p19-Remove-Nth-Node-From-End-of-List-题解" class="headerlink" title="LeetCode p19   Remove Nth Node From End of List    题解"></a>LeetCode p19   Remove Nth Node From End of List    题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p>Given a linked list, remove the nth node from the end of list and return its head.</p>
+</blockquote>
+<p>For example,</p>
+<p>   Given linked list: 1-&gt;2-&gt;3-&gt;4-&gt;5, and n = 2.</p>
+<p>   After removing the second node from the end, the linked list becomes 1-&gt;2-&gt;3-&gt;5.</p>
+<p>Note:<br>Given n will always be valid.<br>Try to do this in one pass. </p>
+<a id="more"></a> 
+<p>题意：</p>
+<blockquote>
+<p>移除链表中倒数第K个数</p>
+</blockquote>
+<h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
+<p>快慢指针定位要移除的位置。加上一个链表头防止空指针情况。</p>
+</blockquote>
+<h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode(int x) &#123; val = x; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">removeNthFromEnd</span><span class="params">(ListNode head, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        ListNode start = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">		start.next = head;</span><br><span class="line"></span><br><span class="line">		ListNode fast = start;</span><br><span class="line">		ListNode slow = start;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n + <span class="number">1</span>; i++) &#123;</span><br><span class="line">			fast = fast.next;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">while</span> (fast != <span class="keyword">null</span>) &#123;</span><br><span class="line">			fast = fast.next;</span><br><span class="line">			slow = slow.next;</span><br><span class="line">		&#125;</span><br><span class="line">		slow.next = slow.next.next;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> start.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/26/p50/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p50</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/05/11/p136/" class="archive-article-date">
-  	<time datetime="2016-05-11T05:34:23.000Z" itemprop="datePublished">5月 11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/11/p136/">p136</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/blog/">blog</a>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/05/11/p292/" class="archive-article-date">
-  	<time datetime="2016-05-11T00:27:59.000Z" itemprop="datePublished">5月 11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/11/p292/">p292</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/blog/">blog</a>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/05/08/p338/" class="archive-article-date">
-  	<time datetime="2016-05-08T12:35:45.000Z" itemprop="datePublished">5月 8</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/08/p338/">p338</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/blog/">blog</a>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/05/08/p344/" class="archive-article-date">
-  	<time datetime="2016-05-08T07:47:52.000Z" itemprop="datePublished">5月 8</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/08/p344/">p344</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LeetCode/">LeetCode</a></li></ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/blog/">blog</a>
-	</div>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="p19" data-title="p19" data-url="http://yoursite.com/2017/03/26/p19/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"zhangmengrou"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/tags/LeetCode/page/29/">&laquo; Prev</a><a class="page-number" href="/tags/LeetCode/">1</a><span class="space">&hellip;</span><a class="page-number" href="/tags/LeetCode/page/28/">28</a><a class="page-number" href="/tags/LeetCode/page/29/">29</a><span class="page-number current">30</span>
-    </nav>
-  
 
+
+ 
 </div>
       <footer id="footer">
   <div class="outer">
@@ -385,9 +310,9 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
