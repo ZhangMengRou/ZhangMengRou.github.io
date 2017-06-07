@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>p402 | ZMR小站</title>
+  <title>p4 | ZMR小站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeetCode p402  Remove K Digits    题解1.题目：
- Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+  <meta name="description" content="LeetCode p4  Median of Two Sorted Arrays  题解1.题目：
+ There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
-Note:The length o">
+Find the median of the two sorted arrays. The overall run time complexity">
 <meta property="og:type" content="article">
-<meta property="og:title" content="p402">
-<meta property="og:url" content="http://yoursite.com/2017/03/27/p402/index.html">
+<meta property="og:title" content="p4">
+<meta property="og:url" content="http://yoursite.com/2017/06/06/p4/index.html">
 <meta property="og:site_name" content="ZMR小站">
-<meta property="og:description" content="LeetCode p402  Remove K Digits    题解1.题目：
- Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+<meta property="og:description" content="LeetCode p4  Median of Two Sorted Arrays  题解1.题目：
+ There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
-Note:The length o">
-<meta property="og:updated_time" content="2017-03-27T04:39:14.266Z">
+Find the median of the two sorted arrays. The overall run time complexity">
+<meta property="og:updated_time" content="2017-06-07T13:43:07.561Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="p402">
-<meta name="twitter:description" content="LeetCode p402  Remove K Digits    题解1.题目：
- Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+<meta name="twitter:title" content="p4">
+<meta name="twitter:description" content="LeetCode p4  Median of Two Sorted Arrays  题解1.题目：
+ There are two sorted arrays nums1 and nums2 of size m and n respectively.
 
-Note:The length o">
+Find the median of the two sorted arrays. The overall run time complexity">
   
     <link rel="alternative" href="/atom.xml" title="ZMR小站" type="application/atom+xml">
   
@@ -172,11 +172,11 @@ Note:The length o">
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-p402" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-p4" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/03/27/p402/" class="article-date">
-  	<time datetime="2017-03-27T04:32:33.000Z" itemprop="datePublished">2017-03-27</time>
+      <a href="/2017/06/06/p4/" class="article-date">
+  	<time datetime="2017-06-06T13:05:39.000Z" itemprop="datePublished">2017-06-06</time>
 </a>
     </div>
   
@@ -189,7 +189,7 @@ Note:The length o">
         
   
     <h1 class="article-title" itemprop="name">
-      p402
+      p4
     </h1>
   
 
@@ -213,22 +213,23 @@ Note:The length o">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="LeetCode-p402-Remove-K-Digits-题解"><a href="#LeetCode-p402-Remove-K-Digits-题解" class="headerlink" title="LeetCode p402  Remove K Digits    题解"></a>LeetCode p402  Remove K Digits    题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
-<p> Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.</p>
+        <h2 id="LeetCode-p4-Median-of-Two-Sorted-Arrays-题解"><a href="#LeetCode-p4-Median-of-Two-Sorted-Arrays-题解" class="headerlink" title="LeetCode p4  Median of Two Sorted Arrays  题解"></a>LeetCode p4  Median of Two Sorted Arrays  题解</h2><h3 id="1-题目："><a href="#1-题目：" class="headerlink" title="1.题目："></a>1.题目：</h3><blockquote>
+<p> There are two sorted arrays nums1 and nums2 of size m and n respectively.</p>
 </blockquote>
-<p>Note:<br>The length of num is less than 10002 and will be ≥ k.<br>The given num does not contain any leading zero.<br>Example 1:</p>
-<p>Input: num = “1432219”, k = 3<br>Output: “1219”<br>Explanation: Remove the three digits 4, 3, and 2 to form the new number 1219 which is the smallest.<br>Example 2:</p>
-<p>Input: num = “10200”, k = 1<br>Output: “200”<br>Explanation: Remove the leading 1 and the number is 200. Note that the output must not contain leading zeroes.<br>Example 3:</p>
-<p>Input: num = “10”, k = 2<br>Output: “0”<br>Explanation: Remove all the digits from the number and it is left with nothing which is 0.<br><a id="more"></a> </p>
+<p>Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).</p>
+<p>Example 1:<br>nums1 = [1, 3]<br>nums2 = [2]</p>
+<p>The median is 2.0<br>Example 2:<br>nums1 = [1, 2]<br>nums2 = [3, 4]</p>
+<p>The median is (2 + 3)/2 = 2.5</p>
+<a id="more"></a> 
 <p>题意：</p>
 <blockquote>
-<p>输入一个数字的字符串，和K，移除K个数字之后使得到的字符串表示的数字最小，输出这个最小的数字。</p>
+<p>输入两个排好序的数组，求将两个数组有序合并之后中间的数值，如果有两个数则输出他们的平均值。</p>
 </blockquote>
 <h3 id="2-解题思路"><a href="#2-解题思路" class="headerlink" title="2.解题思路:"></a>2.解题思路:</h3><blockquote>
-<p>将每个数与它前面的数进行比较，如果比前面的数大就将前面的数移除。<br>比如897321 K=3<br>则移除顺序为 8 9 比较 不移除进位<br>    9 7 比较 9 移除 退位<br>    8 7 比较 8 移除 无法退位<br>    7 3 比较 3 移除 退出循环</p>
+<p>首先将两种取中间值的情况，合并成一种情况。<br>int l1 = nums1.length;<br>        int l2 = nums2.length;<br>        int a = (l1 + l2 + 1) / 2;<br>        int b = (l1 + l2 + 2) / 2;<br>即取第a个数,第b个数的平均值即可。<br>然后将题目转换成为取两个数组合并后的第K个数，即getk函数所做的事。<br>getk这个函数，采用二分的方式一步步排除K前面的数，直到获得第K个数。<br>排除方式：两个数组：num1,nums2，每次分别取出未排除个数的1/2。<br>则取出的数中哦你总有一半会需要整体排除，即可一步步逼近K。<br>注意边界条件。</p>
 </blockquote>
 <h3 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h3><hr>
-<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">removeKdigits</span><span class="params">(String num, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        StringBuilder sBuilder = <span class="keyword">new</span> StringBuilder(num);</span><br><span class="line">		<span class="keyword">int</span> x = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; k;) &#123;</span><br><span class="line"></span><br><span class="line">			<span class="keyword">if</span> (sBuilder.length() == <span class="number">1</span>)</span><br><span class="line">				<span class="keyword">return</span> <span class="string">"0"</span>;</span><br><span class="line">			<span class="keyword">if</span> (x &gt;= sBuilder.length()</span><br><span class="line">					|| sBuilder.charAt(x - <span class="number">1</span>) &gt; sBuilder.charAt(x)) &#123;</span><br><span class="line">				sBuilder.deleteCharAt(x - <span class="number">1</span>);</span><br><span class="line">				i++;</span><br><span class="line">				<span class="keyword">if</span> (x != <span class="number">1</span>)</span><br><span class="line">					x--;</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				x++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		x = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (; x &lt; sBuilder.length();) &#123;</span><br><span class="line">			<span class="keyword">if</span> (sBuilder.charAt(x) != <span class="string">'0'</span> || sBuilder.length() &lt; <span class="number">2</span>)</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">if</span> (sBuilder.charAt(x) == <span class="string">'0'</span>) &#123;</span><br><span class="line">				sBuilder.deleteCharAt(x);</span><br><span class="line">			&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">				x++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> sBuilder.toString();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getk</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span> starta, <span class="keyword">int</span>[] nums2, <span class="keyword">int</span> startb, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (starta &gt; nums1.length - <span class="number">1</span>) <span class="keyword">return</span> nums2[startb + k - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">if</span> (startb &gt; nums2.length - <span class="number">1</span>) <span class="keyword">return</span> nums1[starta + k - <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">if</span> (k == <span class="number">1</span>) <span class="keyword">return</span> Math.min(nums1[starta], nums2[startb]);</span><br><span class="line">        <span class="keyword">int</span> mid1 = nums1.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> mid2 = nums2.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> d1 = nums1[mid1];</span><br><span class="line">        <span class="keyword">int</span> d2 = nums2[mid2];</span><br><span class="line">        <span class="keyword">if</span> (starta + k / <span class="number">2</span> - <span class="number">1</span> &lt; nums1.length) &#123;</span><br><span class="line">            mid1 = starta + k / <span class="number">2</span> - <span class="number">1</span>;</span><br><span class="line">            d1 = nums1[mid1];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (startb + k / <span class="number">2</span> - <span class="number">1</span> &lt; nums2.length) &#123;</span><br><span class="line">            mid2 = startb + k / <span class="number">2</span> - <span class="number">1</span>;</span><br><span class="line">            d2 = nums2[mid2];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (d1 &gt; d2) <span class="keyword">return</span> getk(nums1, starta, nums2, mid2 + <span class="number">1</span>, k - mid2 + startb - <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> getk(nums1, mid1 + <span class="number">1</span>, nums2, startb, k - mid1 + starta - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">findMedianSortedArrays</span><span class="params">(<span class="keyword">int</span>[] nums1, <span class="keyword">int</span>[] nums2)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">double</span> i = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> l1 = nums1.length;</span><br><span class="line">        <span class="keyword">int</span> l2 = nums2.length;</span><br><span class="line">        <span class="keyword">int</span> a = (l1 + l2 + <span class="number">1</span>) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">int</span> b = (l1 + l2 + <span class="number">2</span>) / <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">double</span> a1 = getk(nums1, <span class="number">0</span>, nums2, <span class="number">0</span>, a);</span><br><span class="line">        <span class="keyword">double</span> a2 = getk(nums1, <span class="number">0</span>, nums2, <span class="number">0</span>, b);</span><br><span class="line">        <span class="keyword">return</span> (a1 + a2) / <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="4-一些总结："><a href="#4-一些总结：" class="headerlink" title="4.一些总结："></a>4.一些总结：</h3>
       
@@ -239,18 +240,9 @@ Note:The length o">
     
 <nav id="article-nav">
   
-    <a href="/2017/06/06/p4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          p4
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/03/26/p19/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">p19</div>
+    <a href="/2017/03/27/p402/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">p402</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -266,7 +258,7 @@ Note:The length o">
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="p402" data-title="p402" data-url="http://yoursite.com/2017/03/27/p402/"></div>
+	<div class="ds-thread" data-thread-key="p4" data-title="p4" data-url="http://yoursite.com/2017/06/06/p4/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
